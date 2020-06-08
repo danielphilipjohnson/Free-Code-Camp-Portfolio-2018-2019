@@ -5,10 +5,11 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Twitch Viewer</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="bootstrap4/scss/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://opensource.keycdn.com/angularjs/1.6.5/angular.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="bootstrap4/js/app.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+  <script src="./js/app.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#basic-nav" ng-app="twitchApp">
@@ -49,32 +50,7 @@
         </div>
       </div>
     </div>
-    <!--
-    <div class="card-group row justify-content-center" ng-controller="ChannelController">
-      <div class="card m-3" style="width: 18rem;" ng-repeat="channel in channels">
-        <img class="card-img-top" src="{{channel.video_banner}}" alt="Card image cap">
-        <div class="channel-live">
-          <span ng-if="channel.live">Live now <div class="circle"></div></span>
-        </div>
-        <div class="card-block">
-          <div class="row align-items-start">
-            <div class="col"><img class="logo" src="{{channel.logo}}" alt="Channel Logo"> {{channel.channelLogo}}</div>
-            <div class="col">
-              <h4 class="card-title"><a href="{{channel.url}}">{{channel.display_name}}</a></h4></div>
-          </div>
-          <p class="status">{{channel.status}}</p>
-          <div class="d-flex flex-row">
-            <div class="p-2">Follower: {{channel.followers}}</div>
-            <div class="p-2">Views: {{channel.views}}</div>
-            {{channelsz}}
-            <div class="p-2 stream-modal"><a href="#" class="follow-button btn-follow btn-square" data-toggle="modal" data-target="#exampleModal"><span>&#10084;</span> Follow</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </div>
--->
     <div class="card-group row justify-content-center" id="channel" ng-controller="ChannelController">
       <div class="card m-4 {{channel.onlinestatus}}" style="width: 18rem;" ng-repeat="channel in channelsModel" data-status="{{channel.onlinestatus}}">
         <img class="card-img-top" ng-src="{{channel.video_banner}}" alt="Card image cap">
@@ -161,36 +137,7 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function() {
-      $('.dropdown-item').click(function() {
-        var filterBY = $(this).html();
-        if (filterBY === 'Online') {
-          $(".Offline").each(function(index) {
-            $(this).css('display', 'none');
-          });
-          $(".Online").each(function(index) {
-            $(this).css('display', 'flex');
-          });
-        } else if (filterBY === 'Offline') {
-          $(".Online").each(function(index) {
-            $(this).css('display', 'none');
-          });
-          $(".Offline").each(function(index) {
-            $(this).css('display', 'flex');
-          });
-        } else if (filterBY === 'All') {
-          console.log('all selected');
-          $(".Offline").each(function(index) {
-            $(this).css('display', 'flex');
-          });
-          $(".Online").each(function(index) {
-            $(this).css('display', 'flex');
-          });;
-        }
-      })
-    });
-  </script>
+  <script src="./js/filter.js"></script>
 </body>
 
 </html>

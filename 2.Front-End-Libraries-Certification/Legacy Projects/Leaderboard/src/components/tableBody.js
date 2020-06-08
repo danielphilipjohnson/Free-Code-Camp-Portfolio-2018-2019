@@ -17,7 +17,7 @@ class TableBody extends Component {
             return (
                 <tr>
                     <td>{id += 1}</td>
-                    <td><img src={data.img} className="img-thumbnail float-left" /> <h4 className="username">{data.username}</h4></td>
+                    <td><img src={data.img} alt="profile" className="img-thumbnail float-left" /> <h4 className="username">{data.username}</h4></td>
                     <td>{data.recent} </td>
                     <td>{data.alltime}</td>
                 </tr>
