@@ -29,12 +29,16 @@
     - Caesars Cipher
     - Telephone Number Validator
     - Cash Register
+
 - Data Visualization
     - Bar Chart
     - Choropleth Map
     - Heat Map
     - Scatterplot
     - Treemap Diagram
+    - Legacy
+        - Force Directed Graph
+        - Geo Map
 
 - Apis and Microservices
     - Timestamp
@@ -186,3 +190,30 @@ https://codepen.io/undreamtmayhem/pen/jAGGkj
 ![project](https://res.cloudinary.com/dpj88/image/upload/v1591618664/fcc/front-libraries/wikiviewer_zt7vmx.png)
 
 ![project](https://res.cloudinary.com/dpj88/image/upload/v1591618663/fcc/front-libraries/wikiviewer-mobile_jey8el.png)
+
+
+
+    
+## Data Visualization
+### Bar Chart
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/barchart_fzsaxt.png)
+
+### Choropleth Map
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/choropleth_vsz0lw.png)
+
+### Heat Map
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/heatmap_rdcdml.png)
+
+### Scatterplot
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/scatterplot_rlrc1x.png)
+
+### Treemap Diagram
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620856/fcc/data-visual/treemap_vhqxp2.png)
+
+
+### Legacy
+#### Force Directed Graph
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/force-directed-graph_gctuzn.png)
+
+#### Geo Map
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/geomap_pvuykb.png)
