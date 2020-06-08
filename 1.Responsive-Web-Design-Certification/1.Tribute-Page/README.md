@@ -1,5 +1,13 @@
 ## Build a Tribute Page: User Story
 
+## Views 
+### Desktop
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612960/fcc/responsive/tributepage_cfeojq.png)
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591613258/fcc/responsive/tributepage1_f4i9y5.png)
+https://codepen.io/undreamtmayhem/pen/jAGGkj
+
+
+## User Stories
 ### User Story #1: 
   - My tribute page should have an element with a corresponding id="main", which contains all other elements.
 

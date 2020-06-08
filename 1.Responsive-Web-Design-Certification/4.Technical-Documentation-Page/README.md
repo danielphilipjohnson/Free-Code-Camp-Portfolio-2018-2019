@@ -1,4 +1,16 @@
 ## Build a Technical Documentation Page: User Story
+
+## View
+
+### Desktop
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/techincaldocument_hpi24d.png)
+### Mobile
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/techincaldocumentmobile_wwkdsm.png)
+- https://codepen.io/undreamtmayhem/pen/ErRryM
+
+
+## User Stories
+
 ###  User Story #1: 
 - I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
 ### User Story #2: 

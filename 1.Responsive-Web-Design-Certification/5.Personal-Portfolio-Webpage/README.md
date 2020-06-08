@@ -1,4 +1,15 @@
 ## Build a Personal Portfolio Webpage: User Story
+## Views
+
+### Desktop
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/portfolio_egecka.png)
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612949/fcc/responsive/portfolio1_ghcyke.png)
+### Mobile
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/portfolio-mobile_phsf1m.png)
+
+- https://codepen.io/undreamtmayhem/pen/PWvEvr
+
+## User Stories
 ### User Story #1: 
 - My portfolio should have a welcome section with an id of welcome-section.
 ### User Story #2: 

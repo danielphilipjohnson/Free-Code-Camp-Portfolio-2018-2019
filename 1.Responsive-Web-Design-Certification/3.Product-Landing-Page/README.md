@@ -1,4 +1,16 @@
 ## Build a Product Landing Page User Story
+
+## View
+### Desktop
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage_iboz6i.png)
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage1_ea6xqe.png)
+
+### Mobile
+![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/productlandingpagemobile_em1ccv.png)
+- https://codepen.io/undreamtmayhem/pen/QYBPrN
+
+
+## User Stories
 ###  User Story #1: 
 - My product landing page should have a header element with a corresponding id="header".
 
