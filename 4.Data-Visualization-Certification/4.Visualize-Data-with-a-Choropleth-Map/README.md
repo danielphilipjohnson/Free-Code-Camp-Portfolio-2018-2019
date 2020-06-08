@@ -5,6 +5,11 @@
 - topojson
 - d3-scale-chromatic
 - d3
+## View 
+![https://codepen.io/undreamtmayhem/pen/XQymNV](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/choropleth_vsz0lw.png)
+- https://codepen.io/undreamtmayhem/pen/XQymNV
+
+
 
 ## User Stories 
 

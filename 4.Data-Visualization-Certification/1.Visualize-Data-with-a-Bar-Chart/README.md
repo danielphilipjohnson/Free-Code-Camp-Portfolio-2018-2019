@@ -3,6 +3,12 @@
 ## Tools
 - jquery
 - d3
+
+## View 
+![https://codepen.io/undreamtmayhem/pen/gydNdw](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/barchart_fzsaxt.png)
+- codepen.io/undreamtmayhem/pen/gydNdw
+
+
 ## User Stories 
 
 ### User Story #1: 

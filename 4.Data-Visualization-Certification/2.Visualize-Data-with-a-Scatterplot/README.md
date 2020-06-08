@@ -3,6 +3,11 @@
 ## Tools
 - jquery
 - d3
+## View 
+![https://codepen.io/undreamtmayhem/pen/rYaENN?](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/scatterplot_rlrc1x.png)
+- https://codepen.io/undreamtmayhem/pen/rYaENN?
+
+
 
 ## User Stories 
 
