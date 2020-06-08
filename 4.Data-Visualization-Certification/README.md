@@ -10,10 +10,9 @@
 
 
 ## Visualize Data with a Bar Chart
+
 ![https://codepen.io/undreamtmayhem/pen/gydNdw](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/barchart_fzsaxt.png)
-
 - codepen.io/undreamtmayhem/pen/gydNdw
-
 ## Visualize Data with a Scatterplot Graph
 ![https://codepen.io/undreamtmayhem/pen/rYaENN?](https://res.cloudinary.com/dpj88/image/upload/v1591620855/fcc/data-visual/scatterplot_rlrc1x.png)
 - https://codepen.io/undreamtmayhem/pen/rYaENN?
