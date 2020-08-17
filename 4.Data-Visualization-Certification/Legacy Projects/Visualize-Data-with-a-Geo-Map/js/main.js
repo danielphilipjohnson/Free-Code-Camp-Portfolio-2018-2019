@@ -82,7 +82,8 @@ $('document').ready(function () {
 
 
 
-    } // Tooltip
+    } 
+    // Tooltip
     var div = setupToolTip();
 
     function createMeteors() {
@@ -127,7 +128,6 @@ $('document').ready(function () {
           div.html('<span class="def">Fall:</span> ' + d.properties.fall + '<br>' +
             '<span class="def">Mass:</span> ' + d.properties.mass + '<br>' +
             '<span class="def">Meteor Name:</span> ' + d.properties.name + '<br>' +
-            //'<span class="def">nametype:</span> ' + d.properties.nametype + '<br>' +
             '<span class="def">Recclass:</span> ' + d.properties.recclass + '<br>' +
             '<span class="def">Reclat:</span> ' + d.properties.reclat + '<br>' +
             '<span class="def">Year:</span> ' + new Date(d.properties.year).getFullYear() + '<br>')

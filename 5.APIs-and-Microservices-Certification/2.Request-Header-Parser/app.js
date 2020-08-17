@@ -1,19 +1,14 @@
 /*
   Made By Daniel Philip Johnson: UndreamtMayhem
-  CodePen https://codepen.io/undreamtmayhem/
-  github: https://github.com/UndreamtMayhem
+  CodePen https://codepen.io/danielphilipjohnson/
+  github: https://github.com/danielphilipjohnson/
 */
 
-
 const express = require('express');
-const path = require('path');
-const bodyParser = require('body-parser');
 let get_ip = require('ipware')().get_ip;
 
 // Init App
 const app = express();
-
-
 
 
 // Home Route
@@ -23,11 +18,9 @@ app.get('/', function(req, res){
 
    let user_agent = req.headers['user-agent'];
    let language = req.headers['accept-language']
-   //console.log(req.socket.remoteAddress);
 
    //output
    res.json({"ipaddress":ip_Add,"language":language,"software":user_agent});
-  //console.log(req);
 });
 
 

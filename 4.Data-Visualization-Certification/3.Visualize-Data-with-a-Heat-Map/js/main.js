@@ -1,4 +1,3 @@
-//document ready
 $('document').ready(function () {
   var URL_temperatureData = 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/global-temperature.json';
 

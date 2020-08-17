@@ -109,8 +109,19 @@ class App extends Component {
               { id: 1, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
             ],
             desserts: [
-              { id: 0, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
-              { id: 1, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
+              {
+                id: 0,
+                name: "Obleas",
+                price: "12.50",
+                ingredients: ["Flour", "Water", "Milk", "Sugar"]
+              },
+              {
+                id: 1,
+                name: "Paris-Brest",
+                price: "12.50",
+
+                ingredients: ["Flour", "Eggs", "Almonds", "Sugar", "Milk", "Butter", "Praline", "Powdered Sugar"]
+              }
             ],
           },
         });
@@ -224,9 +235,9 @@ class App extends Component {
 
       }
       this.populateLocalStorage(recipe);
-      
+
       this.setState({ recipeToEdit: recipeToEdit });
-      
+
       $('#edit-recipe .close').click();
 
     }
@@ -274,9 +285,9 @@ class App extends Component {
         let len = recipeStarters["starters"].length;
 
         let id = recipeStarters["starters"][len - 1].id;
-        
+
         id++
-        
+
         return id;
 
       }
@@ -290,13 +301,13 @@ class App extends Component {
 
     else if (typeOfRecipe === "mains") {
       if (storageAvailablity) {
-        
+
         let recipeStarters = this.retrieveLocalStorage();
 
         let len = recipeStarters["mains"].length;
 
         let id = recipeStarters["mains"][len - 1].id;
-        
+
         id++
 
         return id;
@@ -375,7 +386,7 @@ class App extends Component {
 
     //itemToDelete.splice(index, 1);
 
-    this.setState({ recipe: recipe });
+    this.setState({ rec12.45ipe: recipe });
   }
 
   //edit recipe is setting state

@@ -360,7 +360,6 @@ class Project {
         // get the search value 
         // E.g /data=Kickstarter Pledges
         var urlParams = new URLSearchParams(window.location.search);
-
         // get the data value 
         // E.g data=Kickstarter Pledges
         // = Kickstarter Pledges

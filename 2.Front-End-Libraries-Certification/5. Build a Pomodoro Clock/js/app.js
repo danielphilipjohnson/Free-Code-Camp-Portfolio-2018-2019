@@ -3,13 +3,10 @@
 
  * @module Pomodoro
  * @version 1.0.0
- * @author UndreamtMayhem <undreamtmayhem@gmail.com>
+ * @author Daniel Philip Johnson <daniel-philip-johnson@outlook.com>
  */
 
-//break button and set value
 
-//possible look
-// https://www.bing.com/images/search?view=detailV2&ccid=J1JYfkcZ&id=E955E2638E4F1A3A0DA31B31FCBD4678302151B2&thid=OIP.J1JYfkcZmrtGPwDKTB04FAD6D6&q=Digital+Square+Alarm+Clock&simid=608034261118353976&selectedIndex=15&ajaxhist=0
 
 // Required DOM elements
 

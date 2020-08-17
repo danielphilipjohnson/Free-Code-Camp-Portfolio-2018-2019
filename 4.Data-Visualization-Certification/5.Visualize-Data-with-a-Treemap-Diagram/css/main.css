@@ -61,18 +61,21 @@ nav a {
 
 div.tooltip {
     background-color: black;
+    background: rgba(32, 32, 32, 0.95);
     border: 0px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-    font: 1em sans-serif;
+    border-radius: 2px;
+    font: 1em Arial;
     color: #fff;
     height: auto;
-    padding: 6px 9px;
+    padding: 10px;
+
     pointer-events: none;
     position: absolute;
     text-align: center;
     width: auto;
 }
+
+
 
 #main {
     display: flex;
@@ -93,16 +96,7 @@ div.tooltip {
     text-align: center;
 }
 
-div.tooltip {
-    position: absolute;
-    padding: 10px;
-    font: 12px Arial;
-    background: rgba(32, 32, 32, 0.95);
-    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
-    border: 0px;
-    border-radius: 2px;
-    pointer-events: none;
-}
+
 
 #legend {
     font-size: 15px;
