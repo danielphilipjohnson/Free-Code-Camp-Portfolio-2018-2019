@@ -11,7 +11,7 @@ Iphone5
 
 Laptop
 
-<a href="https://codepen.io/danielphilipjohnson/full/oNxabPN">![Mobile view of survey](https://raw.githubusercontent.com/danielphilipjohnson/HTML-and-CSS-portfolio/dev0.1/portfolio-images/suvey-pc-portfolio.png)
+<a href="https://codepen.io/danielphilipjohnson/full/oNxabPN">![PC view of survey](https://github.com/danielphilipjohnson/HTML-and-CSS-portfolio/blob/master/portfolio-images/suvey-pc-portfolio.png)
 </a>
 
 
