@@ -2,10 +2,11 @@
 ## Views
 
 ### Desktop
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/portfolio_egecka.png)
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612949/fcc/responsive/portfolio1_ghcyke.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/developmentv0.11/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage/img/screenshots/portfolio-pc.jpg)
+
+
 ### Mobile
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/portfolio-mobile_phsf1m.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/developmentv0.11/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage/img/screenshots/portfolio-tablet.jpg)
 
 - https://codepen.io/undreamtmayhem/pen/PWvEvr
 
