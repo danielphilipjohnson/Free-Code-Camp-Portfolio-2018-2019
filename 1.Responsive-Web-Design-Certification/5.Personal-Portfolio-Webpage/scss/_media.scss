@@ -1,7 +1,7 @@
 
 // Tablets & Smaller
 @media (max-width: 1000px) {
-  #header-home {
+  #welcome-section {
     height: 100%;
     padding-bottom: 2rem;
 
@@ -68,7 +68,7 @@
 }
 
 @media (min-width: 772px) and(max-width: 1000px) {
-  #header-home {
+  #welcome-section{
     height: 100%;
 
     .header-content {
@@ -92,6 +92,7 @@
   .container {
     padding: 0 0.5rem;
   }
+  #navbar,
   #main-nav {
     flex-direction: column;
     align-items: center;
@@ -103,9 +104,9 @@
   }
 
 
-  #header {
-    &-home {
-      height: 10rem;
+  #welcome {
+    &-section {
+      height: 8rem;
       border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
 
@@ -227,7 +228,7 @@
 
 // Landscape
 @media (max-height: 580px) {
-  #header-home {
+  #welcome-section {
     .header-content {
       padding-top: 3rem;
     }
@@ -235,7 +236,7 @@
 }
 
 @media (max-height: 330px) {
-  #header-home {
+  #welcome-section {
     .header-content {
       h1 {
         font-size: 2rem;

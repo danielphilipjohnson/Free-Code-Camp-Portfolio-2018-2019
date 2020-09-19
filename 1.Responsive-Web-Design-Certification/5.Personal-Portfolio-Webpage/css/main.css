@@ -142,6 +142,7 @@ input[class^='btn-']:hover {
   transform: rotate(23deg);
   margin-left: 1.55rem; }
 
+#navbar,
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -151,12 +152,16 @@ input[class^='btn-']:hover {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 99999;
   padding: 0.55rem; }
+  #navbar.top,
   #main-nav.top {
     background: none; }
+  #navbar ul,
   #main-nav ul {
     display: flex; }
+  #navbar li,
   #main-nav li {
     padding: 1rem 1.5rem; }
+  #navbar a,
   #main-nav a {
     text-decoration: none;
     color: #fff;
@@ -165,8 +170,10 @@ input[class^='btn-']:hover {
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
+    #navbar a:hover,
     #main-nav a:hover {
       border-color: #3BA6B7; }
+    #navbar a.current,
     #main-nav a.current {
       border-color: #9B3CAB; }
 
@@ -632,24 +639,24 @@ make different types how i make my own npm package
         background: #333;
         color: #fff; }
 
-#header-home {
+#welcome-section {
   background: url("../img/showcase1.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff;
   position: relative; }
-  #header-home .header-content {
+  #welcome-section .header-content {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center; }
-    #header-home .header-content > * {
+    #welcome-section .header-content > * {
       z-index: 9999; }
-    #header-home .header-content h1 {
+    #welcome-section .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
-  #header-home::before {
+  #welcome-section::before {
     content: '';
     /* hides the text*/
     background-color: rgba(0, 0, 0, 0.4);
@@ -659,21 +666,21 @@ make different types how i make my own npm package
     top: 0;
     left: 0; }
 
-#header-inner {
+#welcome-inner {
   background: url("../img/showcase1.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #9B3CAB; }
 
 @media (max-width: 1000px) {
-  #header-home {
+  #welcome-section {
     height: 100%;
     padding-bottom: 2rem; }
-    #header-home .header-content {
+    #welcome-section .header-content {
       padding-top: 7rem; }
-      #header-home .header-content h1 {
+      #welcome-section .header-content h1 {
         font-size: 2rem;
         margin-bottom: 1rem; }
-      #header-home .header-content h2 {
+      #welcome-section .header-content h2 {
         font-size: 1.25rem;
         margin-bottom: .75rem; }
   #home-tools .specials, #home-services .process {
@@ -696,9 +703,9 @@ make different types how i make my own npm package
       border-right: 1px solid rebeccapurple; } }
 
 @media (min-width: 772px) and (max-width: 1000px) {
-  #header-home {
+  #welcome-section {
     height: 100%; }
-    #header-home .header-content {
+    #welcome-section .header-content {
       padding-top: 5rem; }
   #about-skills .skills {
     grid-template-columns: repeat(3, 1fr); } }
@@ -710,19 +717,21 @@ make different types how i make my own npm package
 @media (max-width: 500px) {
   .container {
     padding: 0 0.5rem; }
+  #navbar,
   #main-nav {
     flex-direction: column;
     align-items: center;
     padding: 1.5rem 0; }
+    #navbar li,
     #main-nav li {
       padding: 0.55rem; }
-  #header-home {
-    height: 10rem;
+  #welcome-section {
+    height: 8rem;
     border-bottom: 3px solid #9B3CAB;
     background-position: 20% 30%; }
-    #header-home .header-content {
+    #welcome-section .header-content {
       display: none; }
-  #header-inner {
+  #welcome-inner {
     height: 10rem; }
   #home-tools .specials,
   #home-stats .stats,
@@ -771,9 +780,9 @@ make different types how i make my own npm package
     flex-direction: column; } }
 
 @media (max-height: 580px) {
-  #header-home .header-content {
+  #welcome-section .header-content {
     padding-top: 3rem; } }
 
 @media (max-height: 330px) {
-  #header-home .header-content h1 {
+  #welcome-section .header-content h1 {
     font-size: 2rem; } }

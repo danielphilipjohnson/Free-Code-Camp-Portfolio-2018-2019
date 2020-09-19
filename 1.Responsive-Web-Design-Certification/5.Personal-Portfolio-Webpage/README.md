@@ -8,7 +8,7 @@
 ### Mobile
 ![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/developmentv0.11/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage/img/screenshots/portfolio-tablet.jpg)
 
-- https://codepen.io/undreamtmayhem/pen/PWvEvr
+- https://codepen.io/danielphilipjohnson/pen/JjXmZGj
 
 ## User Stories
 ### User Story #1: 

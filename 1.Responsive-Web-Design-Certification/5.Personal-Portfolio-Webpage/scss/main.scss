@@ -12,9 +12,10 @@
 
 
 // Header
-#header {
+#welcome {
   // Header Home
-  &-home {
+  //welcome-section
+  &-section {
     background: $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
