@@ -256,7 +256,7 @@ input[class^='btn-']:hover {
     opacity: 1;
     transform: translateY(0); }
   .item-image {
-    height: auto;
+    height: 200px;
     transform: translateZ(0);
     display: block;
     transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1); }
