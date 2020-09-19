@@ -23,7 +23,7 @@
   &-stats {
     
     .stats {
-      background: url("../img/showcase1.jpg") no-repeat center right / cover;
+      background: $bg-image;
       // background: grey;
       position: relative;
       display: flex;

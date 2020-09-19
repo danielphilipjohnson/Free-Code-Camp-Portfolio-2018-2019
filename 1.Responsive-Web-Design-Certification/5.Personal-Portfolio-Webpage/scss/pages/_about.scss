@@ -93,7 +93,7 @@
   &-testimonials {
     padding-top: 4rem;
     .testimonials {
-      background: url("../img/showcase1.jpg") no-repeat center right / cover;
+      background: $bg-image;
       position: relative;
       display: grid;
       grid-template-columns: repeat(4, 1fr);

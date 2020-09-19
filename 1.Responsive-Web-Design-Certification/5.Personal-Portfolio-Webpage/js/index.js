@@ -1,4 +1,4 @@
-const navbar = document.getElementById('main-nav');
+const navbar = document.getElementById('navbar');
 let scrolled = false;
   window.onscroll = function () {
 
