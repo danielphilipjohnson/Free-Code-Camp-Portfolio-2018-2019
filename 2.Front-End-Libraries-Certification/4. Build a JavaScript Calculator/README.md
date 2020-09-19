@@ -1,12 +1,10 @@
-# FCC-Build a Random Quote Machine
+# FCC-Build a Javascript Calculator
 
 ## Tools used
 
 - HTML
 - CSS
 - JS
-- JQuery
-- Ajax request
 
 
 ## User Stories

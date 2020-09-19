@@ -3,6 +3,7 @@
 body {
   background: url("http://res.cloudinary.com/undreamtmayhem/image/upload/v1501200374/simon/floor.jpg");
   background-size: cover;
+  margin: 0px;
 }
 
 .simon {
@@ -14,7 +15,6 @@ body {
   margin: 10px auto;
   transform: scale(0.8);
   box-shadow: 12px 14px 22px #222;
-
 }
 
 .red,
@@ -109,8 +109,6 @@ body {
 
 
 .count {
-
-
   font-family: 'VT323', monospace;
   color: #DC0D29;
   background-color: #32050C;
@@ -241,4 +239,19 @@ input:checked+.slider:before {
   border-top-right-radius: 254px;
   left: 0px;
   border: 7px solid #6F6F6F;
+}
+
+
+.modal {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+}
+
+.modal-inner {
+  margin: 10px;
+  background-color: white;
+  text-align: center;
 }

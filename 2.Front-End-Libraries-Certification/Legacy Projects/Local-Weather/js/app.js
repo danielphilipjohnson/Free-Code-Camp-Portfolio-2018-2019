@@ -60,10 +60,12 @@ $('#set-temperature').on('click', function() {
   var tempValue = $('#set-temperature-type :selected').val();
   if (tempValue === "celsius" && !$('.celsius').hasClass('active-temp')) {
     changeTemperature();
+    $('#weatherSettings').foundation('close');
 
   }
   if (tempValue === "farenheit" && !$('.farenheit').hasClass('active-temp')) {
     changeTemperature();
+    $('#weatherSettings').foundation('close');
   }
 
 });
@@ -74,9 +76,11 @@ $('#set-location').on('click', function() {
   var locationLatLong = locations[location];
   var locationLong = locationLatLong.long;
   var locationLat = locationLatLong.lat;
-
+  $('#weatherSettings').foundation('close');
+/*
   var geocodingAPI = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + locationLat + "," + locationLong;
   $.getJSON(geocodingAPI, function(json) {
+    console.log(json)
     if (json.status == "OK") {
       var countryAddress = json.results[0].formatted_address.split(",");
       var country = countryAddress[countryAddress.length - 1];
@@ -86,7 +90,7 @@ $('#set-location').on('click', function() {
     }
 
   });
-
+*/
   sendJSON(locationLat, locationLong);
 
 });
@@ -98,9 +102,10 @@ function runGeo() {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
 
-      var rl = "https://ipinfo.io/json?callback=?";
+      var url = "https://ipinfo.io/json?callback=?";
 
-      $.getJSON(rl, function(json) {
+      $.getJSON(url, function(json) {
+        console.log(json)
         $('#location').text(json.country + " " + json.region + " " + json.city);
       });
       sendJSON(latitude, longitude);

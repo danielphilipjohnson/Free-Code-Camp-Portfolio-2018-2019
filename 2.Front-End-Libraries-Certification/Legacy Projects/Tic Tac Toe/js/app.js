@@ -1,14 +1,22 @@
 function grid() {
-
+/**
+ * Highlights Winning()
+ * Is it a Winning Grid() 
+ * Remove Winning Cells
+ * Hard Reset Grid
+ */
     this.filledCells = 0;
 
     this.cellElement = document.querySelectorAll('.cell');
+
     this.highlightWinning = function(ElementOne, ElementTwo, ElementThree){
+
         ElementOne.style.backgroundColor = "red";
         ElementTwo.style.backgroundColor = "red";
         ElementThree.style.backgroundColor = "red";
 
     }
+
     this.isWinningGrid = function (toMatch) {
         //    1 1 1 
         //    - - -
@@ -118,6 +126,7 @@ function grid() {
                 cellElement[i].style.backgroundColor = "transparent";
             }
     }
+
     this.hardResetGrid = function () {
         var cellElement = document.querySelectorAll('.cell');
 
@@ -130,8 +139,10 @@ function grid() {
 }
 
 
-// display UI
-function player() {
+function Player() {
+    /*
+        UI Display
+    */
     this.playerChoice = "";
 
     this.goesFirst = true;
@@ -147,7 +158,6 @@ function player() {
 }
 
 
-// Display UI
 function Computer() {
     //Construct the grid
     var gameGrid = new grid();
@@ -361,7 +371,7 @@ function displayTurn(text) {
 
 
 
-var gamePlayer = new player();
+var gamePlayer = new Player();
 var enemy = new Computer();
 
 
@@ -407,7 +417,7 @@ function waitForPlayerSelection() {
 waitForPlayerSelection();
 
 // when reset clicked call game function game
-function reset() {
+function Reset() {
     var resetElement = document.getElementById('reset');
 
     resetElement.addEventListener('click', function () {
@@ -426,5 +436,5 @@ function reset() {
     });
 }
 
-reset();
+Reset();
 

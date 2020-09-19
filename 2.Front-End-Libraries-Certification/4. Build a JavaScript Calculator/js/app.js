@@ -3,7 +3,7 @@
 
  * @module Calculator
  * @version 1.0.0
- * @author UndreamtMayhem <undreamtmayhem@gmail.com>
+ * @author Daniel Philip Johnson <daniel-philip-johnson@outlook.com>
  */
 
 

@@ -1,9 +1,17 @@
+/**
+ * @author Daniel Philip Johnson
+ * @email daniel-philip-johnson
+ * @create date 2020-06-19 12:55:51
+ * @modify date 2020-06-19 12:55:51
+ * @desc Styling for building Javascript Calculator
+ */
+
 body {
     background-color: #818181;
 }
 
 .nav {
-    margin-bottom: 10ps;
+    margin-bottom: 10px;
 }
 
 .calculator {

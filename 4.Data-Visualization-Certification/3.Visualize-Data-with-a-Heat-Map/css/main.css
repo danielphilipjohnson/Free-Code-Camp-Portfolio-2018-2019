@@ -128,3 +128,7 @@ rect {
     text-align: center;
     width: auto;
 }
+
+.measurement-scale {
+    padding: 0 3rem;
+}

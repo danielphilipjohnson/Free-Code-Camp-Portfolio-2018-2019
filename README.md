@@ -72,9 +72,8 @@
 
 ### Survery Form
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612952/fcc/responsive/surveryform_zaxhl9.png)
-
-- https://codepen.io/undreamtmayhem/pen/OdoJao
+<a href="https://codepen.io/danielphilipjohnson/full/oNxabPN">![PC view of survey](https://github.com/danielphilipjohnson/HTML-and-CSS-portfolio/blob/master/portfolio-images/suvey-pc-portfolio.png)
+</a>
 
 
 ### Product Landing Page

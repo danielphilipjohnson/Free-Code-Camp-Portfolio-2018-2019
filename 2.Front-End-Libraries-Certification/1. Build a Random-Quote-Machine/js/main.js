@@ -292,7 +292,7 @@ MODULE.buttonLogic.shareQuoteClick = function() {
  * @event followButtonClick
  */
 MODULE.buttonLogic.followButtonClick = function() {
-    var url = "https://twitter.com/undreamtmayhem";
+    var url = "https://twitter.com/danielPhilipJo1";
     window.open(url, "_blank");
 };
 
