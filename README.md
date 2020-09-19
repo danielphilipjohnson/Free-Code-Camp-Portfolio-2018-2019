@@ -91,9 +91,9 @@
 
 ### Personal Portfolio
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/portfolio_egecka.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage/img/screenshots/portfolio-pc.jpg)
 
-- https://codepen.io/undreamtmayhem/pen/PWvEvr
+- https://codepen.io/danielphilipjohnson/full/JjXmZGj
 
 
 ## Front End Libraries
