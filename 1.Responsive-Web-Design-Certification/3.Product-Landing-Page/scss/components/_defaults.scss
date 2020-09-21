@@ -54,7 +54,9 @@ img {
     width: 100%;
     margin-bottom: 2rem;
 }
-
+h3, p {
+    margin-bottom: 1rem;
+}
 a {
     text-decoration: none;
     color: #ccc;
@@ -90,3 +92,10 @@ a {
     margin-bottom: 1rem;
 
 }
+
+
+.section {
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+  
