@@ -1,0 +1,11 @@
+{
+  "name": "3.product-landing-page",
+  "version": "1.0.0",
+  "description": "## View ### Desktop ![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage_iboz6i.png) ![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage1_ea6xqe.png)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC"
+}
