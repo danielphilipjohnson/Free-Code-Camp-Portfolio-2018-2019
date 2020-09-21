@@ -1,6 +1,7 @@
 /* Footer */
 $footer-text-color: #515154;
 $footer-bg-color: #f5f5f7;
+
 footer {
   background-color: $footer-bg-color;
   padding: 2rem 0;
@@ -53,6 +54,7 @@ footer {
 
   footer {
     padding: 1rem 0;
+
     .footer-cols {
       display: grid;
       grid-gap: 0px;
@@ -62,11 +64,11 @@ footer {
 
     .footer-bottom {
       grid-template-columns: repeat(1, 1fr);
+
       .location {
         grid-row-start: 1;
         grid-row-end: 2;
         margin-bottom: 0.5rem;
-
         color: $footer-text-color;
       }
     }
@@ -74,9 +76,7 @@ footer {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
-  body {
-    background: blue !important;
-  }
+
   footer {
     .footer-bottom {
       grid-template-columns: repeat(2, 1fr);

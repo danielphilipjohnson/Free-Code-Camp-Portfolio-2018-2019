@@ -232,8 +232,6 @@ footer {
         color: #515154; } }
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
-  body {
-    background: blue !important; }
   footer .footer-bottom {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr; }
