@@ -42,6 +42,10 @@
     background: linear-gradient(to right, #434343, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff; }
+  .badge.outline {
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 0.5rem 1.25rem; }
 
 /* Navigation */
 #nav-bar {
@@ -354,6 +358,11 @@ li {
   font-weight: 700;
   font-size: 3rem; }
 
+section.break {
+  padding: 7rem;
+  font-size: 1.8rem;
+  font-weight: bold; }
+
 /* Section */
 .section-main .section-main__content {
   display: flex;
@@ -468,3 +477,76 @@ section#entertainment {
 #watch iframe {
   margin-top: 2rem;
   border: 2px solid black; }
+
+#socials {
+  background-color: #f9f9f9; }
+  #socials .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #socials .content .right .section-head {
+      font-size: 5rem; }
+
+@media screen and (max-width: 780px) {
+  #socials .content {
+    flex-direction: column-reverse; }
+    #socials .content .left {
+      width: 100%; }
+      #socials .content .left .social-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; }
+    #socials .content .right {
+      margin-bottom: 1rem; } }
+
+/* TODO
+
+make different types how i make my own npm package
+
+*/
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #fff; }
+  .social-icons .nav-item {
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0.5rem;
+    border-radius: 15px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 2.9rem;
+    line-height: 1.6;
+    transition: background-color .75s;
+    background-color: red; }
+    .social-icons .nav-item a {
+      color: #fff; }
+    .social-icons .nav-item.facebook {
+      background-color: #4267B2; }
+    .social-icons .nav-item.twitter {
+      background-color: #1DA1F2; }
+    .social-icons .nav-item.youtube {
+      background-color: #FF0000; }
+    .social-icons .nav-item.instagram {
+      background-color: #C13584; }
+    .social-icons .nav-item.linkedin {
+      background-color: #2867b2; }
+    .social-icons .nav-item.github {
+      background-color: #000; }
+    .social-icons .nav-item.pinterest {
+      background-color: #E60023; }
+    .social-icons .nav-item.google {
+      background-color: #F4B400; }
+    .social-icons .nav-item.rss {
+      background-color: #E58738; }
+    .social-icons .nav-item.email {
+      background-color: #2DA112; }
+    .social-icons .nav-item.snapchat {
+      background-color: #FFFC00; }
+    .social-icons .nav-item.podcast {
+      background-color: #8F35CB; }

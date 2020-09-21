@@ -181,3 +181,53 @@ section#entertainment {
         border: 2px solid black;
     }
 }
+
+
+
+
+
+
+
+
+#socials {
+  background-color: #f9f9f9;
+  .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+
+      .section-head {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+
+
+  #socials {
+
+    .content {
+      flex-direction: column-reverse;
+      .left {
+        width: 100%;
+        .social-icons {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center;
+        
+        }
+      }
+      .right {
+        margin-bottom: 1rem;
+      }
+    }
+
+  }
+
+}
