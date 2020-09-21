@@ -30,6 +30,19 @@
   .container {
     max-width: 1240px; } }
 
+.badge {
+  border-radius: 15px;
+  padding: 1rem 1.25rem;
+  margin: 1rem; }
+  .badge.app {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff; }
+
 /* Navigation */
 #nav-bar {
   min-height: 44px;
@@ -259,7 +272,7 @@ img {
   width: 100%;
   margin-bottom: 2rem; }
 
-h3, p {
+h2, h3, p {
   margin-bottom: 1rem; }
 
 a {
@@ -336,6 +349,10 @@ li {
 
 .left {
   margin-bottom: 1rem; }
+
+.title {
+  font-weight: 700;
+  font-size: 3rem; }
 
 /* Section */
 .section-main .section-main__content {
@@ -437,3 +454,17 @@ section#entertainment {
 #music h3 {
   font-size: 2.8rem;
   font-weight: 100; }
+
+#watch h2 {
+  padding: 2rem;
+  margin-bottom: 0; }
+
+#watch h2.title {
+  padding: 0 0 0.5rem 0; }
+
+#watch .more-link {
+  font-size: 1.25rem; }
+
+#watch iframe {
+  margin-top: 2rem;
+  border: 2px solid black; }
