@@ -2,12 +2,15 @@
 
 ## View
 ### Desktop
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage_iboz6i.png)
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage1_ea6xqe.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/3.Product-Landing-Page/img/screenshots/Build-a-Product-Landing-Page-Desktop.png)
+
+### Hamburger
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/3.Product-Landing-Page/img/screenshots/Build-a-Product-Landing-Page-nav.png)
 
 ### Mobile
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612950/fcc/responsive/productlandingpagemobile_em1ccv.png)
-- https://codepen.io/undreamtmayhem/pen/QYBPrN
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/3.Product-Landing-Page/img/screenshots/Build-a-Product-Landing-Page-Mobile.png)
+
+- https://codepen.io/danielphilipjohnson/full/LYNgrGV
 
 
 ## User Stories
