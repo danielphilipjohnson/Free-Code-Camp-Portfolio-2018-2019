@@ -11,7 +11,7 @@ footer {
     grid-gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     padding-bottom: 1rem;
-    border-bottom: 1px solid #d2d2d7;
+    border-bottom: $border;
   }
 
   .footer-bottom {
@@ -36,7 +36,7 @@ footer {
       display: flex;
       flex-wrap: wrap;
       li {
-        border-right: 1px solid var(--footer-bg);
+        border-right: $footer-border;
         padding: 0 0.75rem 0 0;
         margin: 0 0.5rem 0 0;
         margin-bottom: 0.5rem;

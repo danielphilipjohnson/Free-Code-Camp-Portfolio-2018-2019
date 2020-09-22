@@ -1,69 +1,16 @@
-/* Section */
-
-.section {
-  &.full-bg {
-    position: relative;
-    padding: 7rem;
-    background: url("https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/3.Product-Landing-Page/img/support-bg.jpg") no-repeat;
-    background-size: cover;
-    &::before{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0,0,0, 0.6);
-    }
-    & >* {
-      position: relative;
-      z-index: 100;
-      color: #fff;
-    }
-  }
-  
-}
-
-@media screen and (max-width: 780px) {
-  .section {
-    &.full-bg {
-      padding: 7rem 0;
-     
-    }
-  }
-}
-
-
 .section-head {
   font-size: 2.5rem;
   margin: 1rem 0;
 }
+
 @media screen and (max-width: 780px) {
   .section-head {
-
     font-size: 1.5rem;
-
   }
 }
-
-
-.section h3 {
-  font-size: 2rem;
-}
-
-
-
-
-
 
 @media screen and (max-width: 1076px) {
   .content {
     flex-direction: column;
   }
 }
-
-
-
-
-
-
