@@ -71,7 +71,7 @@ a {
   background-color: #0071e3;
   color: #FFF;
   border-radius: 17px;
-  padding: 0.6rem 0.95rem;
+  padding: 0.6rem 1.55rem;
   text-align: center;
   display: inline-block;
   margin-bottom: 1rem; }
@@ -278,21 +278,81 @@ a {
         transform: translate(-50%, -50%); } }
 
 /* Showcase */
-#showcase {
+.showcase {
   margin: 0;
   padding: 0 0 4rem 0;
   width: 100%;
   position: relative;
   overflow-y: hidden; }
+  .showcase .section-main .section-main__content {
+    display: flex;
+    justify-content: space-between; }
+    .showcase .section-main .section-main__content .left h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 2rem;
+      text-align: left; }
+    .showcase .section-main .section-main__content .left h2 {
+      font-size: 2.65rem;
+      font-weight: 200;
+      color: #000;
+      margin: 1rem 0;
+      text-align: left; }
+    .showcase .section-main .section-main__content .left .button {
+      margin-right: 1rem; }
 
-@media screen and (min-width: 780px) {
+@media screen and (max-width: 780px) {
+  .showcase .container {
+    margin-top: 8vh;
+    padding: 0 3rem; }
+  /* remove to a better place */
   .gift-cards {
     grid-template-columns: 1fr; } }
 
+/* mobile view */
+@media screen and (max-width: 850px) {
+  .showcase .section-main .section-main__content {
+    flex-direction: column;
+    justify-content: center; }
+    .showcase .section-main .section-main__content .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 3;
+      text-align: left; }
+      .showcase .section-main .section-main__content .left h1 {
+        margin-bottom: 0; }
+      .showcase .section-main .section-main__content .left h2 {
+        font-size: 1.55rem;
+        text-align: center; }
+      .showcase .section-main .section-main__content .left .button {
+        margin: 0 2px 1rem 0; }
+    .showcase .section-main .section-main__content .right {
+      flex: 1; } }
+
 @media screen and (min-width: 939px) {
-  #showcase .container {
+  .showcase .container {
     margin-top: 20vh;
     padding: 0 3rem; } }
+
+@media screen and (min-width: 851px) and (max-width: 1200px) {
+  .showcase .section-main .section-main__content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .showcase .section-main .section-main__content .left {
+      width: 45%; }
+      .showcase .section-main .section-main__content .left h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.25rem; }
+      .showcase .section-main .section-main__content .left h2 {
+        font-size: 2.25rem;
+        font-weight: bolder;
+        margin: 0 0 1rem 0; }
+    .showcase .section-main .section-main__content .right {
+      width: 55%; } }
 
 /* Footer */
 footer {
@@ -413,59 +473,10 @@ section.break {
   font-size: 1.8rem;
   font-weight: bold; }
 
+.fa-chevron-right {
+  font-size: 0.7rem; }
+
 /* Section */
-.section-main .section-main__content {
-  display: flex;
-  justify-content: space-between; }
-  .section-main .section-main__content .left h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 2rem;
-    text-align: left; }
-  .section-main .section-main__content .left h2 {
-    font-size: 2.65rem;
-    font-weight: 200;
-    color: #000;
-    margin: 1rem 0;
-    text-align: left; }
-  .section-main .section-main__content .left .button {
-    margin-right: 1rem; }
-
-@media screen and (max-width: 850px) {
-  .section-main .section-main__content {
-    flex-direction: column;
-    justify-content: center; }
-    .section-main .section-main__content .left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex: 3;
-      text-align: left; }
-      .section-main .section-main__content .left h2 {
-        font-size: 1.85rem;
-        text-align: center; }
-    .section-main .section-main__content .right {
-      flex: 1; } }
-
-@media screen and (min-width: 851px) and (max-width: 1200px) {
-  .section-main .section-main__content {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .section-main .section-main__content .left {
-      width: 45%; }
-      .section-main .section-main__content .left h1 {
-        font-size: 1.4rem;
-        margin-bottom: 0.25rem; }
-      .section-main .section-main__content .left h2 {
-        font-size: 2.25rem;
-        font-weight: bolder;
-        margin: 0 0 1rem 0; }
-    .section-main .section-main__content .right {
-      width: 55%; } }
-
 .section.full-bg {
   padding: 7rem;
   background: url("../img/support-bg.jpg") no-repeat;
