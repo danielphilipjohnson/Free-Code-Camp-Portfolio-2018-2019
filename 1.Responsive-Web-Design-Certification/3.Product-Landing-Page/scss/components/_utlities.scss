@@ -29,10 +29,10 @@
 }
 
 
-.bg-dark {
-    background: var(--dark-bg);
-    color: rgb(134, 134, 139);
-}
+// .bg-dark {
+//     background: var(--dark-bg);
+//     color: rgb(134, 134, 139);
+// }
 
 $alt-bg: #fafafa;
 
@@ -77,10 +77,20 @@ li {
 }
 
 
+
+
 section.break {
     padding: 7rem;
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 780px) {
+    section.break {
+        padding: 5rem 3rem;
+        font-size: 1.5rem;
+    }
 }
 
 .fa-chevron-right {

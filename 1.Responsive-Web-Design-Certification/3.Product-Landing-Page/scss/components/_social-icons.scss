@@ -1,8 +1,3 @@
-/* TODO
-
-make different types how i make my own npm package
-
-*/
 
 $socialmedia-colors: (
   "facebook": #4267B2,
@@ -19,6 +14,43 @@ $socialmedia-colors: (
   "snapchat": #FFFC00,
   "podcast": #8F35CB
 );
+
+
+.socials  {
+  .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .socials  {
+    .content {
+      flex-direction: column-reverse;
+      .left {
+        width: 100%;
+        .social-icons {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-items: center;
+        }
+      }
+      .right {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
 .social-icons {
@@ -48,6 +80,17 @@ $socialmedia-colors: (
         background-color: #{$color};
         
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .social-icons {
+    .nav-item {
+      height: 70px;
+      width: 70px;
+      font-size: 2.2rem;
     }
   }
 }

@@ -1,19 +1,52 @@
 /* Section */
 
-
-
 .section {
   &.full-bg {
+    position: relative;
     padding: 7rem;
     background: url("../img/support-bg.jpg") no-repeat;
     background-size: cover;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0,0,0, 0.6);
+    }
+    & >* {
+      position: relative;
+      z-index: 100;
+      color: #fff;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 780px) {
+  .section {
+    &.full-bg {
+      padding: 7rem 0;
+      background: url("../img/support-bg.jpg") no-repeat;
+      background-size: cover;
+    }
   }
 }
+
 
 .section-head {
   font-size: 2.5rem;
   margin: 1rem 0;
 }
+@media screen and (max-width: 780px) {
+  .section-head {
+
+    font-size: 1.5rem;
+
+  }
+}
+
 
 .section h3 {
   font-size: 2rem;
@@ -22,73 +55,7 @@
 
 
 
-#support{
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 1rem;
-    border-top: 1px solid #E4E4E4;
-    border-bottom: 1px solid #E4E4E4;
-    .right {
-      text-align: left;
-      padding: 0 2rem;
-    }
-  }
-}
 
-
-
-
-
-#gift-cards.section {
-  padding: 2rem 0;
-  .container {
-    border-top: 1px solid #E4E4E4;
-    border-bottom: 1px solid #E4E4E4;
-  }
-}
-.gift-cards {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  justify-items: center;
-  text-align: left;
-  color: #000;
-
-  .gift-cards__info {
-    h2 {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .gift-cards {
-    grid-template-columns: repeat(1, 1fr);
-    .gift-cards__info {
-      h2 {
-        font-size: 1.2rem;
-      }
-    }
-  }
-}
-
-#music {
-  background-color: #fff;
-  color: #333;
-
-  .content {
-    display: flex;
-
-    .right {
-      flex: 1;
-    }
-    .left {
-      flex: 2;
-    }
-  }
-}
 
 @media screen and (max-width: 1076px) {
   .content {
@@ -96,61 +63,8 @@
   }
 }
 
-#music h3 {
-  font-size: 2.8rem;
-  font-weight: 100;
-}
 
-#watch {
-  background-color: $alt-bg;
-  h2 {
-    padding: 2rem;
-    margin-bottom: 0;
-  }
-  h2.title {
-    padding: 0 0 0.5rem 0;
-  }
-  .more-link {
-    font-size: 1.25rem;
-  }
-  iframe {
-    margin-top: 2rem;
-    border: 2px solid black;
-  }
-}
 
-#socials {
 
-  .content {
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 
-    .right {
-      .section-head {
-        font-size: 5rem;
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 780px) {
-  #socials {
-    .content {
-      flex-direction: column-reverse;
-      .left {
-        width: 100%;
-        .social-icons {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          justify-items: center;
-        }
-      }
-      .right {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-}
