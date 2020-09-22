@@ -11,13 +11,6 @@ function hamburgerButton() {
 const navbar = document.getElementById("navbar-sticky");
 let scrolled = false;
 
-// detect browser resize  to fix transparency issues
-var displayWindowSize = function () {
-  var w = document.documentElement.clientWidth;
-  return w;
-};
-
-window.addEventListener("resize", displayWindowSize);
 
 window.onscroll = function () {
   if (window.pageYOffset > 80) {

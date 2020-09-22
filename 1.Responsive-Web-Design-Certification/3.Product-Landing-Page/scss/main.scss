@@ -4,13 +4,13 @@
 @import "./components/defaults";
 @import "./components/utlities";
 
-/* need to move out media queries */
 @import "./components/container";
 @import "./components/badges";
 @import "./components/button";
 @import "./components/nav";
 @import "./components/footer";
 @import "./components/section";
+@import "./components/social-icons";
 
 @import "./layout/music";
 @import "./layout/watch";
@@ -19,5 +19,3 @@
 @import "./layout/showcase";
 @import "./layout/trial";
 @import "./layout/full-bg";
-
-@import "./components/social-icons";
