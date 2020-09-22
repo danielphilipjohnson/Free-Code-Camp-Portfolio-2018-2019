@@ -1,9 +1,4 @@
-/* maybe make a mixin for left and right */
-
 .music {
-  background-color: #fff;
-  color: #333;
-
   .content {
     display: flex;
 
@@ -22,7 +17,6 @@
 }
 
 @media screen and (max-width: 780px) {
-
   .music {
     .content {
       .left {
@@ -37,8 +31,5 @@
         }
       }
     }
-
   }
-
-
 }

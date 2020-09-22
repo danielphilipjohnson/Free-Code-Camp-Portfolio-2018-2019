@@ -10,7 +10,6 @@ $socialmedia-colors: (
   "google": #F4B400,
   "rss": #E58738,
   "email": #2DA112,
-  // "logo": #2aead3,
   "snapchat": #FFFC00,
   "podcast": #8F35CB
 );
@@ -71,10 +70,11 @@ $socialmedia-colors: (
     font-size: 2.9rem;
     line-height: 1.6;
     transition: background-color .75s;
-    background-color: red;
+    
     a {
       color: #fff;
     }
+    
     @each $social, $color in $socialmedia-colors {
       &.#{$social}{
         background-color: #{$color};

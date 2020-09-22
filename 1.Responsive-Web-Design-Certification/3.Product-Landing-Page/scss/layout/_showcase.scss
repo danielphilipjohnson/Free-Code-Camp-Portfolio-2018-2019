@@ -1,30 +1,30 @@
-/* Showcase */
-
 .showcase {
   margin: 0;
   padding: 0 0 4rem 0;
   width: 100%;
   position: relative;
   overflow-y: hidden;
+  height: 100vh;
 
   .section-main {
     .section-main__content {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       .left {
         h1 {
-          font-size: 2rem;
+          font-size: 3rem;
+          font-weight: 600;
+          color: #fff;
+          margin-bottom: 0;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 3.65rem;
           font-weight: 600;
           color: #000;
-          margin-bottom: 2rem;
-          text-align: left;
-        }
-        h2 {
-          font-size: 2.65rem;
-          font-weight: 200;
-          color: #000;
-          margin: 1rem 0;
-          text-align: left;
+          margin: 2rem 0;
         }
         .button {
           margin-right: 1rem;
@@ -76,9 +76,9 @@
   }
 }
 
-@media screen and (min-width: 939px) {
+@media screen and (min-width: 789px) {
     .showcase .container{
-      margin-top: 20vh;
+      margin-top: 8vh;
       padding: 0 3rem;
     }
   }

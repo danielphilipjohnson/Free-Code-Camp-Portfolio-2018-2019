@@ -1,37 +1,23 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "./reset";
 
- /* create mixin */
-//  @mixin section-container {
-//   padding: 2rem 3rem;
-//   text-align: center;
-// }
-
-
-
-
+/* Component */
 @import "./components/defaults";
+@import "./components/utlities";
+
 /* need to move out media queries */
 @import "./components/container";
-
-
-
 @import "./components/badges";
+@import "./components/button";
 @import "./components/nav";
-
 @import "./components/footer";
+@import "./components/section";
 
 @import "./layout/music";
 @import "./layout/watch";
 @import "./layout/support";
 @import "./layout/gift-cards";
 @import "./layout/showcase";
-
-@import "./components/utlities";
-@import "./components/section";
-
+@import "./layout/trial";
+@import "./layout/full-bg";
 
 @import "./components/social-icons";
