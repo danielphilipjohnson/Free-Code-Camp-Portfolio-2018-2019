@@ -78,9 +78,9 @@
 
 ### Product Landing Page
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage_iboz6i.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/3.Product-Landing-Page/img/screenshots/Build-a-Product-Landing-Page-Desktop.png)
 
-- https://codepen.io/undreamtmayhem/pen/QYBPrN
+- https://codepen.io/danielphilipjohnson/full/LYNgrGV
 
 
 ### Technical Documentation Page

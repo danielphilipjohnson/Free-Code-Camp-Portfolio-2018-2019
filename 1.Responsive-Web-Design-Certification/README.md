@@ -17,10 +17,11 @@
 <a href="https://codepen.io/danielphilipjohnson/full/oNxabPN">![PC view of survey](https://github.com/danielphilipjohnson/HTML-and-CSS-portfolio/blob/master/portfolio-images/suvey-pc-portfolio.png)
 </a>
 
-### Product Landing Page
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/productlandingpage_iboz6i.png)
 
-- https://codepen.io/undreamtmayhem/pen/QYBPrN
+### Product Landing Page
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/3.Product-Landing-Page/img/screenshots/Build-a-Product-Landing-Page-Desktop.png)
+
+- https://codepen.io/danielphilipjohnson/full/LYNgrGV
 
 
 ### Technical Documentation Page
