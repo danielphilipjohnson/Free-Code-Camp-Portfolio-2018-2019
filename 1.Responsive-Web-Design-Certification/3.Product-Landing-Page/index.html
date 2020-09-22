@@ -19,33 +19,71 @@
     <body>
 
         <header id="header">
-            <nav id="nav-bar">
-                <ul>
-                    <li>
+
+            <nav id="nav-bar" class="navbar main">
+                <a href="javascript:void(0);" class="icon"
+                    onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul id="nav-items" class="nav-items">
+
+                    <li class="nav-item">
                         <a href="#showcase" class="nav-link">
                             <img
                                 src="https://res.cloudinary.com/undreamtmayhem/image/upload/v1550098902/project_landing/logo.png"
-                                id="header-img" alt="logo">
+                                class="header-img" alt="logo">
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href='#showcase' class="nav-link">Overview</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href='#music' class="nav-link">Music</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href='#watch' class="nav-link">Watch</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
+                        <a href='#gift-cards' class="nav-link">Gift Cards</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav id="nav-sub" class="navbar nav-sub">
+                <form class="form-search" action="">
+                    <input type="text" name="" id="" class="nav-search" placeholder="Search pear.com">
+
+
+                </form>
+
+                <ul class="nav-items">
+      
+                    <li class="nav-logo" class="nav-item">
+                        <a href="#showcase" class="nav-link">
+                            <img
+                                src="https://res.cloudinary.com/undreamtmayhem/image/upload/v1550098902/project_landing/logo.png"
+                                class="header-img" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='#showcase' class="nav-link">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='#music' class="nav-link">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href='#watch' class="nav-link">Watch</a>
+                    </li>
+                    <li class="nav-item">
                         <a href='#gift-cards' class="nav-link">Gift Cards</a>
                     </li>
                 </ul>
             </nav>
         </header>
+
         <!-- Showcase & Nav -->
 
-        <section id="showcase">
+        <section id="showcase" class="bg-alt">
             <div class="section-main container">
                 <section class="section-main__content">
                     <div class="left">
@@ -83,7 +121,6 @@
 
 
         <!-- Music Section   -->
-
         <section id="music" class="section">
             <div class="container">
                 <div class="content">
@@ -126,7 +163,7 @@
 
 
         <!-- Video Section -->
-        <section id="watch" class="section bg-light">
+        <section id="watch" class="section bg-alt">
             <div class="container">
                 <h2><span class="badge app"><i class="fas fa-tv"></i></span></h2>
                 <h3>The movie and TV app</h3>
@@ -201,167 +238,182 @@
 
 
         </section>
-        <!-- Entertainment Section -->
 
-        <section id="entertainment" class="section">
-            <div class="container">
-                <h3>A world of entertainment. Available wherever you are.</h3>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Voluptatem veniam nobis, nisi ut
-                    expedita, doloribus reprehenderit explicabo non velit
-                    repellat alias saepe inventore repellendus?
-                    Molestias suscipit eos tempora? Quae quaerat cumque
-                    in veritatis impedit dolorum sapiente recusandae minima quo
-                    aperiam quam, excepturi quasi totam ad quas?
-                    Ipsam laudantium soluta delectus!</p>
-                <form id="form"
-                    action="https://www.freecodecamp.com/email-submit">
-                    <input name="email" id="email" type="email"
-                        placeholder="Enter your email address" required />
-                    <input id="submit" type="submit" value="Get Started"
-                        class="button"></input>
-            </form>
-            </div>
+
+        <section class="bg-alt section break">
+            <h2>Get more out of your Music App</h2>
         </section>
 
-    <section class="bg-light section break">
-        <h2>Get more out of your Music App</h2>
-    </section>
-    <!-- Gift Card Section -->
-    <section id="gift-cards" class="section">
-        <div class="container">
-            <div class="gift-cards">
-                <div>
-                    <img
-                        src="https://res.cloudinary.com/undreamtmayhem/image/upload/v1550098910/project_landing/cards.png"
-                        alt="card">
-                </div>
-                <div class="gift-cards__info">
-                    <h2>Be aware of gift card scams</h2>
 
-                    <a href="#" class="text-secondary">
-                        <span>Learn more</span>
+
+        <section class="bg-light section full-bg">
+            <h2>Welcome to support</h2>
+            <input type="text" name="support" id="support">
+        </section>
+
+        <section id="support" class="bg-light section support">
+            <div class="container">
+                <div class="left">
+                    <img src="./img/tech.jpg" alt="" srcset="">
+                </div>
+                <div class="right">
+                    <h2>Welcome to support</h2>
+                    <p>Ask us any questions and we will happily answer</p>
+                    <a href="#" class="text-secondary more-link">
+                        <span>Get Support</span>
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
 
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-cols">
-                <nav class="list">
-                    <ul class="list__items">
-                        <h3 class="list__title">
-                            Shop & Learn
-                        </h3>
+        </section>
 
-                        <li class="list__item">
-                            <a href="#">Music</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Movies</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Shows</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Apps</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Gift Cards</a>
-                        </li>
-                    </ul>
-                </nav>
+        <!-- Gift Card Section -->
+        <section id="gift-cards" class="section">
+            <div class="container">
+                <div class="gift-cards">
+                    <div>
+                        <img
+                            src="https://res.cloudinary.com/undreamtmayhem/image/upload/v1550098910/project_landing/cards.png"
+                            alt="card">
+                    </div>
+                    <div class="gift-cards__info">
+                        <h2>Be aware of gift card scams</h2>
 
-                <nav class="list">
-                    <ul class="list__items">
-                        <h3 class="list__title">Pear
-                            Store</h3>
-                        <li class="list__item">
-                            <a href="#">Find a Store</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Today at Pear</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Pear Camp</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Financing</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Order Status</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <nav class="list">
-                    <ul class="list__items">
-                        <h3 class="list__title">For Education
-                        </h3>
-                        <li class="list__item">
-                            <a href="#">Pear & Education</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Shop For College</a>
-                        </li>
-                        <h3 class="list__title">For Business </h3>
-
-                        <li class="list__item">
-                            <a href="#">Pear & Business</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Shop For Business</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Jobs</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <nav class="list">
-                    <ul class="list__items">
-                        <h3 class="list__title">About
-                            Pear</h3>
-                        <li class="list__item">
-                            <a href="#">Newsroom</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Pear Leadership</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Investors</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Events</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#">Contact Pear</a>
-                        </li>
-                    </ul>
-                </nav>
-
+                        <a href="#" class="text-secondary">
+                            <span>Learn more</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom container">
-            <p>
-                Copyright&copy; 2020 myTunes inc. All rights reserved.
-            </p>
-            <ul>
-                <li>Privacy Policy</li>
-                <li>Use of Cookies</li>
-                <li>Terms of Use</li>
-                <li>Sales and Refunds</li>
-                <li>Legal</li>
-                <li>Site Map</li>
-            </ul>
-            <p class="location">UK</p>
-        </footer>
+        </section>
 
-    </body>
 
-</html>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-cols">
+                    <nav class="list">
+                        <ul class="list__items">
+                            <h3 class="list__title">
+                                Shop & Learn
+                            </h3>
+
+                            <li class="list__item">
+                                <a href="#">Music</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Movies</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Shows</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Apps</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Gift Cards</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="list">
+                        <ul class="list__items">
+                            <h3 class="list__title">Pear
+                                Store</h3>
+                            <li class="list__item">
+                                <a href="#">Find a Store</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Today at Pear</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Pear Camp</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Financing</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Order Status</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="list">
+                        <ul class="list__items">
+                            <h3 class="list__title">For Education
+                            </h3>
+                            <li class="list__item">
+                                <a href="#">Pear & Education</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Shop For College</a>
+                            </li>
+                            <h3 class="list__title">For Business </h3>
+
+                            <li class="list__item">
+                                <a href="#">Pear & Business</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Shop For Business</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Jobs</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="list">
+                        <ul class="list__items">
+                            <h3 class="list__title">About
+                                Pear</h3>
+                            <li class="list__item">
+                                <a href="#">Newsroom</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Pear Leadership</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Investors</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Events</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#">Contact Pear</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="footer-bottom container">
+                <p>
+                    Copyright&copy; 2020 myTunes inc. All rights reserved.
+                </p>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Use of Cookies</li>
+                    <li>Terms of Use</li>
+                    <li>Sales and Refunds</li>
+                    <li>Legal</li>
+                    <li>Site Map</li>
+                </ul>
+                <p class="location">UK</p>
+            </footer>
+            <script>
+    function myFunction() {
+  var x = document.getElementById("nav-sub");
+  console.log(x)
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+        </body>
+
+    </html>

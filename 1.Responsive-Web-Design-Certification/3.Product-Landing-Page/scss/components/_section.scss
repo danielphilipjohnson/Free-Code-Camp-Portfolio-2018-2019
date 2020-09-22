@@ -38,7 +38,7 @@
         flex: 3;
         text-align: left;
         h2 {
-            font-size: 1.85rem;
+          font-size: 1.85rem;
           text-align: center;
         }
       }
@@ -50,7 +50,6 @@
 }
 
 @media screen and (min-width: 851px) and (max-width: 1200px) {
-
   .section-main {
     .section-main__content {
       flex-direction: row;
@@ -58,7 +57,7 @@
       align-items: center;
       .left {
         width: 45%;
-       
+
         h1 {
           font-size: 1.4rem;
 
@@ -77,6 +76,13 @@
   }
 }
 
+.section {
+  &.full-bg {
+    padding: 7rem;
+    background: url("../img/support-bg.jpg") no-repeat;
+    background-size: cover;
+  }
+}
 
 .section-head {
   font-size: 2.5rem;
@@ -87,15 +93,33 @@
   font-size: 2rem;
 }
 
-section#entertainment {
-  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
+
+
+
+#support{
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 1rem;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    .right {
+      text-align: left;
+      padding: 0 2rem;
+    }
+  }
 }
+
 
 
 
 
 #gift-cards.section {
   padding: 2rem 0;
+  .container {
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+  }
 }
 .gift-cards {
   display: grid;
@@ -105,6 +129,7 @@ section#entertainment {
   justify-items: center;
   text-align: left;
   color: #000;
+
   .gift-cards__info {
     h2 {
       margin-bottom: 1rem;
@@ -123,74 +148,53 @@ section#entertainment {
   }
 }
 
-
-
-
-
-
-
 #music {
   background-color: #fff;
   color: #333;
-  
+
   .content {
     display: flex;
-  
+
     .right {
-        flex: 1;
+      flex: 1;
     }
     .left {
-        flex: 2;
+      flex: 2;
     }
   }
 }
 
-
-
 @media screen and (max-width: 1076px) {
-
-    .content {
-        flex-direction: column;
-      }
+  .content {
+    flex-direction: column;
+  }
 }
-
-
-
 
 #music h3 {
   font-size: 2.8rem;
   font-weight: 100;
 }
 
-
-
-#watch  {
-    h2 {
-        padding:2rem;
-        margin-bottom: 0;
-    }
-    h2.title  {
-        padding:0 0 0.5rem 0;
-    }
-    .more-link {
-        font-size: 1.25rem;
-     
-    }
-    iframe {
-        margin-top: 2rem;
-        border: 2px solid black;
-    }
+#watch {
+  background-color: $alt-bg;
+  h2 {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+  h2.title {
+    padding: 0 0 0.5rem 0;
+  }
+  .more-link {
+    font-size: 1.25rem;
+  }
+  iframe {
+    margin-top: 2rem;
+    border: 2px solid black;
+  }
 }
 
-
-
-
-
-
-
-
 #socials {
-  background-color: #f9f9f9;
+
   .content {
     padding: 2rem;
     display: flex;
@@ -199,7 +203,6 @@ section#entertainment {
     align-items: center;
 
     .right {
-
       .section-head {
         font-size: 5rem;
       }
@@ -208,10 +211,7 @@ section#entertainment {
 }
 
 @media screen and (max-width: 780px) {
-
-
   #socials {
-
     .content {
       flex-direction: column-reverse;
       .left {
@@ -220,14 +220,11 @@ section#entertainment {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           justify-items: center;
-        
         }
       }
       .right {
         margin-bottom: 1rem;
       }
     }
-
   }
-
 }

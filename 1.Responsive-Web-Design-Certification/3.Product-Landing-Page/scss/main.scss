@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+@import "./components/defaults";
 /* need to move out media queries */
 @import "./components/container";
 
@@ -11,7 +12,7 @@
 @import "./components/nav";
 @import "./components/showcase";
 @import "./components/footer";
-@import "./components/defaults";
+
 @import "./components/utlities";
 @import "./components/section";
 

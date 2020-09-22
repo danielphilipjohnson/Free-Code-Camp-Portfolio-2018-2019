@@ -24,7 +24,7 @@
 }
 
 .bg-light {
-    background: var(--light-color);
+    background: #fff;
     color: #333;
 }
 
@@ -34,6 +34,12 @@
     color: rgb(134, 134, 139);
 }
 
+$alt-bg: #fafafa;
+
+.bg-alt {
+    background: $alt-bg;
+    color: #333;
+}
 .mb {
     margin-bottom: 1rem;
 }

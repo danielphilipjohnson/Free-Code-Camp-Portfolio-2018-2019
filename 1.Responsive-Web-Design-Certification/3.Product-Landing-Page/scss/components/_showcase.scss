@@ -3,7 +3,6 @@
 #showcase {
     margin: 0;
     padding: 0 0 4rem 0;
-    background-color: #fafafa;
     width: 100%;
     position: relative;
     overflow-y: hidden;
@@ -11,11 +10,6 @@
 
 
 @media screen and (min-width: 780px) {
-
-    // #showcase h2.call-of-action {
-    //     padding: 0 5rem;
-    //     text-align: center;
-    // }
 
     .gift-cards {
         grid-template-columns: 1fr;

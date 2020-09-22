@@ -3,7 +3,7 @@
 $font: 'PT Sans',
 sans-serif;
 $background-color:rgb(255, 255, 255);
-
+$alt-bg: #fafafa;
 *:root {
     --primary-color: #b90415;
     --primary-color-hover: #d3071b;
@@ -22,10 +22,6 @@ body {
     line-height: 1.2;
 }
 
-#header-img {
-    width: 30px;
-    height: 35px;
-}
 
 #email {
     background-color: hsla(0, 0%, 100%, .8);
