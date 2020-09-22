@@ -111,7 +111,6 @@ section.break .statement {
 .fa-chevron-right {
   font-size: 0.7rem; }
 
-/* need to move out media queries */
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -455,6 +454,75 @@ footer {
   .content {
     flex-direction: column; } }
 
+.socials .content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+@media screen and (max-width: 780px) {
+  .socials .content {
+    flex-direction: column-reverse; }
+    .socials .content .left {
+      width: 100%; }
+      .socials .content .left .social-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; }
+    .socials .content .right {
+      margin-bottom: 1rem; } }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #fff; }
+  .social-icons .nav-item {
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0.5rem;
+    border-radius: 15px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 2.9rem;
+    line-height: 1.6;
+    transition: background-color .75s; }
+    .social-icons .nav-item a {
+      color: #fff; }
+    .social-icons .nav-item.facebook {
+      background-color: #4267B2; }
+    .social-icons .nav-item.twitter {
+      background-color: #1DA1F2; }
+    .social-icons .nav-item.youtube {
+      background-color: #FF0000; }
+    .social-icons .nav-item.instagram {
+      background-color: #C13584; }
+    .social-icons .nav-item.linkedin {
+      background-color: #2867b2; }
+    .social-icons .nav-item.github {
+      background-color: #000; }
+    .social-icons .nav-item.pinterest {
+      background-color: #E60023; }
+    .social-icons .nav-item.google {
+      background-color: #F4B400; }
+    .social-icons .nav-item.rss {
+      background-color: #E58738; }
+    .social-icons .nav-item.email {
+      background-color: #2DA112; }
+    .social-icons .nav-item.snapchat {
+      background-color: #FFFC00; }
+    .social-icons .nav-item.podcast {
+      background-color: #8F35CB; }
+
+@media screen and (max-width: 600px) {
+  .social-icons .nav-item {
+    height: 70px;
+    width: 70px;
+    font-size: 2.2rem; } }
+
 .music .content {
   display: flex; }
   .music .content .right {
@@ -650,72 +718,3 @@ footer {
 @media screen and (max-width: 780px) {
   .full-bg {
     padding: 7rem 0; } }
-
-.socials .content {
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-@media screen and (max-width: 780px) {
-  .socials .content {
-    flex-direction: column-reverse; }
-    .socials .content .left {
-      width: 100%; }
-      .socials .content .left .social-icons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center; }
-    .socials .content .right {
-      margin-bottom: 1rem; } }
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  color: #fff; }
-  .social-icons .nav-item {
-    padding: 7px;
-    background-color: rgba(255, 255, 255, 0.15);
-    margin: 0.5rem;
-    border-radius: 15px;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    font-size: 2.9rem;
-    line-height: 1.6;
-    transition: background-color .75s; }
-    .social-icons .nav-item a {
-      color: #fff; }
-    .social-icons .nav-item.facebook {
-      background-color: #4267B2; }
-    .social-icons .nav-item.twitter {
-      background-color: #1DA1F2; }
-    .social-icons .nav-item.youtube {
-      background-color: #FF0000; }
-    .social-icons .nav-item.instagram {
-      background-color: #C13584; }
-    .social-icons .nav-item.linkedin {
-      background-color: #2867b2; }
-    .social-icons .nav-item.github {
-      background-color: #000; }
-    .social-icons .nav-item.pinterest {
-      background-color: #E60023; }
-    .social-icons .nav-item.google {
-      background-color: #F4B400; }
-    .social-icons .nav-item.rss {
-      background-color: #E58738; }
-    .social-icons .nav-item.email {
-      background-color: #2DA112; }
-    .social-icons .nav-item.snapchat {
-      background-color: #FFFC00; }
-    .social-icons .nav-item.podcast {
-      background-color: #8F35CB; }
-
-@media screen and (max-width: 600px) {
-  .social-icons .nav-item {
-    height: 70px;
-    width: 70px;
-    font-size: 2.2rem; } }
