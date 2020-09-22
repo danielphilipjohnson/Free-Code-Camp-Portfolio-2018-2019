@@ -7,3 +7,30 @@ function hamburgerButton() {
     x.style.display = "none";
   }
 }
+
+const navbar = document.getElementById("navbar-sticky");
+let scrolled = false;
+
+// detect browser resize  to fix transparency issues
+var displayWindowSize = function () {
+  var w = document.documentElement.clientWidth;
+  return w;
+};
+
+window.addEventListener("resize", displayWindowSize);
+
+window.onscroll = function () {
+  if (window.pageYOffset > 80) {
+    navbar.classList.remove("top");
+    if (!scrolled) {
+      // navbar.style.transform = "translateY(0)";
+    }
+    setTimeout(function () {
+      // navbar.style.transform = "translateY(0px)";
+      scrolled = true;
+    }, 100);
+  } else {
+    navbar.classList.add("top");
+    scrolled = false;
+  }
+};

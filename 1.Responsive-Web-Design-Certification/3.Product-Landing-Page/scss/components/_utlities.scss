@@ -77,14 +77,45 @@ li {
 }
 
 
+.hightlighted-text {
 
+    color: #eb142d;
+}
 
-section.break {
+section.break, section.trial {
     padding: 7rem;
     font-size: 1.8rem;
     font-weight: bold;
 }
 
+
+section.trial {
+    .title {
+        font-size: 4rem;
+    }
+    h4 {
+        margin-bottom: 5rem;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-content: center;
+    }
+
+    .button {
+        font-size: 1.2rem;
+        background-color: #eb142d;
+    }
+    
+    
+}
+section.break {
+    .statement {
+        color: #333;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+}
 
 @media screen and (max-width: 780px) {
     section.break {
