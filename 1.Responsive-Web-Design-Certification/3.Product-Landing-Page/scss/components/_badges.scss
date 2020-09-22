@@ -2,6 +2,7 @@
   border-radius: 15px;
   padding: 1rem 1.25rem;
   margin: 1rem;
+  display: inline-block;
 
   &.app {
     background: #000000; /* fallback for old browsers */
@@ -16,5 +17,10 @@
       #000000
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
+  }
+  &.outline {
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 0.5rem 1.25rem;
   }
 }

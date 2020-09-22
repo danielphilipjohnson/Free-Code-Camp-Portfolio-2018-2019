@@ -4,14 +4,34 @@
   box-sizing: border-box;
 }
 
+ /* create mixin */
+//  @mixin section-container {
+//   padding: 2rem 3rem;
+//   text-align: center;
+// }
+
+
+
+
+@import "./components/defaults";
 /* need to move out media queries */
 @import "./components/container";
 
+
+
 @import "./components/badges";
 @import "./components/nav";
-@import "./components/showcase";
+
 @import "./components/footer";
-@import "./components/defaults";
+
+@import "./layout/music";
+@import "./layout/watch";
+@import "./layout/support";
+@import "./layout/gift-cards";
+@import "./layout/showcase";
+
 @import "./components/utlities";
 @import "./components/section";
 
+
+@import "./components/social-icons";

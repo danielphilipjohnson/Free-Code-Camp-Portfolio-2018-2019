@@ -24,16 +24,22 @@
 }
 
 .bg-light {
-    background: var(--light-color);
+    background: #fff;
     color: #333;
 }
 
 
-.bg-dark {
-    background: var(--dark-bg);
-    color: rgb(134, 134, 139);
-}
+// .bg-dark {
+//     background: var(--dark-bg);
+//     color: rgb(134, 134, 139);
+// }
 
+$alt-bg: #fafafa;
+
+.bg-alt {
+    background: $alt-bg;
+    color: #333;
+}
 .mb {
     margin-bottom: 1rem;
 }
@@ -68,4 +74,25 @@ li {
 .title {
     font-weight: 700;
     font-size: 3rem;
+}
+
+
+
+
+section.break {
+    padding: 7rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 780px) {
+    section.break {
+        padding: 5rem 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+.fa-chevron-right {
+    font-size: 0.7rem;
 }
