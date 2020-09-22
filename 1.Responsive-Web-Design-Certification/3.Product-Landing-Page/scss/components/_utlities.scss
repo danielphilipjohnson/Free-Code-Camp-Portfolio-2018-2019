@@ -1,9 +1,5 @@
 /* Utility Classes */
 
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-}
 
 .lead {
     font-size: 1.15rem;
@@ -28,16 +24,22 @@
 }
 
 .bg-light {
-    background: var(--light-color);
+    background: #fff;
     color: #333;
 }
 
 
-.bg-dark {
-    background: var(--dark-bg);
-    color: rgb(134, 134, 139);
-}
+// .bg-dark {
+//     background: var(--dark-bg);
+//     color: rgb(134, 134, 139);
+// }
 
+$alt-bg: #fafafa;
+
+.bg-alt {
+    background: $alt-bg;
+    color: #333;
+}
 .mb {
     margin-bottom: 1rem;
 }
@@ -49,5 +51,48 @@
 li {
     text-decoration: none;
     display: inline-block;
-    padding: 0.2rem;
+    // padding: 0.2rem;
+}
+
+.logo {
+
+    margin-bottom: 0;
+    width: 22px;
+    display: inline-block;
+
+}
+
+.left {
+    
+
+    margin-bottom: 1rem;
+
+}
+
+
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+
+
+section.break {
+    padding: 7rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 780px) {
+    section.break {
+        padding: 5rem 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+.fa-chevron-right {
+    font-size: 0.7rem;
 }
