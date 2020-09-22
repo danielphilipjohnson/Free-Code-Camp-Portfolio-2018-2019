@@ -1,4 +1,4 @@
-function myFunction() {
+function hamburgerButton() {
   var x = document.getElementById("nav-sub");
   console.log(x);
   if (x.style.display === "none") {
