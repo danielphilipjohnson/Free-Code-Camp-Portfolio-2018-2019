@@ -1,0 +1,41 @@
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.heart {
+  color: red;
+ 
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  transition: transform 0.5s;
+
+}
+.heart:hover {
+  transform: scale(2);
+  
+}
+
+.nav {
+  list-style: none;
+  padding: 1rem;
+}
+
+
+
+
+.col {
+  padding: 0 1rem;
+}
+
+
+
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
