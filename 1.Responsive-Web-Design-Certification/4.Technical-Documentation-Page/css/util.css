@@ -3,6 +3,20 @@ a {
   text-decoration: none;
 }
 
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; 
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 0.5rem; 
+  }
+}
+
 .heart {
   color: red;
  
@@ -12,6 +26,7 @@ a {
   transition: transform 0.5s;
 
 }
+
 .heart:hover {
   transform: scale(2);
   
@@ -29,7 +44,9 @@ a {
   padding: 0 1rem;
 }
 
-
+.fa-times {
+  padding: 1rem;
+}
 
 
 .tl {
@@ -39,3 +56,4 @@ a {
 .tr {
   text-align: right;
 }
+

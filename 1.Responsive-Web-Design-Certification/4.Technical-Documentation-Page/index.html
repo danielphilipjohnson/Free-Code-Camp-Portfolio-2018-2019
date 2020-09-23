@@ -23,68 +23,80 @@
     </head>
 
     <body>
+        <nav class="nav-main">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="icon"
+                    onclick="hamburgerButton()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li>
+                    <h1>Web Development</h1>
+                </li>
+            </ul>
+        </nav>
+
+
         <nav id="navbar">
-            <header>
-                <h1>JavaScript Guide</h1>
-            </header>
+            <a href="javascript:void(0);" class="icon"
+                    onclick="hamburgerButton()">
+                    <i class="fas fa-times"></i>
+                </li>
+            </a>
+            <form class="form-search" action="">
+                <input type="text" name="" id="" class="nav-search"
+                    placeholder="Search resources">
+            </form>
             <ul class="nav">
+               
                 <li><a class="nav-link" href="#Basics" rel="nofollow">Basics</a></li>
                 <li><a class="nav-link" href="#Comments" rel="nofollow">Comments</a></li>
                 <li><a class="nav-link" href="#Declarations" rel="nofollow">Declarations</a></li>
                 <li><a class="nav-link" href="#Variables" rel="nofollow">Variables</a></li>
-                <li><a class="nav-link" href="#declaring-variables"
-                        rel="nofollow">Declaring-variables</a></li>
-                <li><a class="nav-link" href="#evaluating-variables"
-                        rel="nofollow">Evaluating variables</a></li>
-                <li><a class="nav-link" href="#variable-scope" rel="nofollow">Variable
-                        scope</a></li>
-                <li><a class="nav-link" href="#variable-hoisting"
-                        rel="nofollow">Variable hoisting</a></li>
-                <li><a class="nav-link" href="#function-hoisting"
-                        rel="nofollow">Function hoisting</a></li>
-                <li><a class="nav-link" href="#global-variables" rel="nofollow">Global
-                        variables</a></li>
                 <li><a class="nav-link" href="#constants" rel="nofollow">Constants</a></li>
-                <li><a class="nav-link" href="#Data_types" rel="nofollow">Data
-                        types</a></li>
+                <li><a class="nav-link" href="#Data_types" rel="nofollow">Datatypes</a></li>
                 <li><a class="nav-link" href="#if...else_statement"
                         rel="nofollow">if...else statement</a> </li>
                 <li><a class="nav-link" href="#while_statement" rel="nofollow">While
                         statement </a></li>
                 <li><a class="nav-link" href="#Function_declarations"
                         rel="nofollow">Function declarations</a></li>
-                <li><a class="nav-link" href="#Reference" rel="nofollow">Reference</a></li>
             </ul>
 
         </nav>
 
-        <!-- <main id="main-doc">
-
-        <section class="bg-alt section break">
-            <h2>JavaScript Guide</h2>
-        </section>
-        <nav id="navbar-sticky" class="navbar-sticky top">
+        <main id="main-doc">
+        <section class="bg-alt section break ">
             <div class="container">
-                <div class="navbar-sticky-items">
-                    <h3>Pear Music</h3>
+                <h2>JavaScript Guide</h2>
+            </div>
+            
+        </section>
+
+
+
+        <nav id="navbar-sub" class="navbar-sub top">
+            <div class="container">
+                <div class="navbar-sub-items">
                     <ul class="links">
                         <li class="hide-sm">
                             <div class="link item">
-                                <a href="#about">Overview</a>
-                            </div>
-                        </li>
-                        <li class="hide-sm">
-                            <div class="link item">
-                                <a href="#cases">Features</a>
+                                <a href="#about"> Web technology for developers <i class="fas fa-angle-right"></i></a>
                             </div>
                         </li>
                         <li>
                             <div class="link item">
-                                <a href="#blog" class="button-try">Try it
-                                    free*</a>
+                                <a href="#cases"> See JavaScript <i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </li>
+                        <li class="hide-sm">
+                            <div class="link item active">
+                                <a href="#blog"> JavaScript Guide <i class="fas fa-angle-right"></i></a>
                             </div>
                         </li>
                     </ul>
+                    <h3>English</h3>
                 </div>
             </div>
         </nav>
@@ -529,7 +541,7 @@
             <p class="note">All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></p>
         </section>
 
-    </main> -->
+    </main>
         <footer>
             <div class="footer-header">
                 <nav class="row tutorial-navigation">
@@ -646,7 +658,17 @@
                 </div>
             </div>
         </footer>
-
+<script>
+    function hamburgerButton() {
+  var x = document.getElementById("navbar");
+  console.log(x);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
     </body>
 
 </html>
