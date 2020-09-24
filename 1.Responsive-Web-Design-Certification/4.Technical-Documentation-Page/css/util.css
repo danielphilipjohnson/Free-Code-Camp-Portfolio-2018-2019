@@ -3,7 +3,6 @@ a {
   text-decoration: none;
 }
 
-
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -11,34 +10,32 @@ a {
   overflow: hidden; 
 }
 
-@media (max-width: 500px) {
-  .container {
-    padding: 0 0.5rem; 
-  }
+
+/* text */
+.title {
+  color:#282c34;
+  font-weight: 900;
+  font-size: 2.5rem;
+
+}
+
+.sub-text {
+  color: #6d6d6d;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 .heart {
   color: red;
- 
   display: inline-block;
   padding: 0 0.5rem;
   font-size: 1.3rem;
   transition: transform 0.5s;
 
 }
-
 .heart:hover {
   transform: scale(2);
-  
 }
-
-.nav {
-  list-style: none;
-  padding: 1rem;
-}
-
-
-
 
 .col {
   padding: 0 1rem;
@@ -48,7 +45,6 @@ a {
   padding: 1rem;
 }
 
-
 .tl {
   text-align: left;
 }
@@ -57,3 +53,16 @@ a {
   text-align: right;
 }
 
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1.5rem; 
+  }
+}
+
+@media screen and (max-width: 963px) {
+  .hide-sm {
+    display: none;
+    background-color: red;
+  }
+}
