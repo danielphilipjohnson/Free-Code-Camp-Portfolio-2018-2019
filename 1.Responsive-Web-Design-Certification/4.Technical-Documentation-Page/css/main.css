@@ -30,10 +30,6 @@ li {
   padding: 0.5rem 0;
 }
 
-/* ul {
-  padding-left: 2rem;
-} */
-
 /* Navbar */
 
 .nav-main {
@@ -58,15 +54,10 @@ li {
 
 #navbar {
   display: none;
-}
-
-#navbar {
   position: relative;
   width: 100%;
   border-right: 1px solid #ececec;
-  background-color: #f7f7f7;
   background-color: #1d1d1f;
-
   overflow-y: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -74,7 +65,8 @@ li {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  z-index: -1000;
+  top: -60px;
+  height: 100vh;
 }
 @keyframes fadeInOpacity {
   0% {
@@ -253,7 +245,6 @@ code {
   margin: 0.5rem 0;
   display: block;
   border-radius: 4px;
-  background-color: #e1e8ed;
   background-color: rgb(40, 44, 52);
   color: #fff;
   -webkit-border-radius: 4px;
@@ -375,6 +366,8 @@ footer {
 /* Footer content */
 .footer-content {
   padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
 }
 .footer-content .about {
   display: flex;
@@ -394,10 +387,7 @@ footer {
   padding: 2rem 0 0 0;
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
+
 
 /* nav footer */
 
@@ -459,11 +449,6 @@ footer {
     padding: 0 0.75rem;
   }
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .tutorial-navigation {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -508,6 +493,9 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  .nav-header  {
+    display: block;
+  }
   .cards {
     grid-template-columns: repeat(4, 1fr);
   }

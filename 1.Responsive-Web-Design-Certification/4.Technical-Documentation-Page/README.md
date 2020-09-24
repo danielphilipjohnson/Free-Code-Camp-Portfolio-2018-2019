@@ -3,9 +3,9 @@
 ## View
 
 ### Desktop
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/techincaldocument_hpi24d.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/4.Technical-Documentation-Page/img/desktop.png)
 ### Mobile
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612951/fcc/responsive/techincaldocumentmobile_wwkdsm.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/4.Technical-Documentation-Page/img/mobile.png)
 - https://codepen.io/undreamtmayhem/pen/ErRryM
 
 
