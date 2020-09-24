@@ -6,8 +6,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Documentation: Daniel Philp Johnson</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans"
-            rel="stylesheet">
+
+ <!-- Facebook tags -->
+ <meta property="og:title" content="Freecodecamp project: Technical Documentation">
+<meta property="og:description" content="Build a Technical Documentation using css and html">
+<meta property="og:image"
+ content="https://pbs.twimg.com/profile_images/1288051154413379591/tUGJS2vc_400x400.jpg">
+<meta property="og:url"
+ content="https://danielphilipjohnson.github.io/ffc/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!--  Non-Essential, But Recommended -->
+
+<meta property="og:site_name" content="Freecodecamp project: Build a
+Technical Documentation Page">
+<meta name="twitter:image:alt" content="Profile of React Developer
+ Daniel
+ Philip Johnson">
+
+<!-- Twitter Tags -->
+<meta name="twitter:title" content="Freecodecamp project: Technical Documentation Page">
+<meta name="twitter:description" content="Freecodecamp project: Build a
+Technical Documentation Page form using css and html">
+<meta name="twitter:image"
+ content="https://pbs.twimg.com/profile_images/1288051154413379591/tUGJS2vc_400x400.jpg">
+<meta name="twitter:card" content="Twitter Profile">
+
+
+
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap"
             rel="stylesheet">
@@ -260,7 +286,7 @@
                 <div id="declaring-variables">
                     <p class="sub-header">Declaring variables</p>
                     <p>You can declare a variable in two ways:</p>
-                    <ul>
+                    <ul class="code">
                         <li>With the keyword var. For example, <span class="code-text">var x = 42</span>. This
                             syntax can be used to declare both local
                             and global variables, depending on the execution
@@ -686,7 +712,7 @@
                     </header>
                     <p class="sub-header">Data types</p>
                     <p>The latest ECMAScript standard defines seven data types:</p>
-                    <ul>
+                    <ul class="code">
                         <li>Boolean. true and false.</li>
                         <li>null. A special keyword denoting a null value.
                             Because JavaScript is case-sensitive, null is not
@@ -891,7 +917,7 @@
                         value to x. Therefore, x and n take on the
                         following values:</p>
 
-                    <ul>
+                    <ul class="code">
                         <li>After the first pass: n = 1 and x = 1</li>
                         <li>After the second pass: n = 2 and x = 3</li>
                         <li>After the third pass: n = 3 and x = 6</li>
@@ -910,7 +936,7 @@
                         declaration, or function statement) consists of the
                         function keyword, followed by:</p>
 
-                    <ul>
+                    <ul class="code">
                         <li>The name of the function.</li>
                         <li>A list of arguments to the function, enclosed in
                             parentheses and separated by commas.</li>
@@ -1041,7 +1067,6 @@
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
-
                     </ul>
                 </div>
 
@@ -1097,17 +1122,7 @@
             </div>
         </footer>
 
-        <script>
-        function hamburgerButton() {
-            var x = document.getElementById("navbar");
-            console.log(x);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+        <script src="./js/main.js"></script>
     </body>
 
 </html>
