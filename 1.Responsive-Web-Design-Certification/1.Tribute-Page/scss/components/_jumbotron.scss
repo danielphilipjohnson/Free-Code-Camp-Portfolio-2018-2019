@@ -1,0 +1,23 @@
+.jumbotron {
+  height: 100vh;
+  background: url("../img/juicewrld.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  position: relative;
+  padding-top: 10rem;
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}

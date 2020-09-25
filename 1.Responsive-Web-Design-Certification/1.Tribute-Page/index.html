@@ -1,123 +1,448 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tribute Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen"
-            href="./css/style.css">
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
 
-    <body>
-        <header>
-            <h1>Dr. Norman Borlaug</h1>
-            <h3>The man who saved a billion lives</h3>
-        </header>
-        <section>
-            <article>
-                <figure>
-                    <img
-                        src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
-                    <figcaption> Dr. Norman Borlaug, second from left, trains
-                        biologists in Mexico on how to increase wheat
-                        yields - part of his life-long war on hunger.</figcaption>
-                </figure>
-                <h3 class="timeline-header">Here's a time line of Dr. Borlaug's
-                    life:</h3>
-                <ul class="timeline">
-                    <li class="year">1914</li>
-                    <li class="event"> Born in Cresco, Iowa</li>
-                    <li class="year">1933 </li>
-                    <li class="event">Leaves his family's farm to attend the
-                        University of Minnesota, thanks to a Depression
-                        era program known as the "National Youth Administration"</li>
-                    <li class="event"> Has to stop school and save up more
-                        money. Works in the Civilian Conservation Corps,
-                        helping starving Americans. "I saw how food changed
-                        them", he said. "All of this left scars on me."
+  <body>
+
+    <nav id="nav-bar" class="navbar">
+      <ul class="social-icons">
+        <li class="nav-item twitter">
+          <a href="https://twitter.com/juiceworlddd?">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="nav-item facebook">
+          <a
+            href="https://www.facebook.com/juiceworldddd/">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+
+        <li class="nav-item instagram">
+          <a
+            href="https://github.com/danielphilipjohnson/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <li class="nav-item youtube">
+          <a
+            href="https://www.linkedin.com/in/daniel-philip-johnson/">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li class="nav-item spotify">
+          <a
+            href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+            <i class="fab fa-spotify"></i>
+          </a>
+        </li>
+
+        <li class="nav-item apple">
+          <a
+            href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+            <i class="fab fa-apple"></i>
+          </a>
+        </li>
+
+      </ul>
+
+      <a href='#' class="nav-title"><h1>Tribute Page</h1></a>
+      <a href="javascript:void(0);" class="hamburger"
+        onclick="hamburgerButton()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+
+
+    <nav class="subnav socials fade-in-right" id="subnav">
+      <a href="javascript:void(0);" class="hamburger"
+        onclick="hamburgerButton()">
+        <i class="fas fa-times"></i>
+      </a>
+      <ul class="subnav__links fade-in-right">
+        <li class="subnav___link">About</li>
+        <li class="subnav___link">Albums</li>
+        <li class="subnav___link">Awards</li>
+        <li class="subnav___divider"></li>
+      </ul>
+      <ul class="social-icons fade-in-left">
+        <li class="nav-item twitter">
+          <a href="https://twitter.com/juiceworlddd?">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="nav-item facebook">
+          <a
+            href="https://www.facebook.com/juiceworldddd/">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+
+        <li class="nav-item instagram">
+          <a
+            href="https://github.com/danielphilipjohnson/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+
+        <li class="nav-item youtube">
+          <a
+            href="https://www.linkedin.com/in/daniel-philip-johnson/">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li class="nav-item spotify">
+          <a
+            href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+            <i class="fab fa-spotify"></i>
+          </a>
+        </li>
+
+        <li class="nav-item apple">
+          <a
+            href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+            <i class="fab fa-apple"></i>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    <section class="jumbotron">
+      <header class="fade-in">
+        <h2>Juice WRLD</h2>
+        <h3>Jarad Anthony Higgins</h3>
+      </header>
+
+      <!--       
+      <ul class="timeline">
+        <li class="timeline__item">
+          <a href="#">1998</a>
+        
+          <span class="nav__item"></span>
+        </li>
+        
+        <li class="timeline__item">
+          <a href="#">2012</a>
+          <span class="nav__item"></span>
+        </li>
+
+        <li class="timeline__item">
+          <a href="#">2019</a>
+          <span class="nav__item"></span>
+        </li>
+
+
+      </ul>
+
+      <p class="sidebar">02/12/1998 - 08/12/2019</p> -->
+    </section>
+    <section class="container about">
+      <header>
+        <h3>About</h3>
+        <h2>Biography</h2>
+      </header>
+      <div class="row">
+
+        <div class="col">
+          <div class="card">
+            <div class="card-header">
+              <img class="profile-img" src="./img/profile.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Name: Jarad Anthony Higgins</li>
+                <li>OCCUPATION: Rapper</li>
+                <li>BIRTH DATE: December 2, 1998 </li>
+                <li>DEATH DATE: December 8, 2019 (aged 21)</li>
+                <li>PLACE OF BIRTH: Chicago, Illinois, U.S.</li>
+                <li>PLACE OF DEATH: Oak Lawn, Illinois, U.S.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <p>
+            Juice WRLD became a Top Ten hitmaker delivering introspective lyrics
+            atop melodic production, with echoes of Travis Scott and Post Malone.
+            His heartsick 2018 debut Goodbye & Good Riddance (2018), home to his
+            biggest hit "Lucid Dreams," reflected a wide range of stylistic
+            influences: R&B instrumentation, dreamy beats, and even indie rock
+            melodicism. The momentum built by "Lucid Dreams" helped land Juice's
+            sophomore effort A Death Race for Love (2019) at the top of the charts.
+            Months later, at the height of his mainstream popularity, he tragically
+            passed away after suffering a medical emergency at Chicago's Midway
+            Airport; he had just turned 21. At the time of his death, Juice had
+            three singles in the Hot 100 and both official LPs in the Top 100.
+          </p>
+          <p>
+            Born Jarad Higgins in 1998, the Calumet Park musician grew up playing
+            piano, drums, and guitar, turning to rap freestyling in high school.
+            Influenced by rock music and Chicago drill from Lil durk and , Chief
+            Keef
+          </p>
+          <p>
+            Higgins began recording as Juice TheKidd, a moniker derived from his
+            haircut, which resembled 's in the film Juice. His early tracks were all
+            posted online, leading up to 2017's Juice WLRD 999 EP. Produced by Nick
+            Mira and Sidepce, the set included the singles "Lucid Dreams (Forget
+            Me)" and "All Girls Are the Same." Both tracks would also land on his
+            official debut full-length, Goodbye & Good Riddance, which peaked at
+            number 15 on the Billboard 200 upon release in May 2018. In January 2019
+            Higgins issued the single "Robbery" ahead of the arrival of the
+            full-length A Death Race for Love, which was released later that March.
+            Death Race shot to number one on the Billboard 200 and was soon
+            certified gold.
+          </p>
+          <p>
+            He followed with high-profile collaborations with Ellie Goulding("Hate
+            Me"), Benny Blanco ("Graduation"), BTS ("All Night"), and Young Boy
+            Never Broke Again ("Bandit"). In 2019, the latter track joined "Lucid
+            Dreams" as the rapper's second Top 10 hit.
+    
+          </p>
+          <p>
+            On December 8, 2019, Higgins suffered a medical emergency at Chicago's
+            Midway International Airport and died. He had just turned 21. At the
+            time of his death, he had three singles in the Hot 100 and both official
+            LPs in the Top 100 on the Billboard 200. During the next several months,
+            his verses appeared on tracks with Halsey, MarshMellow, and Eminem. The
+            posthumous album Legends Never Die followed in July of 2020 and topped
+            the Billboard 200. ~ Neil Z. Yeung, Rovi
+    
+          </p>
+        </div>
+      </div>
+     
+      
+    
+
+      <header>
+        <h3>Quotes</h3>
+      </header>
+      <p>
+        <blockquote cite="http://www.wikipedia.org">
+          Addiction knows no boundaries, and its impact goes beyond the person
+          fighting it. We hope the conversations he started in his music and his
+          legacy will help others win their battles, as that is what he wanted
+          more than anything. We know that Jarad's legacy of love, joy and
+          emotional honesty will live on."[112] Wallace later established Live
+          Free 999 Fund in honor of Higgins and the battle he faced against
+          addiction, anxiety and depression.[96] The fund's primary goal is to
+          support programs that target young, underserved populations. With a
+          focus on addiction, anxiety and depression, the organization hopes to
+          normalize the conversation about the mental health challenges that
+          Higgins faced, and provide an avenue for people to process those
+          challenges in a healthy way.[96] Higgins' production team and record
+          label have committed to supporting the organization.[96]
+          <cite>
+            Carmella Wallace
+          </cite>
+        </blockquote>
+
+      </p>
+    </section>
+    <section class="container album">
+      <header class="section-header">
+        <h3>
+          Albums
+        </h3>
+      </header>
+      <div class="albums">
+        <div class="album">
+          <div class="album__content legends">
+            <iframe class="spotify-track" src="https://open.spotify.com/embed/track/2U5WueTLIK5WJLD7mvDODv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="album__content__track">
+              <h3>Legends Never Die</h3>
+              <p>Released: July 10, 2020</p>
+              <p>Label: Grade A Productions and Interscope Records.</p>
+              <p>Length	58:50</p>
+              <p>Listen:
+                
+                <a class="listen"
+                  href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+                  <i class="fab fa-spotify"></i>
+                </a>
+
+                <a class="listen"
+                  href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+                  <i class="fab fa-apple"></i>
+                </a>
+              </p>
+
+              <p>Share: 
+                <ul class="social-icons-share">
+                  <li class="social-icons-share-item twitter">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <li class="social-icons-share-item facebook">
+                      <a
+                      href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
                     </li>
-                    <li class="year">1937</li>
-                    <li class="event">Finishes university and takes a job in the
-                        US Forestry Service</li>
-                    <li class="year">1938</li>
-                    <li class="event">Marries wife of 69 years Margret Gibson.
-                        Gets laid off due to budget cuts. Inspired by
-                        Elvin Charles Stakman, he returns to school study under
-                        Stakman, who teaches him about breeding
-                        pest-resistent plants.
+                    <li class="social-icons-share-item instagram">
+                      <a
+                      href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
                     </li>
-                    <li class="event">Tries to enroll in the military after the
-                        Pearl Harbor attack, but is rejected.
-                        Instead, the military asked his lab to work on
-                        waterproof glue, DDT to control malaria,
-                        disenfectants, and other applied science.</li>
-                    <li class="year">1942</li>
-                    <li class="event"> Receives a Ph.D. in Genetics and Plant
-                        Pathology
-                    </li>
-                    <li class="year">1944</li>
-                    <li class="event">Rejects a 100% salary increase from
-                        Dupont, leaves behind his pregnant wife, and flies
-                        to Mexico to head a new plant pathology program. Over
-                        the next 16 years, his team breeds 6,000
-                        different strains of disease resistent wheat - including
-                        different varieties for each major climate on Earth.
-                    </li>
-                    <li class="year">1945</li>
-                    <li class="event"> Discovers a way to grown wheat twice each
-                        season, doubling wheat yields
-                    </li>
-                    <li class="year">1953</li>
-                    <li class="event"> crosses a short, sturdy dwarf breed of
-                        wheat with a high-yeidling American breed,
-                        creating a strain that responds well to fertalizer. It
-                        goes on to provide 95% of Mexico's wheat.
-                    </li>
-                    <li class="year">1962</li>
-                    <li class="event">Visits Delhi and brings his high-yielding
-                        strains of wheat to the Indian subcontinent
-                        in time to help mitigate mass starvation due to a
-                        rapidly expanding population
-                    </li>
-                    <li class="year">1970</li>
-                    <li class="event">receives the Nobel Peace Prize
-                    </li>
-                    <li class="year">1983</li>
-                    <li class="event">helps seven African countries dramatically
-                        increase their maize and sorghum yields
-                    </li>
-                    <li class="year">1984</li>
-                    <li class="event">becomes a distinguished professor at Texas
-                        A&M University
-                    </li>
-                    <li class="year">2005</li>
-                    <li class="event">states "we will have to double the world
-                        food supply by 2050." Argues that genetically
-                        modified crops are the only way we can meet the demand,
-                        as we run out of arable land. Says that GM
-                        crops are not inherently dangerous because "we've
-                        been genetically modifying plants and animals for a long
-                        time. Long before we called it science,
-                        people were selecting the best breeds."
-                    </li>
-                    <li class="year">2009</li>
-                    <li class="event">dies at the age of 95.</li>
+                  </li>
                 </ul>
-                <blockquote>"Borlaug's life and achievement are testimony to the
-                    far-reaching contribution that one man's
-                    towering intellect, persistence and scientific vision can
-                    make to human peace and progress."
-                </blockquote>
-            </article>
-            <cite>- Indian Prime Minister Manmohan Singh</cite>
-        </section>
-        <footer>
-            <h3>If you have time, you should read more about this incredible
-                human being on his
-                <a href="https://en.wikipedia.org/wiki/Norman_Borlaug">Wikipedia
-                    entry.</a>
-            </h3>
-        </footer>
-    </body>
+                 
+                 
+                  
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="album">
+          <div class="album__content death">
+            <iframe class="spotify-track"  src="https://open.spotify.com/embed/track/41MCdlvXOl62B7Kv86Bb1v" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="album__content__track">
+              <h3>Death Race for Love</h3>
+              <p>Released: March 8, 2019</p>
+              <p>Label: Grade A Productions and Interscope Records.</p>
+              <p>Length	72:04:</p>
+              <p>Listen:
+                
+                <a class="listen"
+                  href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+                  <i class="fab fa-spotify"></i>
+                </a>
+
+                <a class="listen"
+                  href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+                  <i class="fab fa-apple"></i>
+                </a>
+              </p>
+
+              <p>Share: 
+                <ul class="social-icons-share">
+                  <li class="social-icons-share-item twitter">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <li class="social-icons-share-item facebook">
+                      <a
+                      href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    </li>
+                    <li class="social-icons-share-item instagram">
+                      <a
+                      href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    </li>
+                  </li>
+                </ul>
+                 
+                 
+                  
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="album">
+          <div class="album__content goodbye">
+            <iframe class="spotify-track"src="https://open.spotify.com/embed/track/24BNgrtp6Fag4M5BQPEgsV" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <div class="album__content__track">
+              <h3>Goodbye & Good Riddance</h3>
+              <p>Released: May 23, 2018</p>
+              <p>Label: Grade A Productions and Interscope Records.</p>
+              <p>Length	47:20</p>
+              <p>Listen:
+                
+                <a class="listen"
+                  href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+                  <i class="fab fa-spotify"></i>
+                </a>
+
+                <a class="listen"
+                  href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+                  <i class="fab fa-apple"></i>
+                </a>
+              </p>
+
+              <p>Share: 
+                <ul class="social-icons-share">
+                  <li class="social-icons-share-item twitter">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <li class="social-icons-share-item facebook">
+                      <a
+                      href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    </li>
+                    <li class="social-icons-share-item instagram">
+                      <a
+                      href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    </li>
+                  </li>
+                </ul>
+                 
+                 
+                  
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <header>
+        <p>Award: Song of Summer</p>
+
+        <h3>Awards</h3>
+
+        <p>MTV Video Music Awards</p>
+        <p>2018</p>
+        <p>Result: Nominated</p>
+      </header>
+    </section>
+
+    <script>
+      function hamburgerButton() {
+  var x = document.getElementById("subnav");
+  console.log(x)
+  if (x.style.display === "grid") {
+      x.style.display = "none";
+  } else {
+      x.style.display = "grid";
+  }
+}
+    </script>
+  </body>
 </html>
