@@ -3,8 +3,11 @@ $website-width: 1280px;
 
 .container {
   max-width: $website-width;
-  padding: 0 1.5rem;
+  // padding: 0 1.5rem;
+  padding: 0;
+
   margin: auto;
+  
   overflow: hidden;
 }
 

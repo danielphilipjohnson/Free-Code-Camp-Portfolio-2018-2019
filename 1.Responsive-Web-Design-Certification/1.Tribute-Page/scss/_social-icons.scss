@@ -18,27 +18,16 @@ $socialmedia-colors: (
 
 @each $social, $color in $socialmedia-colors {
   .social-icons {
+    list-style: none;
+    a {
+      color: #fff;
+    }
     .#{$social}:hover a{
       color: #{$color};
     }
 
   }
 }
-.social-icons {
-  list-style: none;
- 
-  .nav-item {
-    a {
-      color: #fff;
-      padding: 0.5rem;
-    }
-  }
-}
-
-
-
-
-
 
 
 
@@ -48,6 +37,42 @@ $socialmedia-colors: (
   flex-wrap: wrap;
   list-style: none;
   color: #fff;
+
+  .social-icons-share-item {
+    padding: 7px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 0.5rem;
+    border-radius: 50%;
+    width: 42px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    transition: background-color .75s;
+    a {
+      color: #fff;
+    }
+
+    @each $social, $color in $socialmedia-colors {
+
+      &.#{$social}:hover {
+        background-color: #{$color};
+        
+      }
+    }
+  }
+}
+/* find similarities */
+
+.social-icons-share-video {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  color: #fff;
+  .label {
+    margin: 1rem 0.5rem 1rem 0;
+  }
 
   .social-icons-share-item {
     padding: 7px;
