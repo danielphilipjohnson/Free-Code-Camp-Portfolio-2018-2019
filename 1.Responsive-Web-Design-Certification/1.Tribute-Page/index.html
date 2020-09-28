@@ -15,59 +15,15 @@
   </head>
 
   <body>
-
-    <nav id="nav-bar" class="navbar">
-      <ul class="social-icons">
-        <li class="nav-item twitter">
-          <a href="https://twitter.com/juiceworlddd?">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-
-        <li class="nav-item facebook">
-          <a
-            href="https://www.facebook.com/juiceworldddd/">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-
-        <li class="nav-item instagram">
-          <a
-            href="https://github.com/danielphilipjohnson/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-
-        <li class="nav-item youtube">
-          <a
-            href="https://www.linkedin.com/in/daniel-philip-johnson/">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-        <li class="nav-item spotify">
-          <a
-            href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
-            <i class="fab fa-spotify"></i>
-          </a>
-        </li>
-
-        <li class="nav-item apple">
-          <a
-            href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
-            <i class="fab fa-apple"></i>
-          </a>
-        </li>
-
-      </ul>
-
-      <a href='#' class="nav-title"><h1>Tribute Page</h1></a>
+    <nav id="nav-bar" class="navbar-top">
+      <header class="top-header">
+        <h1>Juice WRLD</h1>
+      </header>
       <a href="javascript:void(0);" class="hamburger"
         onclick="hamburgerButton()">
         <i class="fa fa-bars"></i>
       </a>
     </nav>
-
-
 
     <nav class="subnav socials fade-in-right" id="subnav">
       <a href="javascript:void(0);" class="hamburger"
@@ -80,7 +36,55 @@
         <li class="subnav___link">Awards</li>
         <li class="subnav___divider"></li>
       </ul>
+
       <ul class="social-icons fade-in-left">
+        <li class="nav-item twitter">
+          <a href="https://twitter.com/juiceworlddd?">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item facebook">
+          <a
+            href="https://www.facebook.com/juiceworldddd/">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="nav-item instagram">
+          <a
+            href="https://github.com/danielphilipjohnson/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item youtube">
+          <a
+            href="https://www.linkedin.com/in/daniel-philip-johnson/">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li class="nav-item spotify">
+          <a
+            href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+            <i class="fab fa-spotify"></i>
+          </a>
+        </li>
+
+        <li class="nav-item apple">
+          <a
+            href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+            <i class="fab fa-apple"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="content">
+        <h1>Legends Never Die</h1>
+      </div>
+    </header>
+
+    <nav id="nav-bar" class="navbar">
+      <ul class="social-icons nav-items">
         <li class="nav-item twitter">
           <a href="https://twitter.com/juiceworlddd?">
             <i class="fab fa-twitter"></i>
@@ -122,46 +126,122 @@
         </li>
 
       </ul>
-    </nav>
-
-
-    <section class="jumbotron">
-      <header class="fade-in">
-        <h2>Juice WRLD</h2>
-        <h3>Jarad Anthony Higgins</h3>
-      </header>
-
-      <!--       
-      <ul class="timeline">
-        <li class="timeline__item">
-          <a href="#">1998</a>
-        
-          <span class="nav__item"></span>
-        </li>
-        
-        <li class="timeline__item">
-          <a href="#">2012</a>
-          <span class="nav__item"></span>
+      <ul class="nav-items hide-md">
+        <li class="nav-item">
+          <a href="#about">
+            About
+          </a>
         </li>
 
-        <li class="timeline__item">
-          <a href="#">2019</a>
-          <span class="nav__item"></span>
+        <li class="nav-item">
+          <a
+            href="#albums">
+            Albums
+          </a>
         </li>
 
-
+        <li class="nav-item">
+          <a
+            href="#awards">
+            Awards
+          </a>
+        </li>
       </ul>
 
-      <p class="sidebar">02/12/1998 - 08/12/2019</p> -->
-    </section>
-    <section class="container about">
-      <header>
-        <h3>About</h3>
-        <h2>Biography</h2>
-      </header>
-      <div class="row">
+      <a href='#' class="nav-title"><h1 class="hide-sm">Tribute Page</h1></a>
+    </nav>
 
-        <div class="col">
+    <main>
+      <section class="container section-header video">
+        <header>
+          <h3>Latest</h3>
+        </header>
+        <div class="video-card">
+          <div class="video-card-video">
+            <iframe
+              src="https://www.youtube.com/embed/C5i-UnuUKUI" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="video-card-body">
+            <h4 class="sub-title">Apr 24, 2020</h4>
+            <h2 class="title">Juice WRLD - Wishing Well</h2>
+
+            <p>
+              <ul class="social-icons-share-video">
+                <li class="label">Share:</li>
+                <li class="social-icons-share-item twitter">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <li class="social-icons-share-item facebook">
+                    <a
+                      href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="social-icons-share-item instagram">
+                    <a
+                      href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </li>
+              </ul>
+            </p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class=" container section-header video">
+        <header>
+          <h3>More Videos</h3>
+        </header>
+
+        <div class="video-cards">
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/3Klj_pjjqUM"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/TNAuyONWorE"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/0Hi2KQWmNM0"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/1VSZtyenNlA"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/1VSZtyenNlA"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/EfP3Ya5-JoU"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section-header about">
+        <header>
+          <h3>About</h3>
+        </header>
+
+        <div class="container profile">
+        
           <div class="card">
             <div class="card-header">
               <img class="profile-img" src="./img/profile.jpg" alt="">
@@ -177,261 +257,414 @@
               </ul>
             </div>
           </div>
+
+          <div class="col">
+            <h3>Biography</h3>
+            <p>
+              Juice WRLD became a Top Ten hitmaker delivering introspective
+              lyrics
+              atop melodic production, with echoes of Travis Scott and Post
+              Malone.
+              His heartsick 2018 debut Goodbye & Good Riddance (2018), home to
+              his
+              biggest hit "Lucid Dreams," reflected a wide range of stylistic
+              influences: R&B instrumentation, dreamy beats, and even indie rock
+              melodicism. The momentum built by "Lucid Dreams" helped land
+              Juice's
+              sophomore effort A Death Race for Love (2019) at the top of the
+              charts.
+              Months later, at the height of his mainstream popularity, he
+              tragically
+              passed away after suffering a medical emergency at Chicago's
+              Midway
+              Airport; he had just turned 21. At the time of his death, Juice
+              had
+              three singles in the Hot 100 and both official LPs in the Top 100.
+            </p>
+            <p>
+              Born Jarad Higgins in 1998, the Calumet Park musician grew up
+              playing
+              piano, drums, and guitar, turning to rap freestyling in high
+              school.
+              Influenced by rock music and Chicago drill from Lil durk and ,
+              Chief
+              Keef
+            </p>
+            <p>
+              Higgins began recording as Juice TheKidd, a moniker derived from
+              his
+              haircut, which resembled 's in the film Juice. His early tracks
+              were
+              all
+              posted online, leading up to 2017's Juice WLRD 999 EP. Produced by
+              Nick
+              Mira and Sidepce, the set included the singles "Lucid Dreams
+              (Forget
+              Me)" and "All Girls Are the Same." Both tracks would also land on
+              his
+              official debut full-length, Goodbye & Good Riddance, which peaked
+              at
+              number 15 on the Billboard 200 upon release in May 2018. In
+              January
+              2019
+              Higgins issued the single "Robbery" ahead of the arrival of the
+              full-length A Death Race for Love, which was released later that
+              March.
+              Death Race shot to number one on the Billboard 200 and was soon
+              certified gold.
+            </p>
+            <p>
+              He followed with high-profile collaborations with Ellie
+              Goulding("Hate
+              Me"), Benny Blanco ("Graduation"), BTS ("All Night"), and Young
+              Boy
+              Never Broke Again ("Bandit"). In 2019, the latter track joined
+              "Lucid
+              Dreams" as the rapper's second Top 10 hit.
+
+            </p>
+            <p>
+              On December 8, 2019, Higgins suffered a medical emergency at
+              Chicago's
+              Midway International Airport and died. He had just turned 21. At
+              the
+              time of his death, he had three singles in the Hot 100 and both
+              official
+              LPs in the Top 100 on the Billboard 200. During the next several
+              months,
+              his verses appeared on tracks with Halsey, MarshMellow, and
+              Eminem.
+              The
+              posthumous album Legends Never Die followed in July of 2020 and
+              topped
+              the Billboard 200. ~ Neil Z. Yeung, Rovi
+
+            </p>
+          </div>
         </div>
 
-        <div class="col">
-          <p>
-            Juice WRLD became a Top Ten hitmaker delivering introspective lyrics
-            atop melodic production, with echoes of Travis Scott and Post Malone.
-            His heartsick 2018 debut Goodbye & Good Riddance (2018), home to his
-            biggest hit "Lucid Dreams," reflected a wide range of stylistic
-            influences: R&B instrumentation, dreamy beats, and even indie rock
-            melodicism. The momentum built by "Lucid Dreams" helped land Juice's
-            sophomore effort A Death Race for Love (2019) at the top of the charts.
-            Months later, at the height of his mainstream popularity, he tragically
-            passed away after suffering a medical emergency at Chicago's Midway
-            Airport; he had just turned 21. At the time of his death, Juice had
-            three singles in the Hot 100 and both official LPs in the Top 100.
-          </p>
-          <p>
-            Born Jarad Higgins in 1998, the Calumet Park musician grew up playing
-            piano, drums, and guitar, turning to rap freestyling in high school.
-            Influenced by rock music and Chicago drill from Lil durk and , Chief
-            Keef
-          </p>
-          <p>
-            Higgins began recording as Juice TheKidd, a moniker derived from his
-            haircut, which resembled 's in the film Juice. His early tracks were all
-            posted online, leading up to 2017's Juice WLRD 999 EP. Produced by Nick
-            Mira and Sidepce, the set included the singles "Lucid Dreams (Forget
-            Me)" and "All Girls Are the Same." Both tracks would also land on his
-            official debut full-length, Goodbye & Good Riddance, which peaked at
-            number 15 on the Billboard 200 upon release in May 2018. In January 2019
-            Higgins issued the single "Robbery" ahead of the arrival of the
-            full-length A Death Race for Love, which was released later that March.
-            Death Race shot to number one on the Billboard 200 and was soon
-            certified gold.
-          </p>
-          <p>
-            He followed with high-profile collaborations with Ellie Goulding("Hate
-            Me"), Benny Blanco ("Graduation"), BTS ("All Night"), and Young Boy
-            Never Broke Again ("Bandit"). In 2019, the latter track joined "Lucid
-            Dreams" as the rapper's second Top 10 hit.
-    
-          </p>
-          <p>
-            On December 8, 2019, Higgins suffered a medical emergency at Chicago's
-            Midway International Airport and died. He had just turned 21. At the
-            time of his death, he had three singles in the Hot 100 and both official
-            LPs in the Top 100 on the Billboard 200. During the next several months,
-            his verses appeared on tracks with Halsey, MarshMellow, and Eminem. The
-            posthumous album Legends Never Die followed in July of 2020 and topped
-            the Billboard 200. ~ Neil Z. Yeung, Rovi
-    
-          </p>
+        <header>
+          <h3>Quotes</h3>
+        </header>
+        <p>
+          <blockquote cite="http://www.wikipedia.org">
+            Addiction knows no boundaries, and its impact goes beyond the person
+            fighting it. We hope the conversations he started in his music and
+            his
+            legacy will help others win their battles, as that is what he wanted
+            more than anything. We know that Jarad's legacy of love, joy and
+            emotional honesty will live on."[112] Wallace later established Live
+            Free 999 Fund in honor of Higgins and the battle he faced against
+            addiction, anxiety and depression.[96] The fund's primary goal is to
+            support programs that target young, underserved populations. With a
+            focus on addiction, anxiety and depression, the organization hopes
+            to
+            normalize the conversation about the mental health challenges that
+            Higgins faced, and provide an avenue for people to process those
+            challenges in a healthy way.[96] Higgins' production team and record
+            label have committed to supporting the organization.[96]
+            <cite>
+              Carmella Wallace
+            </cite>
+          </blockquote>
+
+        </p>
+      </section>
+
+      <section class="container album">
+        <header class="section-header">
+          <h3>
+            Disography
+          </h3>
+        </header>
+        <div class="albums">
+          <div class="album">
+            <div class="album__content legends">
+              <iframe class="spotify-track"
+                src="https://open.spotify.com/embed/track/2U5WueTLIK5WJLD7mvDODv"
+                width="300" height="380" frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"></iframe>
+              <div class="album__content__track">
+                <h3>Legends Never Die</h3>
+                <p>Released: July 10, 2020</p>
+                <p>Label: Grade A Productions and Interscope Records.</p>
+                <p>Length 58:50</p>
+                <p>Listen:
+
+                  <a class="listen"
+                    href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+                    <i class="fab fa-spotify"></i>
+                  </a>
+
+                  <a class="listen"
+                    href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+                    <i class="fab fa-apple"></i>
+                  </a>
+                </p>
+
+                <p>Share:
+                  <ul class="social-icons-share">
+                    <li class="social-icons-share-item twitter">
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <li class="social-icons-share-item facebook">
+                        <a
+                          href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social-icons-share-item instagram">
+                        <a
+                          href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="album">
+            <div class="album__content death">
+              <iframe class="spotify-track"
+                src="https://open.spotify.com/embed/track/41MCdlvXOl62B7Kv86Bb1v"
+                width="300" height="380" frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"></iframe>
+              <div class="album__content__track">
+                <h3>Death Race for Love</h3>
+                <p>Released: March 8, 2019</p>
+                <p>Label: Grade A Productions and Interscope Records.</p>
+                <p>Length 72:04:</p>
+                <p>Listen:
+
+                  <a class="listen"
+                    href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+                    <i class="fab fa-spotify"></i>
+                  </a>
+
+                  <a class="listen"
+                    href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+                    <i class="fab fa-apple"></i>
+                  </a>
+                </p>
+
+                <p>Share:
+                  <ul class="social-icons-share">
+                    <li class="social-icons-share-item twitter">
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <li class="social-icons-share-item facebook">
+                        <a
+                          href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social-icons-share-item instagram">
+                        <a
+                          href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="album">
+            <div class="album__content goodbye">
+              <iframe class="spotify-track"
+                src="https://open.spotify.com/embed/track/24BNgrtp6Fag4M5BQPEgsV"
+                width="300" height="380" frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"></iframe>
+              <div class="album__content__track">
+                <h3>Goodbye & Good Riddance</h3>
+                <p>Released: May 23, 2018</p>
+                <p>Label: Grade A Productions and Interscope Records.</p>
+                <p>Length 47:20</p>
+                <p>Listen:
+
+                  <a class="listen"
+                    href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
+                    <i class="fab fa-spotify"></i>
+                  </a>
+
+                  <a class="listen"
+                    href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
+                    <i class="fab fa-apple"></i>
+                  </a>
+                </p>
+
+                <p>Share:
+                  <ul class="social-icons-share">
+                    <li class="social-icons-share-item twitter">
+                      <a href="#">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <li class="social-icons-share-item facebook">
+                        <a
+                          href="#">
+                          <i class="fab fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="social-icons-share-item instagram">
+                        <a
+                          href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-     
-      
-    
+      </section>
 
-      <header>
-        <h3>Quotes</h3>
-      </header>
-      <p>
-        <blockquote cite="http://www.wikipedia.org">
-          Addiction knows no boundaries, and its impact goes beyond the person
-          fighting it. We hope the conversations he started in his music and his
-          legacy will help others win their battles, as that is what he wanted
-          more than anything. We know that Jarad's legacy of love, joy and
-          emotional honesty will live on."[112] Wallace later established Live
-          Free 999 Fund in honor of Higgins and the battle he faced against
-          addiction, anxiety and depression.[96] The fund's primary goal is to
-          support programs that target young, underserved populations. With a
-          focus on addiction, anxiety and depression, the organization hopes to
-          normalize the conversation about the mental health challenges that
-          Higgins faced, and provide an avenue for people to process those
-          challenges in a healthy way.[96] Higgins' production team and record
-          label have committed to supporting the organization.[96]
-          <cite>
-            Carmella Wallace
-          </cite>
-        </blockquote>
+      <section class="container section-header music">
+        <header class="section-header">
+          <h3>
+            Album
+          </h3>
+        </header>
 
-      </p>
-    </section>
-    <section class="container album">
-      <header class="section-header">
-        <h3>
-          Albums
-        </h3>
-      </header>
-      <div class="albums">
-        <div class="album">
-          <div class="album__content legends">
-            <iframe class="spotify-track" src="https://open.spotify.com/embed/track/2U5WueTLIK5WJLD7mvDODv" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <div class="album__content__track">
-              <h3>Legends Never Die</h3>
-              <p>Released: July 10, 2020</p>
-              <p>Label: Grade A Productions and Interscope Records.</p>
-              <p>Length	58:50</p>
-              <p>Listen:
-                
-                <a class="listen"
-                  href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
-                  <i class="fab fa-spotify"></i>
-                </a>
+        <div class="content">
+          <div class="album-img">
+            <img src="./img/albumcover.png" alt="">
+          </div>
+          <div class="album-info">
+            <h4 class="sub-title">July 10, 2020</h4>
+            <h2 class="title">Legends Never Die</h2>
+            <div class="album-tracks">
+              <ul>
+                <li class="odd">
+                  <span>1</span>
+                  <p> "Anxiety" (Intro)</p>
+                </li>
+                <li class="even">
+                  <span>2</span>
+                  <p>"Conversations"</p>
+                </li>
+                <li class="odd">
+                  <span>3</span>
+                  <p>"Titanic"</p>
+                </li>
 
-                <a class="listen"
-                  href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
-                  <i class="fab fa-apple"></i>
-                </a>
-              </p>
+                <li class="even">
+                  <span>4</span>
+                  <p> "Bad Energy"</p>
+                </li>
 
-              <p>Share: 
-                <ul class="social-icons-share">
-                  <li class="social-icons-share-item twitter">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <li class="social-icons-share-item facebook">
-                      <a
-                      href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                    </li>
-                    <li class="social-icons-share-item instagram">
-                      <a
-                      href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    </li>
-                  </li>
-                </ul>
-                 
-                 
-                  
-              </p>
-              
+                <li class="odd">
+                  <span>5</span>
+                  <p> "Righteous"</p>
+                </li>
+                <li class="even">
+                  <span>6</span>
+                  <p> "Blood on My Jeans"</p>
+                </li>
+
+                <li class="odd">
+                  <span>7</span>
+                  <p> "Smile" (with The Weeknd)</p>
+                </li>
+
+                <li class="even">
+                  <span>8</span>
+                  <p> "Tell Me U Luv Me" (with Trippie Redd)</p>
+                </li>
+
+                <li class="odd">
+                  <span>9</span>
+                  <p> "Hate the Other Side"</p>
+                </li>
+                <li class="even">
+                  <span>10</span>
+                  <p>"Get Through It" (Interlude)</p>
+                </li>
+
+                <li class="odd">
+                  <span>11</span>
+                  <p> "Life's a Mess" (with Halsey)</p>
+                </li>
+                <li class="even">
+                  <span>12</span>
+                  <p> "Come & Go" (with Marshmello)</p>
+                </li>
+                <li class="odd">
+                  <span>13</span>
+                  <p> "I Want It"</p>
+                </li>
+                <li class="even">
+                  <span>14</span>
+                  <p> "Fighting Demons"</p>
+                </li>
+                <li class="odd">
+                  <span>15</span>
+                  <p> "Wishing Well"</p>
+                </li>
+                <li class="even">
+                  <span>16</span>
+                  <p>"Screw Juice"</p>
+                </li>
+
+                <li class="odd">
+                  <span>17</span>
+                  <p> "Up Up and Away"</p>
+                </li>
+
+                <li class="even">
+                  <span>18</span>
+                  <p>"The Man, The Myth, The Legend"</p>
+                </li>
+                <li class="odd">
+                  <span>19</span>
+                  <p>"Stay High"</p>
+                </li>
+
+                <li class="even">
+                  <span>20</span>
+                  <p>"Can't Die"</p>
+                </li>
+                <li class="odd">
+                  <span>21</span>
+                  <p> "Man of the Year"</p>
+                </li>
+                <li class="even">
+                  <span>22</span>
+                  <p>"Juice WRLD Speaks from Heaven" (Outro)</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="album">
-          <div class="album__content death">
-            <iframe class="spotify-track"  src="https://open.spotify.com/embed/track/41MCdlvXOl62B7Kv86Bb1v" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <div class="album__content__track">
-              <h3>Death Race for Love</h3>
-              <p>Released: March 8, 2019</p>
-              <p>Label: Grade A Productions and Interscope Records.</p>
-              <p>Length	72:04:</p>
-              <p>Listen:
-                
-                <a class="listen"
-                  href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
-                  <i class="fab fa-spotify"></i>
-                </a>
 
-                <a class="listen"
-                  href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
-                  <i class="fab fa-apple"></i>
-                </a>
-              </p>
-
-              <p>Share: 
-                <ul class="social-icons-share">
-                  <li class="social-icons-share-item twitter">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <li class="social-icons-share-item facebook">
-                      <a
-                      href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                    </li>
-                    <li class="social-icons-share-item instagram">
-                      <a
-                      href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    </li>
-                  </li>
-                </ul>
-                 
-                 
-                  
-              </p>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="album">
-          <div class="album__content goodbye">
-            <iframe class="spotify-track"src="https://open.spotify.com/embed/track/24BNgrtp6Fag4M5BQPEgsV" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <div class="album__content__track">
-              <h3>Goodbye & Good Riddance</h3>
-              <p>Released: May 23, 2018</p>
-              <p>Label: Grade A Productions and Interscope Records.</p>
-              <p>Length	47:20</p>
-              <p>Listen:
-                
-                <a class="listen"
-                  href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz">
-                  <i class="fab fa-spotify"></i>
-                </a>
-
-                <a class="listen"
-                  href="https://music.apple.com/gb/artist/juice-wrld/1368733420">
-                  <i class="fab fa-apple"></i>
-                </a>
-              </p>
-
-              <p>Share: 
-                <ul class="social-icons-share">
-                  <li class="social-icons-share-item twitter">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <li class="social-icons-share-item facebook">
-                      <a
-                      href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                    </li>
-                    <li class="social-icons-share-item instagram">
-                      <a
-                      href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    </li>
-                  </li>
-                </ul>
-                 
-                 
-                  
-              </p>
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
+      </section>
 
 
-    <section>
-      <header>
-        <p>Award: Song of Summer</p>
+      <section>
+        <header>
+          <p>Award: Song of Summer</p>
 
-        <h3>Awards</h3>
+          <h3>Awards</h3>
 
-        <p>MTV Video Music Awards</p>
-        <p>2018</p>
-        <p>Result: Nominated</p>
-      </header>
-    </section>
+          <p>MTV Video Music Awards</p>
+          <p>2018</p>
+          <p>Result: Nominated</p>
+        </header>
+      </section>
+
+    </main>
 
     <script>
       function hamburgerButton() {
