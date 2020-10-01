@@ -6,6 +6,7 @@ $badge-types: (
   "nominated": $badge-bgcolor-nominated,
 );
 
+<<<<<<< HEAD
 .badge {
   display: inline-block;
   border-radius: 10px;
@@ -13,10 +14,22 @@ $badge-types: (
   margin-left: 1rem;
 
   @each $name, $badge-color in $badge-types {
+=======
+@each $name, $badge-color in $badge-types {
+  .badge {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 1rem;
+>>>>>>> 9b73a7c3e09a3eff749869fe7660b490b7412f16
     &.#{$name} {
       background-color: $badge-color;
       color: #fff;
       font-size: 1.3rem;
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9b73a7c3e09a3eff749869fe7660b490b7412f16
