@@ -32,7 +32,10 @@
       font-size: 2rem;
       font-weight: 600;
       margin-bottom: 1rem;
-
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
       &:hover {
         color: #cd33ff;
       }

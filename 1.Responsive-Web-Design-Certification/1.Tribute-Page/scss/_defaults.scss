@@ -1,13 +1,6 @@
-
 body {
-  // background-color: red;
   font-family: Circular, Helvetica, Arial, sans-serif;
   height: 1200px;
-  // background: url("../img/background.jpeg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  
-
 }
 
 h1,
@@ -24,15 +17,17 @@ img {
   max-width: 100%;
 }
 
+
 blockquote {
+  border-right: 3px solid #1ED760;
   border-left: 3px solid #1ED760;
-  color: #1a1a1a;
+  color: #fff;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   font-style: italic;
   line-height: 1.8em;
-  margin: 0 0 1rem 0;
-  padding: 0 0 0 2rem;
+  margin:0 1rem;
+  padding: 2rem;
   position: relative;
   transition: .2s border ease-in-out;
   z-index: 0;
@@ -43,7 +38,7 @@ blockquote {
     top: 50%;
     left: -4px;
     height: 3rem;
-    background-color: #fff;
+    background-color:#191919;
     width: 5px;
     margin-top: -1rem;
 
@@ -54,16 +49,14 @@ blockquote {
     content: open-quote;
     position: absolute;
     top: 50%;
- 
-    
+
     font-size: 3.25rem;
     line-height: 2rem;
     text-align: center;
-    text-indent: 9px;
+    text-indent: -88px;
     width: 1rem;
     margin-top: -0;
   }
-    
 }
 
 cite {
@@ -74,38 +67,12 @@ cite {
   margin-top: 1rem;
 }
 
-
-
-
 .spotify-track {
   width: 100%;
 }
 
-
-/* old */
-
-// .section-header {
-//   header {
-//     position: relative;
-//     text-align: center;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin-top: 3rem;
-//     border-top: 4px solid #000;
-//   }
-
-//   h3 {
-//     background-color: #000;
-//     color: #fff;
-//     padding: 0.75rem 0.5rem;
-//     width: 150px;
-//     text-align: center;
-//     position: relative;
-//     top: -31px;
-//     margin: 0;
-//   }
-//   h2 {
-//     font-size: 2.25rem;
-//   }
-// }
+.bet-logo {
+  background-color: #1e1e1e;
+  height:120px;
+  padding: 1rem;
+}

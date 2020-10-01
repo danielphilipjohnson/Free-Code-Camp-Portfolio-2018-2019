@@ -1,0 +1,30 @@
+.video {
+  background:rgba(0,0,0,0.9);
+  background: url(../img/bg.jpg);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+}
+
+
+.more-video {
+  .video {
+    background: rgba(0, 0, 0, 0.9);
+    background: url(../img/bg.jpg);
+    padding-bottom: 4rem;
+  }
+
+  padding: 0;
+  
+  header {
+    h3 {
+      color: #000;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .more-video {
+    padding: 2rem 4rem;
+  }
+}

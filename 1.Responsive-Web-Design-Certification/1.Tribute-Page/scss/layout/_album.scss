@@ -1,6 +1,13 @@
+.discography {
+  // padding: 0 3rem;
+  background: rgba(0, 0, 0, 0.8);
+}
 .albums {
+  padding: 2rem 1rem;
+  
   .album {
     margin-bottom: 1rem;
+
     .album__content {
       color: #fff;
 
@@ -42,6 +49,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .discography {
+    padding: 0 3rem;
+  }
   .albums  {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,8 +61,3 @@
   }
 }
 
-
-
-.container.album {
-  background:rgba(0,0,0,0.8);
-}

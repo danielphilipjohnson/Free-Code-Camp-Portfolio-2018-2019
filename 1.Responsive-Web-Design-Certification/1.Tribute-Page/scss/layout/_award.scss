@@ -1,0 +1,48 @@
+.awards {
+  margin-bottom: 1rem;
+}
+
+.awards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  .award {
+    margin-right: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .award__content {
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem 0 2rem;
+    border: 1px solid #eee;
+    color: #000;
+    // height: 500px;
+
+    .award__image {
+      display: flex;
+      justify-content: center;
+      img, svg {
+       max-width: 250px;
+      }
+  
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      
+    }
+    .subtitle {
+      color: #666;
+    }
+  }
+ 
+}
+
+
+@media screen and (min-width: 1000px){
+  .awards {
+    grid-template-columns: repeat(3, 1fr);
+
+    
+  }
+}
