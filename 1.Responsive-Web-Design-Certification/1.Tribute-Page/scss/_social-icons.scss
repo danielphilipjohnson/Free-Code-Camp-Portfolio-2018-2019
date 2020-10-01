@@ -5,16 +5,11 @@ $socialmedia-colors: (
   "instagram": #C13584,
   "linkedin": #2867b2,
   "github": #000,
-  "pinterest": #E60023,
-  "google": #F4B400,
-  "rss": #E58738,
-  "email": #2DA112,
   "spotify": rgb(30, 215, 96),
   "apple": #A1AAAC,
-  // "logo": #2aead3,
-  "snapchat": #FFFC00,
-  "podcast": #8F35CB
+
 );
+
 
 @each $social, $color in $socialmedia-colors {
   .social-icons {
@@ -61,21 +56,13 @@ $socialmedia-colors: (
     }
   }
 }
-/* find similarities */
 
-.social-icons-share-video {
+@mixin base-social-icons-share($justify-content)  {
   display: flex;
-  justify-content: flex-start;
+  justify-content: $justify-content;
   flex-wrap: wrap;
   list-style: none;
   color: #fff;
-  
-  &.center {
-    justify-content: center;
-  }
-  .label {
-    margin: 1rem 0.5rem 1rem 0;
-  }
 
   .social-icons-share-item {
     padding: 7px;
@@ -100,4 +87,29 @@ $socialmedia-colors: (
       }
     }
   }
+
+
+
 }
+
+
+
+/* find similarities */
+@mixin  social-video-share {
+  .social-icons-share-video {
+    @include base-social-icons-share(flex-start);
+    
+    /* does it exist */
+    &.center {
+      justify-content: center;
+    }
+    .label {
+      margin: 1rem 0.5rem 1rem 0;
+    }
+
+  }
+}
+
+@include social-video-share;
+
+

@@ -18,9 +18,11 @@ img {
 }
 
 
+$blockquote-border: 3px solid #1ED760;
+
 blockquote {
-  border-right: 3px solid #1ED760;
-  border-left: 3px solid #1ED760;
+  border-right: $blockquote-border;
+  border-left: $blockquote-border;
   color: #fff;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
@@ -67,12 +69,3 @@ cite {
   margin-top: 1rem;
 }
 
-.spotify-track {
-  width: 100%;
-}
-
-.bet-logo {
-  background-color: #1e1e1e;
-  height:120px;
-  padding: 1rem;
-}

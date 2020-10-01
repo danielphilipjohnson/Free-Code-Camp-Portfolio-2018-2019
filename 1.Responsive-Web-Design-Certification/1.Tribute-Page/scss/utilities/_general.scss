@@ -1,6 +1,37 @@
+
+.bet-logo {
+  background-color: #1e1e1e;
+  height:120px;
+  padding: 1rem;
+}
+
+.mute {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sub-title {
+  color: rgb(143, 137, 137);
+  margin: 0;
+  font-size: 0.7rem;
+}
+.google-play, .spotify-badge {
+  width: 139px;
+  height: auto;
+}
+
+.spotify-track {
+  width: 100%;
+}
+
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 .top-header{
   color: #fff;
-  // background-color: black;
   text-align: center;
   h1 {
     margin: 0;
@@ -8,15 +39,11 @@
 }
 
 
-
-
 @media screen and (max-width: 500px) {
 
   .hide-sm {
     display: none!important;
   }
-
-
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -26,21 +53,3 @@
   }
 }
 
-
-.sub-title {
-  color: rgb(143, 137, 137);
-  margin: 0;
-  font-size: 0.7rem;
-}
-
-.title {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-
-
-.mute {
-  font-size: 1.2rem;
-  font-weight: 500;
-}

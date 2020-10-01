@@ -1,46 +1,46 @@
-.jumbotron {
-  height: 100vh;
-  background: url("../img/juicewrld.jpeg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+// .jumbotron {
+//   height: 100vh;
+//   background: url("../img/juicewrld.jpeg") no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
 
-  position: relative;
-  padding-top: 10rem;
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    h2 {
-      font-size: 3rem;
-    }
-  }
-}
+//   position: relative;
+//   padding-top: 10rem;
+//   header {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     color: #fff;
+//     h2 {
+//       font-size: 3rem;
+//     }
+//   }
+// }
 
 
-@media screen and (min-width: 1000px) {
-  .jumbotron {
-    height: 100vh;
-    background: url("../img/juicewrld.jpeg") no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    z-index: -1000;
-    padding-top: 10rem;
-    .sidebar {
-      position: absolute;
-      top: 50%;
-      right: 50px;
-      padding-top: 10rem;
-      transform: rotate(270deg);
-      color: #fff;
-      font-size: 3rem;
-    }
-  }
-}
+// @media screen and (min-width: 1000px) {
+//   .jumbotron {
+//     height: 100vh;
+//     background: url("../img/juicewrld.jpeg") no-repeat;
+//     background-size: cover;
+//     display: flex;
+//     justify-content: space-evenly;
+//     position: relative;
+//     z-index: -1000;
+//     padding-top: 10rem;
+//     .sidebar {
+//       position: absolute;
+//       top: 50%;
+//       right: 50px;
+//       padding-top: 10rem;
+//       transform: rotate(270deg);
+//       color: #fff;
+//       font-size: 3rem;
+//     }
+//   }
+// }

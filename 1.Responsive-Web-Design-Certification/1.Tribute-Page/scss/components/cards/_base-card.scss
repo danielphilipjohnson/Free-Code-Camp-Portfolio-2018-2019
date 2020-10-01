@@ -1,8 +1,12 @@
+$card-bg: rgb(28, 30, 33);
+$card-height: 393px;
+$card-margin: 0 1rem 0 0;
+
 .card {
-  margin: 0 1rem 0 0;
-  height: 393px;
+  margin: $card-margin;
+  height: $card-height;
   text-align: center;
-  background-color: rgb(28, 30, 33);
+  background-color: $card-bg;
 
   .card-header {
     width: 100%;
