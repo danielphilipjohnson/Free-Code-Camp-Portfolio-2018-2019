@@ -1,69 +1,36 @@
 
 @import "./config";
-
-
-
-@import "./sitewide/navbar";
-
 @import "./defaults";
-
 @import "./social-icons";
 @import "./animations";
-@import "./components/jumbotron";
+@import "./utilities/container";
+@import "./utilities/general";
+
 @import "./components/cards/card";
 @import "./components/hero";
 @import "./components/badge";
 
-// @import "./layout/about";
+
+@import "./sitewide/navbar";
+@import "./sitewide/footer";
+
 @import "./layout/album";
 @import "./layout/music";
 @import "./layout/about";
-
 @import "./layout/award";
 @import "./layout/video";
-@import "./sitewide/footer";
-@import "./utilities/container";
-@import "./utilities/general";
 
-body {
-  // background: rgba(0, 0, 0, 0.5);
-  background-color: #fff;
-}
-.about {
-  background: #141414;
-  color: #fff;
-  padding-bottom: 3rem;
-}
 
-.nav__item {
-  width: 12px;
-  height: 12px;
-  display: block;
-  margin: 0 0 0 0.5rem;
-  border: solid 2px white;
-  border-radius: 50%;
-  cursor: pointer;
-}
 
-.section-header {
-  header {
-    text-align: center;
-    color: #fff;
-    position: relative;
 
-    &.alt {
-      color: #000;
-    }
+// .nav__item {
+//   width: 12px;
+//   height: 12px;
+//   display: block;
+//   margin: 0 0 0 0.5rem;
+//   border: solid 2px white;
+//   border-radius: 50%;
+//   cursor: pointer;
+// }
 
-    h3 {
-      padding: 0.75rem 0.5rem 0 0.5rem;
-      margin: 0;
-      font-size: 3rem;
-    }
-  }
-
-  h2 {
-    font-size: 2.25rem;
-  }
-}
 
