@@ -9,10 +9,6 @@
   
   
   &.socials {
-<<<<<<< HEAD
-=======
-    display: grid;
->>>>>>> 9b73a7c3e09a3eff749869fe7660b490b7412f16
     display: none;
     grid-template-rows: 1fr 4fr;
   }
@@ -62,7 +58,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     list-style: none;
     
     .nav-item {
@@ -72,12 +67,6 @@
       a {
         color: #fff;
       }
-=======
-
-    .nav-item {
-      font-size: 2rem;
-      padding: 0.5rem;
->>>>>>> 9b73a7c3e09a3eff749869fe7660b490b7412f16
     }
   }
 }
@@ -94,15 +83,10 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-<<<<<<< HEAD
      
       .nav-item {
         font-size: 1.7rem;
         
-=======
-      .nav-item {
-        font-size: 1.7rem;
->>>>>>> 9b73a7c3e09a3eff749869fe7660b490b7412f16
       }
     }
   }
