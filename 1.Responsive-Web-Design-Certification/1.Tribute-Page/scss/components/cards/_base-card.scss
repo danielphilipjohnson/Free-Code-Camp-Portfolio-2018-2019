@@ -1,10 +1,9 @@
 .card {
-  margin: 1rem;
-  
+  margin: 0 1rem 0 0;
+  height: 393px;
+  text-align: center;
   background-color: rgb(28, 30, 33);
- 
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+
   .card-header {
     width: 100%;
     img {
@@ -14,12 +13,21 @@
   }
   .card-body {
     padding: 0.5rem;
+    h3 {
+      margin: 0;
+    }
     ul {
       list-style: none;
       li {
-        padding: 0.5rem;
-        // border-bottom: 1px solid #eee;
+        padding: 0.35rem;
         color: rgb(176, 179, 184);
+        .title {
+          font-weight: 300;
+          font-size: 1.5rem;
+          span {
+            font-weight: 800;
+          }
+        }
       }
     }
   }
