@@ -9,7 +9,6 @@
   
   
   &.socials {
-    display: grid;
     display: none;
     grid-template-rows: 1fr 4fr;
   }
@@ -59,10 +58,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    list-style: none;
+    
     .nav-item {
       font-size: 2rem;
       padding: 0.5rem;
+      
+      a {
+        color: #fff;
+      }
     }
   }
 }
@@ -79,8 +83,10 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+     
       .nav-item {
         font-size: 1.7rem;
+        
       }
     }
   }

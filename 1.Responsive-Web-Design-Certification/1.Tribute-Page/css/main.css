@@ -344,7 +344,7 @@ cite {
     height: 500px; }
 
 .hero {
-  background: url("../img/topbanner.jpg") top center/cover;
+  background: url(https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/1.Tribute-Page/img/topbanner.jpg) top center/cover;
   height: 40vh;
   position: relative; }
   .hero .content {
@@ -377,12 +377,6 @@ cite {
     background-color: green;
     color: #fff;
     font-size: 1.3rem; }
-
-.badge {
-  display: inline-block;
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin-left: 1rem; }
   .badge.nominated {
     background-color: red;
     color: #fff;
@@ -400,36 +394,20 @@ cite {
   border-bottom: 3px solid #1ed760; }
   .navbar .social-icons .facebook:hover a {
     color: #4267b2 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .twitter:hover a {
     color: #1da1f2 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .youtube:hover a {
     color: #ff0000 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .instagram:hover a {
     color: #c13584 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .linkedin:hover a {
     color: #2867b2 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .github:hover a {
     color: #000 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .spotify:hover a {
     color: #1ed760 !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .social-icons .apple:hover a {
     color: #a1aaac !important; }
-  .navbar .social-icons a {
-    color: #fff; }
   .navbar .navbar__items {
     list-style: none;
     width: 100%;
@@ -479,7 +457,6 @@ cite {
   top: 0;
   color: #fff; }
   .subnav.socials {
-    display: grid;
     display: none;
     grid-template-rows: 1fr 4fr; }
   .subnav .hamburger {
@@ -511,10 +488,13 @@ cite {
   .subnav .social-icons {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    list-style: none; }
     .subnav .social-icons .nav-item {
       font-size: 2rem;
       padding: 0.5rem; }
+      .subnav .social-icons .nav-item a {
+        color: #fff; }
 
 @media screen and (min-width: 500px) {
   .subnav .social-icons
@@ -642,7 +622,7 @@ cite {
 
 .music.overlay {
   position: relative;
-  background-image: url("../img/Legends_Never_Die.png");
+  background-image: url("https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/1.Tribute-Page/img/Legends_Never_Die.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -746,7 +726,6 @@ cite {
     margin-right: 0.5rem;
     margin-bottom: 0.75rem; }
   .awards .award__content {
-    color: #fff;
     text-align: center;
     padding: 1.5rem 2rem 0 2rem;
     border: 1px solid #eee;
@@ -766,8 +745,7 @@ cite {
     grid-template-columns: repeat(3, 1fr); } }
 
 .video__container {
-  background: rgba(0, 0, 0, 0.9);
-  background: url(../img/bg.jpg);
+  background: url(https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/1.Tribute-Page/img/bg.jpg);
   padding-top: 4rem;
   padding-bottom: 4rem; }
 

@@ -6,12 +6,13 @@ $badge-types: (
   "nominated": $badge-bgcolor-nominated,
 );
 
-@each $name, $badge-color in $badge-types {
-  .badge {
-    display: inline-block;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-left: 1rem;
+.badge {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 1rem;
+
+  @each $name, $badge-color in $badge-types {
     &.#{$name} {
       background-color: $badge-color;
       color: #fff;
