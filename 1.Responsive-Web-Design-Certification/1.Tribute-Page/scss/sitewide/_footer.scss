@@ -1,22 +1,9 @@
-
-@mixin main-hover {
-  border-bottom: 3px transparent solid;
-  padding-bottom: 0.5rem;
-  transition: border-color 0.5s;
-  &:hover {
-    border-color: $medium-color;
-  }
-}
-$main-color: #9B3CAB;
-$light-color: #f4f4f4;
-$medium-color: #3BA6B7;
-
-#main-footer {
+.main__footer {
   background: #000;
   color: #fff;
   padding: 1rem;
 
-  .footer-top {
+  .main__footer__top {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: space-between;
@@ -48,16 +35,15 @@ $medium-color: #3BA6B7;
         }
     
         @each $social, $color in $socialmedia-colors {
-    
           &.#{$social}:hover {
             background-color: #{$color};
-    
           }
         }
       }
     }
   }
-  .footer-bottom {
+
+  .main__footer__bottom {
     text-align: center;
     padding: 1.5rem 0;
 
@@ -87,8 +73,8 @@ $medium-color: #3BA6B7;
 
 
 @media screen and (min-width: 1000px){
-  #main-footer {
-    .footer-top {
+  .main__footer {
+    .main__footer__top {
       grid-template-columns: repeat(3, 1fr);
     }
   } 

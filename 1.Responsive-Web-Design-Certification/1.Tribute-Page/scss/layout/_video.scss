@@ -1,4 +1,4 @@
-.video {
+.video__container {
   background:rgba(0,0,0,0.9);
   background: url(../img/bg.jpg);
   padding-top: 4rem;
@@ -7,14 +7,14 @@
 }
 
 
-.more-video {
-  .video {
-    background: rgba(0, 0, 0, 0.9);
-    background: url(../img/bg.jpg);
-    padding-bottom: 4rem;
-  }
+.more__video__container {
+  // .video {
+  //   background: rgba(0, 0, 0, 0.9);
+  //   background: url(../img/bg.jpg);
+  //   padding-bottom: 4rem;
+  // }
 
-  padding: 0;
+  // padding: 0;
   
   header {
     h3 {
@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .more-video {
+  .more__video__container {
     padding: 2rem 4rem;
   }
 }

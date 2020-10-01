@@ -1,13 +1,12 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
+@import "./config";
+
+
 
 @import "./sitewide/navbar";
 
 @import "./defaults";
-@import "./config";
+
 @import "./social-icons";
 @import "./animations";
 @import "./components/jumbotron";

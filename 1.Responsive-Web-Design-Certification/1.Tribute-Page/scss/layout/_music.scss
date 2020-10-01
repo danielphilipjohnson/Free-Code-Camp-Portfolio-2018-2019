@@ -2,7 +2,6 @@
 
   &.overlay {
     position: relative;
-
     background-image: url("../img/Legends_Never_Die.png");
     background-size: cover;
     background-position: center;
@@ -19,7 +18,7 @@
     }
   }
 
-  .content {
+  .music__content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: self-end;
@@ -27,7 +26,7 @@
     z-index: 1000;
 
 
-    .album-img {
+    .album__img {
       padding: 0 2rem;
       color: #fff;
       margin:  0 auto;
@@ -44,11 +43,10 @@
       }
     }
 
-    .album-info {
+    .album__info {
       text-align: center;
       color: #fff;
-
-      .album-tracks {
+      .album__info__tracks {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: flex-start;
@@ -76,14 +74,15 @@
 }
 
 @media screen and (min-width: 1148px) {
+
   .music {
     &.overlay {
       padding: 3rem;
     }
 
-    .content {
+    .music__content {
       grid-template-columns: 1fr 2fr;
-      .album-img {
+      .album__img {
         text-align: left;
         .img-badges {
           display: flex;
@@ -95,20 +94,22 @@
           }
         }
       }
-      .album-info {
+      .album__info {
         text-align: left;
-        .album-tracks {
+
+        .album__info__tracks {
+
           .odd {
             float: left;
             width: 50%;
           }
+
           .even {
             float: right;
             width: 50%;
           }
 
-          .odd,
-          .even {
+          li {
             list-style: none;
             text-align: left;
             font-size: 0.9rem;
@@ -122,10 +123,4 @@
       }
     }
   }
-}
-
-
-.google-play, .spotify-badge {
-  width: 139px;
-  height: auto;
 }

@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <nav id="nav-bar" class="navbar-top">
+    <nav id="nav-bar" class="navbar__top">
       <header class="top-header">
         <h1 class="fade-in-left">Juice WRLD</h1>
       </header>
@@ -168,7 +168,7 @@
     </nav>
 
     <main>
-      <section class="section-header video">
+      <section class="section-header video__container">
         <header>
           <h3>Latest</h3>
         </header>
@@ -209,42 +209,41 @@
 
           </div>
         </div>
-
       </section>
 
-      <section class="section-header more-video">
+      <section class="section-header more__video__container">
         <header>
           <h3>More Videos</h3>
         </header>
 
         <div class="video-cards">
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/3Klj_pjjqUM"
+          <div class="video-card-spotify">
+            <iframe class="spotify-album" src="https://www.youtube.com/embed/3Klj_pjjqUM"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/TNAuyONWorE"
+          <div class="video-card-spotify">
+            <iframe class="spotify-album" src="https://www.youtube.com/embed/TNAuyONWorE"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/0Hi2KQWmNM0"
+          <div class="video-card-spotify">
+            <iframe class="spotify-album" src="https://www.youtube.com/embed/0Hi2KQWmNM0"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/1VSZtyenNlA"
+          <div class="video-card-spotify">
+            <iframe class="spotify-album" src="https://www.youtube.com/embed/1VSZtyenNlA"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/1VSZtyenNlA"
+          <div class="video-card-spotify">
+            <iframe class="spotify-album" src="https://www.youtube.com/embed/1VSZtyenNlA"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="video-card">
-            <iframe src="https://www.youtube.com/embed/EfP3Ya5-JoU"
+          <div class="video-card-spotify">
+            <iframe class="spotify-album" src="https://www.youtube.com/embed/EfP3Ya5-JoU"
               frameborder="0" allow="accelerometer; autoplay; clipboard-write;
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -257,10 +256,8 @@
         </header>
 
         <div class="container profile">
-
           <div class="bio">
-
-            <div class="profile-images">
+            <div class="profile__images">
               <img src="./img/profile2.jpeg" alt="">
               <img src="./img/profile1.jpeg" alt="">
             </div>
@@ -587,8 +584,8 @@
             Album
           </h3>
         </header>
-        <div class="content">
-          <div class="album-img">
+        <div class="music__content">
+          <div class="album__img">
             <img src="./img/albumcover.png" alt="">
             <h4 class="sub-title">July 10, 2020</h4>
             <h2 class="title">Legends Never Die</h2>
@@ -610,9 +607,9 @@
                 alt="google play">
             </div>
           </div>
-          <div class="album-info">
+          <div class="album__info">
             <h3>Tracks</h3>
-            <div class="album-tracks">
+            <div class="album__info__tracks">
               <ul>
                 <li class="odd">
                   <span><i class="fas fa-play"></i></span>
@@ -717,7 +714,7 @@
         </div>
       </section>
 
-      <section id="awards" class="container section-header music">
+      <section id="awards" class="container section-header">
         <header class="alt">
           <h3>Awards</h3>
         </header>
@@ -731,7 +728,6 @@
               <p class="subtitle">MTV Video Music Awards: 2018</p>
 
               <h4>Song of Summer<span class="badge nominated">Nominated</span></h4>
-
               <p>
                 Juice WRLD had everyone thinking about "Lucid Dreams" with his
                 debut performance at the 2018 MTV Video Music Awards on Monday
@@ -750,172 +746,176 @@
           </div>
 
           <div class="award">
-
             <div class="award__content">
               <div class="award__image">
                 <svg class="bet-logo" height="154px" viewBox="0 0 488 154"
                   version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>Fill 1</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs/>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-                      fill-rule="evenodd">
-                      <g id="Artboard" transform="translate(-1778.000000,
-                        -565.000000)" fill="#FFFFFF">
-                        <path d="M1892.7485,642.11135 C1899.89398,639.178986
-                          1905.97777,633.138826 1909.99364,625.635211
-                          C1909.38553,630.363715 1909.08739,635.364913
-                          1909.08739,640.726976 C1909.08739,646.709871
-                          1909.49188,652.462794 1910.25997,657.945751
-                          C1906.59315,651.095691 1900.76842,645.748172
-                          1892.7485,642.11135 Z M1875.48337,669.517952
-                          C1875.48337,679.983928 1864.09478,679.557617
-                          1864.09478,679.557617 L1815.88621,679.557617
-                          L1815.88621,659.499194 L1864.13569,659.499194
-                          C1876.0733,659.499194 1875.48337,669.517952
-                          1875.48337,669.517952 Z M1815.78895,604.68508
-                          L1864.04024,604.68508 C1875.97876,604.68508
-                          1875.3852,614.703838 1875.3852,614.703838
-                          C1875.3852,625.170723 1863.99843,624.742594
-                          1863.99843,624.742594 L1815.78895,624.742594
-                          L1815.78895,604.68508 Z M2162.38871,565
-                          L1977.43255,565 C1960.57464,565 1950.41772,567.308805
-                          1942.10511,572.387266 C1935.17779,576.774904
-                          1928.71404,582.777796 1923.63376,590.165062
-                          C1920.13147,595.100814 1917.33091,600.181093
-                          1915.14391,605.561335 C1915.14391,605.509524
-                          1915.14663,605.455894 1915.14663,605.403173
-                          C1915.14663,585.320208 1902.21642,569.15403
-                          1883.97504,566.383465 C1879.12383,565.691732
-                          1871.04665,565 1865.04375,565 L1778,565 L1778,719
-                          L1863.19398,719 C1885.35942,719 1895.05822,716.457588
-                          1903.36809,708.839441 C1910.98897,701.913027
-                          1914.91121,691.060736 1914.91121,678.36231
-                          C1914.91121,678.011445 1914.8903,677.674214
-                          1914.88394,677.327893 C1921.24133,695.38111
-                          1932.52357,708.463124 1947.18357,713.691567
-                          C1957.57501,717.382928 1970.9679,719 1990.12825,719
-                          L2025.54022,719 L2025.54022,679.434905
-                          L1999.98248,679.434905 C1969.23084,679.368549
-                          1959.15936,682.141842 1953.78639,659.732802
-                          L2025.54022,659.732802 L2025.54022,624.95984
-                          L1953.7164,624.916209 C1953.7164,624.916209
-                          1957.30232,604.565095 1978.6024,604.565095
-                          C1984.90344,604.565095 1989.09838,604.565095
-                          2000.17791,604.565095 L2049.32,604.565095 L2049.32,719
-                          L2093.96447,719 L2093.96447,604.565095
-                          L2150.07842,604.565095 L2162.38871,565 Z
-                          M2265.97678,624.801677 L2204.26716,624.801677
-                          L2185.31042,565.08908 L2166.3664,624.801677
-                          L2104.63951,624.801677 L2154.66512,660.57088
-                          L2135.45569,718.75094 L2185.31042,682.654506
-                          L2235.17878,718.75094 L2215.97661,660.57088
-                          L2265.97678,624.801677 Z" id="Fill-1" />
-                        </g>
+                <title>Fill 1</title>
+                <desc>Created with Sketch.</desc>
+                <defs/>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                    fill-rule="evenodd">
+                    <g id="Artboard" transform="translate(-1778.000000,
+                      -565.000000)" fill="#FFFFFF">
+                      <path d="M1892.7485,642.11135 C1899.89398,639.178986
+                        1905.97777,633.138826 1909.99364,625.635211
+                        C1909.38553,630.363715 1909.08739,635.364913
+                        1909.08739,640.726976 C1909.08739,646.709871
+                        1909.49188,652.462794 1910.25997,657.945751
+                        C1906.59315,651.095691 1900.76842,645.748172
+                        1892.7485,642.11135 Z M1875.48337,669.517952
+                        C1875.48337,679.983928 1864.09478,679.557617
+                        1864.09478,679.557617 L1815.88621,679.557617
+                        L1815.88621,659.499194 L1864.13569,659.499194
+                        C1876.0733,659.499194 1875.48337,669.517952
+                        1875.48337,669.517952 Z M1815.78895,604.68508
+                        L1864.04024,604.68508 C1875.97876,604.68508
+                        1875.3852,614.703838 1875.3852,614.703838
+                        C1875.3852,625.170723 1863.99843,624.742594
+                        1863.99843,624.742594 L1815.78895,624.742594
+                        L1815.78895,604.68508 Z M2162.38871,565
+                        L1977.43255,565 C1960.57464,565 1950.41772,567.308805
+                        1942.10511,572.387266 C1935.17779,576.774904
+                        1928.71404,582.777796 1923.63376,590.165062
+                        C1920.13147,595.100814 1917.33091,600.181093
+                        1915.14391,605.561335 C1915.14391,605.509524
+                        1915.14663,605.455894 1915.14663,605.403173
+                        C1915.14663,585.320208 1902.21642,569.15403
+                        1883.97504,566.383465 C1879.12383,565.691732
+                        1871.04665,565 1865.04375,565 L1778,565 L1778,719
+                        L1863.19398,719 C1885.35942,719 1895.05822,716.457588
+                        1903.36809,708.839441 C1910.98897,701.913027
+                        1914.91121,691.060736 1914.91121,678.36231
+                        C1914.91121,678.011445 1914.8903,677.674214
+                        1914.88394,677.327893 C1921.24133,695.38111
+                        1932.52357,708.463124 1947.18357,713.691567
+                        C1957.57501,717.382928 1970.9679,719 1990.12825,719
+                        L2025.54022,719 L2025.54022,679.434905
+                        L1999.98248,679.434905 C1969.23084,679.368549
+                        1959.15936,682.141842 1953.78639,659.732802
+                        L2025.54022,659.732802 L2025.54022,624.95984
+                        L1953.7164,624.916209 C1953.7164,624.916209
+                        1957.30232,604.565095 1978.6024,604.565095
+                        C1984.90344,604.565095 1989.09838,604.565095
+                        2000.17791,604.565095 L2049.32,604.565095 L2049.32,719
+                        L2093.96447,719 L2093.96447,604.565095
+                        L2150.07842,604.565095 L2162.38871,565 Z
+                        M2265.97678,624.801677 L2204.26716,624.801677
+                        L2185.31042,565.08908 L2166.3664,624.801677
+                        L2104.63951,624.801677 L2154.66512,660.57088
+                        L2135.45569,718.75094 L2185.31042,682.654506
+                        L2235.17878,718.75094 L2215.97661,660.57088
+                        L2265.97678,624.801677 Z" id="Fill-1" />
                       </g>
-                    </svg>
-                  </div>
-                  <p class="subtitle"> BET Hip-Hop Awards: 2018</p>
-                  <h4>Best New Hip Hop Artist<span class="badge nominated">Nominated</span></h4>
-
-                  <p>The 2018 BET Hip Hop Awards are a recognition ceremony held on October 16, 2018 at the Fillmore Miami Beach at Jackie Gleason Theater in Miami Beach, Florida. The nominations were announced on September 9, 2018.</p>
-                  <p>
-                    <ul>
-                      <li>BlocBoy JB</li>
-                      <li>Juice Wrld</li>
-                      <li>Lil Baby</li>
-                      <li>Rich the Kid</li>
-                      <li>XXXTentacion -- WINNER </li>
-                    </ul>
-                  </p>
-                </div>
+                </g>
+                </svg>
               </div>
-
-              <div class="award">
-                <div class="award__content">
-                  <div class="award__image">
-                    <img src="./img/awards/billboardaward.jpg" alt="top new
-                      artist">
-                  </div>
-                  <p class="subtitle">Billboard Music Awards: 2019 </p>
-                  <h4>Top New Artist <span class="badge won">Won</span></h4>
-
-                  <p>The Billboard Music Award is an honor given out annually by
-                    Billboard, a publication and music popularity chart covering
-                    the
-                    music business. </p>
-                  <p>
-                    <ul>
-                      <li>Bazzi</li>
-                      <li>Juice WRLD -- WINNER</li>
-                      <li>Lil Baby</li>
-                      <li>Dua Lipa</li>
-                      <li>Ella Mai</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-
-
-        <!-- Footer -->
-        <footer id="main-footer">
-          <div class="container">
-            <div class="footer-top">
-              <div class="disclaimer">
-                <h4>Content Disclaimer</h4>
-                <p> The content of this project came from
-                  <a
-                    href="https://en.wikipedia.org/wiki/Juice_Wrld#Discography">Wikipedia</a>,
-                  <a
-                    href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz/about">Spotify</a>
-                  and
-                  <a href="https://www.youtube.com/channel/UC0BletW9phE4xHFM44q4qKA">Youtube</a>
-                </p>
-              </div>
-              <div class="techs">
-                <h4>Techs Used</h4>
-                <p>SASS</p>
-              </div>
-
-              <ul class="social-icons-footer">
-                <li class="nav-item twitter">
-                  <a href="https://twitter.com/danielp_johnson">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-
-                <li class="nav-item facebook">
-                  <a
-                    href="httphttp://127.0.0.1:5500/Free-Code-Camp-Portfolio-2018-2020/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage/index.htmls://www.facebook.com/DanielPhilipJohnson">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </li>
-
-                <li class="nav-item github">
-                  <a href="https://github.com/danielphilipjohnson/">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-
-                <li class="nav-item linkedin">
-                  <a href="https://www.linkedin.com/in/daniel-philip-johnson/">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer-bottom">
-              <p>Copyright &copy; 2020. All Rights Reserved | Designed and built
-                with <span class="heart">❤️</span>
-                by <a href="">Daniel Philip Johnson </a></p>
+              <p class="subtitle"> BET Hip-Hop Awards: 2018</p>
+              <h4>Best New Hip Hop Artist<span class="badge nominated">Nominated</span></h4>
+              <p>The 2018 BET Hip Hop Awards are a recognition ceremony held
+                on October 16, 2018 at the Fillmore Miami Beach at Jackie
+                Gleason Theater in Miami Beach, Florida. The nominations
+                were announced on September 9, 2018.</p>
+              <p>
+                <ul>
+                  <li>BlocBoy JB</li>
+                  <li>Juice Wrld</li>
+                  <li>Lil Baby</li>
+                  <li>Rich the Kid</li>
+                  <li>XXXTentacion -- WINNER </li>
+                </ul>
+              </p>
             </div>
           </div>
-        </footer>
+
+          <div class="award">
+            <div class="award__content">
+              <div class="award__image">
+                <img src="./img/awards/billboardaward.jpg" alt="top new
+                  artist">
+              </div>
+              <p class="subtitle">Billboard Music Awards: 2019 </p>
+              <h4>Top New Artist <span class="badge won">Won</span></h4>
+
+              <p>The Billboard Music Award is an honor given out annually by
+                Billboard, a publication and music popularity chart covering
+                the
+                music business. </p>
+              <p>
+                <ul>
+                  <li>Bazzi</li>
+                  <li>Juice WRLD -- WINNER</li>
+                  <li>Lil Baby</li>
+                  <li>Dua Lipa</li>
+                  <li>Ella Mai</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="main__footer" id="main-footer">
+      <div class="container">
+        <div class="main__footer__top">
+          <div class="disclaimer">
+            <h4>Content Disclaimer</h4>
+            <p> The content of this project came from
+              <a
+                href="https://en.wikipedia.org/wiki/Juice_Wrld#Discography">Wikipedia</a>,
+              <a
+                href="https://open.spotify.com/artist/4MCBfE4596Uoi2O4DtmEMz/about">Spotify</a>
+              and
+              <a
+                href="https://www.youtube.com/channel/UC0BletW9phE4xHFM44q4qKA">Youtube</a>
+            </p>
+          </div>
+          <div class="techs">
+            <h4>Techs Used</h4>
+            <p>SASS</p>
+          </div>
+
+          <ul class="social-icons-footer">
+            <li class="nav-item twitter">
+              <a href="https://twitter.com/danielp_johnson">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+
+            <li class="nav-item facebook">
+              <a
+                href="httphttp://127.0.0.1:5500/Free-Code-Camp-Portfolio-2018-2020/1.Responsive-Web-Design-Certification/5.Personal-Portfolio-Webpage/index.htmls://www.facebook.com/DanielPhilipJohnson">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+
+            <li class="nav-item github">
+              <a href="https://github.com/danielphilipjohnson/">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+
+            <li class="nav-item linkedin">
+              <a href="https://www.linkedin.com/in/daniel-philip-johnson/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__footer__bottom">
+          <p>Copyright &copy; 2020. All Rights Reserved | Designed and built
+            with <span class="heart">❤️</span>
+            by <a href="">Daniel Philip Johnson </a></p>
+        </div>
+      </div>
+    </footer>
 
 
         <script>
