@@ -9,7 +9,9 @@
     - Personal Portfolio
 ## Tribute Page
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591612960/fcc/responsive/tributepage_cfeojq.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/1.Responsive-Web-Design-Certification/1.Tribute-Page/img/screenshot/tribute-page-pc.png)
+
+- https://codepen.io/danielphilipjohnson/full/VwaJrPg
 
 ## Survery Form
 
