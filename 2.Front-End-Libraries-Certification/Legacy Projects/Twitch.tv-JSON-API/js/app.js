@@ -55,7 +55,7 @@ twitchApp.controller('ChannelController', function ChannelController($scope, $ht
         .then(function successCallback(response) {
           response.data.onlinestatus = onlineStatus;
           if (response.data.video_banner === null) {
-            response.data.video_banner = 'https://dummyimage.com/600x400/6441a4/fcfcfc.png&text=6e6f7420666f756e64';
+            response.data.video_banner = 'https://dummyimage.com/1920x1080/6441a4/fcfcfc.png&text=6e6f7420666f756e64';
           }
           if (response.data.logo === null) {
             response.data.logo = 'https://dummyimage.com/300x300/6441a4/fcfcfc.png&text=6c6f676f0d0a';
@@ -291,12 +291,12 @@ twitchApp.controller("FavGameComponent", function FavGameComponent($scope) {
       viewers: "56,203",
       tags: ['FPS', 'Shooter'],
     },
-    {
-      image: "./img/categories/Apex-Legends.jpg",
-      title: "Apex Legends",
-      viewers: "45,654",
-      tags: ['FPS', 'Shooter'],
-    },
+    // {
+    //   image: "./img/categories/Apex-Legends.jpg",
+    //   title: "Apex Legends",
+    //   viewers: "45,654",
+    //   tags: ['FPS', 'Shooter'],
+    // },
   ];
 });
 
