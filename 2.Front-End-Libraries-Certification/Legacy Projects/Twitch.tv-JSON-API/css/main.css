@@ -1,3 +1,21 @@
+.d-grid {
+  display: grid;
+}
+.justify-items-center {
+  justify-items: center;
+}
+.grid-column-1 {
+  grid-template-columns: repeat(1,1fr);
+}
+
+.grid-column-2 {
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+
 
 
 #channel {
@@ -6,14 +24,9 @@
 }
 
 
-/* .card-group {
-  max-width: 100%;
-  justify-content:center
-} */
-
-.game-card {
+/* .game-card {
   padding: 0;
-}
+} */
 
 .live {
   display:inline-block;
@@ -63,7 +76,6 @@ main {
 
 .media-body .viewers  {
   font-size: .75rem;
-
 }
 
 
@@ -72,114 +84,78 @@ main {
 
 
 
-/* footer */
+/* footer csss variables */
 
 .main-footer {
-  text-align: center;
-  padding: 1rem;
+
   background: #7D3DAF;
-  color: #fff;
 }
 
 
-.main-footer .footer-top {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  justify-items: center;
-  align-items: center;
-  border-bottom: 1px solid #8b8a8a;
-  padding: 1rem 0;
-}
 
 
-.main-footer .footer-top .sitemap {
-  display: flex;
-}
+@media screen and (min-width:768px) {
+  .w-min-768 {
+      grid-template-columns: repeat(2,1fr);
+  }
+ }
 
-.main-footer .footer-top .sitemap > * {
-  padding: 1rem;
-}
 
 .main-footer .footer-top .sitemap > * a {
-  color: #fff;
-  font-weight: 800;
+  /* broken padding-bottom: 2.5rem; */
   border-bottom: 3px solid transparent;
-  padding-bottom: .5rem;
   transition: border-color .5s;
 }
 
 
-
-
-.main-footer .footer-top .social-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.no-list {
   list-style: none;
-  color: #fff;
 }
 
 
-.main-footer .footer-top .social-icons .nav-item {
+
+.social-icons .nav-item {
   padding: 7px;
   background-color: hsla(0,0%,100%,.15);
-  margin: .5rem;
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  text-align: center;
   font-size: 1.25rem;
   line-height: 1.75;
   transition: all 1.25s;
 }
 
-.main-footer .footer-top .social-icons .nav-item a {
-  color: #fff;
-}
+
 
 .social-icons a {
   font-size: 1.25rem;
 }
 
-
-.main-footer .footer-top .social-icons .nav-item.twitter:hover {
+.social-icons .nav-item.twitter:hover {
   background-color: #1da1f2;
   opacity: .8;
   transform: scale(1.5);
 }
 
-.main-footer .footer-top .social-icons .nav-item.facebook:hover {
+.social-icons .nav-item.facebook:hover {
   background-color: #4267b2;
   opacity: .8;
   transform: scale(1.5);
 }
 
-
-.main-footer .footer-top .social-icons .nav-item.github:hover {
+.social-icons .nav-item.github:hover {
   background-color: #000;
   opacity: .8;
   transform: scale(1.5);
 }
 
-.main-footer .footer-top .social-icons .nav-item.linkedin:hover {
+.social-icons .nav-item.linkedin:hover {
   background-color: #2867b2;
   opacity: .8;
   transform: scale(1.5);
 }
 
-.main-footer .footer-bottom {
-  text-align: center;
-  padding: 1.5rem 0;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-}
 
-
-
-.heart-container {
-  padding: 2rem;
-}
 
 
 .heart {
@@ -206,4 +182,9 @@ main {
 .main-footer .footer-bottom .author {
   color: #fff;
   transition: all .5s;
+}
+.main-footer .footer-bottom .author:hover {
+  opacity: .8;
+  color: #94c85a;
+  transform: scale(2);
 }
