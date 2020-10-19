@@ -42,8 +42,6 @@ twitchApp.controller('ChannelController', function ChannelController($scope, $ht
         } else if (response.data.stream === undefined) {
           console.log("Account Closed");
           onlineStatus = "Account Closed";
-          // get request
-          //channelRequest(makeURL('stream', channel), onlineStatus)
         }
 
       }, function errorCallback(response) {
@@ -291,12 +289,12 @@ twitchApp.controller("FavGameComponent", function FavGameComponent($scope) {
       viewers: "56,203",
       tags: ['FPS', 'Shooter'],
     },
-    // {
-    //   image: "./img/categories/Apex-Legends.jpg",
-    //   title: "Apex Legends",
-    //   viewers: "45,654",
-    //   tags: ['FPS', 'Shooter'],
-    // },
+    {
+      image: "./img/categories/Apex-Legends.jpg",
+      title: "Apex Legends",
+      viewers: "45,654",
+      tags: ['FPS', 'Shooter'],
+    },
   ];
 });
 

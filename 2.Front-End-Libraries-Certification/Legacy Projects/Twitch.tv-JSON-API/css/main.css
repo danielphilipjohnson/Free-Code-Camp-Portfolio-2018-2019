@@ -1,3 +1,12 @@
+/* elements */
+aside {
+  background-color: #efeff1;
+  position: fixed;
+  width: 55px;
+  z-index: 1000;
+}
+
+/* utils */
 .d-grid {
   display: grid;
 }
@@ -12,26 +21,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (min-width: 768px) {
-  #channel {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .card-group {
-    flex-direction: row !important;
-  }
-  .fave-card {
-    min-width: 33.3%;
-  }
-  .game-card {
-    width: 250px;
-  }
+.no-list {
+  list-style: none;
 }
 
-/*  */
-
-/* .game-card {
-  max-width: 250px;
-} */
 
 .live {
   display: inline-block;
@@ -44,35 +37,13 @@
   height: 50px;
 }
 
-/* .card-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} */
-
-aside {
-  background-color: #efeff1;
-  position: fixed;
-  width: 55px;
-  z-index: 1000;
-}
 .content {
   background-color: #f7f7f8;
   width: 100%;
   margin: 0 0 0 55px;
 }
 
-/* footer csss variables */
-
-.main-footer {
-  background: #7d3daf;
-  /* width: 100%; */
-  margin: 0 0 0 40px;
-}
-
-main {
-  margin-top: 3rem;
-}
+/* components */
 
 .navbar {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 0px 2px rgba(0, 0, 0, 0.1);
@@ -90,20 +61,19 @@ main {
   font-size: 0.75rem;
 }
 
-@media screen and (min-width: 768px) {
-  .w-min-768 {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+
+/* footer csss variables */
+
+.main-footer {
+  background: #7d3daf;
+  /* width: 100%; */
+  margin: 0 0 0 40px;
 }
 
-.main-footer .footer-top .sitemap > * a {
-  /* broken padding-bottom: 2.5rem; */
+.sitemap > * a {
   border-bottom: 3px solid transparent;
   transition: border-color 0.5s;
-}
-
-.no-list {
-  list-style: none;
 }
 
 .social-icons .nav-item {
@@ -165,14 +135,32 @@ main {
   transition: background 1.5s steps(28);
 }
 
-.main-footer .footer-bottom .author {
+.footer-bottom .author {
   color: #fff;
   transition: all 0.5s;
 }
-.main-footer .footer-bottom .author:hover {
+.footer-bottom .author:hover {
   opacity: 0.8;
   color: #94c85a;
   transform: scale(2);
+}
+
+@media screen and (min-width: 768px) {
+  .w-min-768 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #channel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-group {
+    flex-direction: row !important;
+  }
+  .fave-card {
+    min-width: 33.3%;
+  }
+  .game-card {
+    width: 250px;
+  }
 }
 
 @media screen and (min-width: 991px) {
@@ -184,7 +172,7 @@ main {
   }
   #channel {
     grid-template-columns: repeat(4, 1fr);
-}
+  }
 
   .fave-card {
     min-width: 150px;
