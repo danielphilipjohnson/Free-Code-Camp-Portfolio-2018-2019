@@ -12,7 +12,7 @@ var users = [
 // https://wind-bow.glitch.me/twitch-api/users/ESL_SC2
 // https://wind-bow.glitch.me/twitch-api/channels/freecodecamp
 var channels = ["freecodecamp","test_channel","ESL_SC2", "OgamingSC2","ukmasters",];
-
+https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/no-banner.png
 twitchApp.controller('ChannelController', function ChannelController($scope, $http, $sce) {
 
   var channels = ["freecodecamp", "test_channel",    "cretetion", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
@@ -53,7 +53,7 @@ twitchApp.controller('ChannelController', function ChannelController($scope, $ht
         .then(function successCallback(response) {
           response.data.onlinestatus = onlineStatus;
           if (response.data.video_banner === null) {
-            response.data.video_banner = './img/no-banner.png';
+            response.data.video_banner = 'https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/no-banner.png';
           }
           console.log(response.data.logo);
           if (response.data.logo === null) {
@@ -116,68 +116,68 @@ twitchApp.controller('ChannelController', function ChannelController($scope, $ht
 twitchApp.controller("PopularLiveGameComponent", function LiveGameComponent($scope) {
   $scope.popularlivegames = [
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "auronplay",
       game: "Among Us",
       viewers: " 125,513"
     },
   
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "ZeratoR",
       game: " Special Events",
       viewers: "79,746"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "csgomc_ru",
       game: "Counter-Strike: Global Offensive",
       viewers: "62,959"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "RocketLeague",
       game: "Rocket League",
       viewers: "61,183"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "Etoiles",
       game: "Rocket League",
       viewers: "61,183"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "Etoiles",
       game: "Special Events",
       viewers: "46,923"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "Squeezie",
       game: "Special Events",
       viewers: "43,559"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "benjyfishy",
       game: "Fortnite",
       viewers: "33,217"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "Mongraal",
       game: "Fortnite",
       viewers: "32,042"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "DreamHackCS",
       game: "Counter-Strike: Global Offensive",
       viewers: "28,370"
     },
     {
-      image: "./img/profile.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/profile.jpg",
       username: "dota2mc_ru",
       game: "Dota 2",
       viewers: "23,713"
@@ -191,7 +191,7 @@ twitchApp.controller("PopularLiveGameComponent", function LiveGameComponent($sco
 twitchApp.controller("LiveGameComponent", function LiveGameComponent($scope) {
   $scope.livegames = [
     {
-      image: "./img/stream.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/stream.jpg",
       username: "Riot Games",
       title: "Worlds Cooldown | Quarterfinals |",
       game: "League of Legends",
@@ -200,28 +200,28 @@ twitchApp.controller("LiveGameComponent", function LiveGameComponent($scope) {
   
 
     {
-      image: "./img/stream.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/stream.jpg",
       username: "ibai",
       title: "  WORLDS 2020 | TES VS FNATIC |",
       game: "League of Legends",
       tags: ['Spanish'],
     },
     {
-      image: "./img/stream.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/stream.jpg",
       username: "LVPes",
       title: "LEAGUE OF LEGENDS - WORLDS",
       game: "League of Legends",
       tags: ['Esports', 'Spanish'],
     },
     {
-      image: "./img/stream.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/stream.jpg",
       username: "LCK_Korea",
       title: "[2020 LoL 월드 챔피언십] 8강전 3일차 -",
       game: "Among Us",
       tags: ['Esports', 'English'],
     },
     {
-      image: "./img/stream.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/stream.jpg",
       username: "auronplay",
       title: "Worlds Cooldown | Quarterfinals |",
       game: "Among Us",
@@ -231,67 +231,64 @@ twitchApp.controller("LiveGameComponent", function LiveGameComponent($scope) {
 });
 
 
-
-
-
 twitchApp.controller("FavGameComponent", function FavGameComponent($scope) {
   $scope.games = [
     {
-      image: "./img/categories/League-of-Legends.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/League-of-Legends.jpg",
       title: "League of Legends",
       viewers: "1,266,932",
       tags: ['MOBA', 'Action'],
     },
     {
-      image: "./img/categories/Special-Events.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Special-Events.jpg",
       title: "Special Events",
       viewers: "223,522",
       tags: ['IRL'],
     },
     {
-      image: "./img/categories/Just-Chatting.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Just-Chatting.jpg",
       title: "Just Chatting",
       viewers: "167,380",
       tags: ['IRL'],
     },
     {
-      image: "./img/categories/FIFA-21.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/FIFA-21.jpg",
       title: "FIFA 21",
       viewers: "96,532",
       tags: ['Sports Game', 'Action'],
     },
     {
-      image: "./img/categories/Counter-Strike-Global-Offensive.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Counter-Strike-Global-Offensive.jpg",
       title: "Counter-Strike Global Offensive",
       viewers: "66,863",
       tags: ['FPS', 'Shooter'],
     },
     {
-      image: "./img/categories/Among-Us.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Among-Us.jpg",
       title: "Among Us",
       viewers: "65,445",
       tags: ['Strategy', 'Survival'],
     },
     {
-      image: "./img/categories/Fortnite.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Fortnite.jpg",
       title: "Fortnite",
       viewers: "70,703",
       tags: ['Shooter', 'Action'],
     },
     {
-      image: "./img/categories/Dota-2.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Dota-2.jpg",
       title: "Dota 2",
       viewers: "52,868",
       tags: ['MOBA', 'Action'],
     },
     {
-      image: "./img/categories/Call-Of-Duty-Modern-Warfare.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Call-Of-Duty-Modern-Warfare.jpg",
       title: "Call-Of-Duty-Modern-Warfare",
       viewers: "56,203",
       tags: ['FPS', 'Shooter'],
     },
     {
-      image: "./img/categories/Apex-Legends.jpg",
+      image: "https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/Legacy%20Projects/Twitch.tv-JSON-API/img/categories/Apex-Legends.jpg",
       title: "Apex Legends",
       viewers: "45,654",
       tags: ['FPS', 'Shooter'],
