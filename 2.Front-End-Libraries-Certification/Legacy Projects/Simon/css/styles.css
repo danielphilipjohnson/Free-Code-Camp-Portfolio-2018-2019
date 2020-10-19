@@ -4,6 +4,10 @@ body {
   background: url("http://res.cloudinary.com/undreamtmayhem/image/upload/v1501200374/simon/floor.jpg");
   background-size: cover;
   margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .simon {

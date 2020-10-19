@@ -266,6 +266,9 @@ cite {
   .top-header h1 {
     margin: 0; }
 
+#image {
+  margin: 0 auto; }
+
 @media screen and (max-width: 500px) {
   .hide-sm {
     display: none !important; } }
