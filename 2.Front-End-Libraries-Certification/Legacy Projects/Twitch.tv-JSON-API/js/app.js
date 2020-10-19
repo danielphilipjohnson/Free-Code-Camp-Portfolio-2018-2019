@@ -53,8 +53,9 @@ twitchApp.controller('ChannelController', function ChannelController($scope, $ht
         .then(function successCallback(response) {
           response.data.onlinestatus = onlineStatus;
           if (response.data.video_banner === null) {
-            response.data.video_banner = 'https://dummyimage.com/1920x1080/6441a4/fcfcfc.png&text=6e6f7420666f756e64';
+            response.data.video_banner = './img/no-banner.png';
           }
+          console.log(response.data.logo);
           if (response.data.logo === null) {
             response.data.logo = 'https://dummyimage.com/300x300/6441a4/fcfcfc.png&text=6c6f676f0d0a';
           }
@@ -115,68 +116,68 @@ twitchApp.controller('ChannelController', function ChannelController($scope, $ht
 twitchApp.controller("PopularLiveGameComponent", function LiveGameComponent($scope) {
   $scope.popularlivegames = [
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "auronplay",
       game: "Among Us",
       viewers: " 125,513"
     },
   
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "ZeratoR",
       game: " Special Events",
       viewers: "79,746"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "csgomc_ru",
       game: "Counter-Strike: Global Offensive",
       viewers: "62,959"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "RocketLeague",
       game: "Rocket League",
       viewers: "61,183"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "Etoiles",
       game: "Rocket League",
       viewers: "61,183"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "Etoiles",
       game: "Special Events",
       viewers: "46,923"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "Squeezie",
       game: "Special Events",
       viewers: "43,559"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "benjyfishy",
       game: "Fortnite",
       viewers: "33,217"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "Mongraal",
       game: "Fortnite",
       viewers: "32,042"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "DreamHackCS",
       game: "Counter-Strike: Global Offensive",
       viewers: "28,370"
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/profile.jpg",
       username: "dota2mc_ru",
       game: "Dota 2",
       viewers: "23,713"
@@ -190,7 +191,7 @@ twitchApp.controller("PopularLiveGameComponent", function LiveGameComponent($sco
 twitchApp.controller("LiveGameComponent", function LiveGameComponent($scope) {
   $scope.livegames = [
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/stream.jpg",
       username: "Riot Games",
       title: "Worlds Cooldown | Quarterfinals |",
       game: "League of Legends",
@@ -199,28 +200,28 @@ twitchApp.controller("LiveGameComponent", function LiveGameComponent($scope) {
   
 
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/stream.jpg",
       username: "ibai",
       title: "  WORLDS 2020 | TES VS FNATIC |",
       game: "League of Legends",
       tags: ['Spanish'],
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/stream.jpg",
       username: "LVPes",
       title: "LEAGUE OF LEGENDS - WORLDS",
       game: "League of Legends",
       tags: ['Esports', 'Spanish'],
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/stream.jpg",
       username: "LCK_Korea",
       title: "[2020 LoL 월드 챔피언십] 8강전 3일차 -",
       game: "Among Us",
       tags: ['Esports', 'English'],
     },
     {
-      image: "https://source.unsplash.com/1600x900?game",
+      image: "./img/stream.jpg",
       username: "auronplay",
       title: "Worlds Cooldown | Quarterfinals |",
       game: "Among Us",
