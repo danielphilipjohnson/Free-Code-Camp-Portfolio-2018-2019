@@ -40,7 +40,9 @@
 
 ![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/1.%20Build%20a%20Random-Quote-Machine/img/screenshot/mobile.png)
 
+## Codepen
 
+[Twitter Quote generator](https://codepen.io/danielphilipjohnson/full/MWeQMea)
 
 ## How the app executes
 
