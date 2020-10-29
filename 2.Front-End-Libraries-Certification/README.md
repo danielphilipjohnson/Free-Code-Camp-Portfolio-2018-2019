@@ -15,11 +15,10 @@
     - Wiki Viewer
  
 ## Random Quote Machine
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618661/fcc/front-libraries/quotemobile1_ntgsks.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/1.%20Build%20a%20Random-Quote-Machine/img/screenshot/desktop.png)
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618661/fcc/front-libraries/quotemobile_mppdez.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/1.%20Build%20a%20Random-Quote-Machine/img/screenshot/mobile.png)
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/quotemachine_z3qsu6.png)
 
 ## Markdown Previewer
 ![project](https://res.cloudinary.com/dpj88/image/upload/v1591618662/fcc/front-libraries/design_flhjxp.png)
