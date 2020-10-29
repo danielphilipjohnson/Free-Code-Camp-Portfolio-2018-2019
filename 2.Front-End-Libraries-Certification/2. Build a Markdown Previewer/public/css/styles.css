@@ -7,7 +7,7 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 body {
-    background-color: #36465D;
+    background-color:#001935;
     line-height: 22px;
     font-family: Helvetica Neue, Helvetica, sans-serif;
 }
@@ -55,13 +55,18 @@ img {
 
 .search-box {
     padding-left: 40px;
-    background-color: #2F3D51;
+    background-color: #405368;
 }
 
 .search-box:focus {
     background-color: white;
     border: none;
     color: grey;
+}
+
+.profile-img {
+    width: 50px;
+    border-radius: 4px;
 }
 
 .profile-box {
@@ -82,7 +87,8 @@ img {
 }
 
 .page-link {
-    padding: 1rem 1.2rem 0.0rem 1.2rem;
+    padding: 1rem 1.2rem .2rem 1.2rem;
+    border: none;
 }
 
 .page-link i {
@@ -104,27 +110,27 @@ img {
 }
 
 .photo {
-    color: #DD6F54;
+    color: #FF492F;
 }
 
 .quote {
-    color: #F4A443;
+    color: #FF8A00;
 }
 
 .link {
-    color: #67C396;
+    color: #00CF35;
 }
 
 .chat {
-    color: #257AE3;
+    color: #FF8A00;
 }
 
 .audio {
-    color: #a77dc2;
+    color: #7C5CFF;
 }
 
 .video {
-    color: #748089;
+    color: #7C5CFF;
 }
 
 .posts {
