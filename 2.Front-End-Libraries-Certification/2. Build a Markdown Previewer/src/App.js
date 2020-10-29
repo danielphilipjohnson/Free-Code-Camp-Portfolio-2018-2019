@@ -1,23 +1,30 @@
 import React, { Component } from "react";
-import MarkDownPreviewer from "./components/MarkdownPreviewer";
-import Markdown from "./components/Markdown";
+import MarkdownContainer from "./components/MarkdownContainer";
 
-
-import Navbar from "./components/sitewide/navbar";
+import Navbar from "./components/sitewide/Navbar";
 import BlogType from "./components/BlogType";
+
+import BlogPost from "./components/BlogPost";
 import "./App.css";
 
 class App extends Component {
   render() {
-
+    const numbers = [1, 2, 3, 4, 5];
+    const BlogItems = numbers.map((number) =>  <BlogPost />);
     return (
-      // <Navbar/>  
-      <div className="container">
-        <BlogType/>
-      <Markdown />
-     </div>
-      )
-    ;
+      <div>
+        <Navbar />
+
+        <div className="container">
+          <BlogType />
+        
+          <div className="posts d-flex flex-row flex-wrap">
+            <MarkdownContainer />
+            {BlogItems}
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
