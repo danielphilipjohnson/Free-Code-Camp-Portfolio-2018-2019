@@ -1,12 +1,3 @@
-/**
- * @author Daniel Philip Johnson
- * @email daniel-philip-johnson
- * @create date 2020-06-19 12:55:51
- * @modify date 2020-06-19 12:55:51
- * @desc Styling for building a random quote machine
- */
-
-/* @import url('https://fonts.googleapis.com/css?family=Raleway'); */
 
 * {
   padding: 0;
@@ -21,11 +12,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  padding: 0px;
-  margin: 0px;
+
   background-color: #f5f8fa;
-  width: 100%;
-  overflow-x: hidden;
+ 
 }
 
 h1,
@@ -118,6 +107,8 @@ p {
   color: white;
 }
 
+
+
 /* NAV BAR */
 .nav {
   box-shadow: 19px 1px 20px grey;
@@ -162,10 +153,7 @@ p {
   color: var(--twitter-color);
   border-bottom: 2px var(--twitter-color) solid;
 }
-
-input[type="checkbox"]:checked {
-  border-bottom: 5px #17bf63 solid;
-}
+/* end  of NAV BAR */
 
 /* Quote Box */
 .quote-box {
@@ -179,7 +167,7 @@ input[type="checkbox"]:checked {
   transition: all 0.5s;
 }
 
-/* Banner */
+
 .author-details__image {
   display: flex;
   justify-content: space-between;
@@ -190,7 +178,7 @@ input[type="checkbox"]:checked {
   padding: 0.8rem 0px;
 }
 
-.banner-left img {
+.profile-image {
   border-radius: 100%;
   width: 125px;
 }
@@ -278,10 +266,12 @@ input[type="checkbox"]:checked {
 .author-post__details__post span {
   font-size: 1.1rem;
   padding-left: 10px;
-  /* font-weight: bold; */
+
 }
 
-/* AUTHOR POST */
+/* end of AUTHOR POST */
+
+/* Retweets */
 
 .retweets {
   list-style: none;
@@ -293,17 +283,14 @@ input[type="checkbox"]:checked {
   margin-right: 22px;
   color: rgb(101, 119, 134);
 }
-btn-share .retweets li strong {
-  display: block;
-  color: lightskyblue;
-}
 
 .retweets .recent-likes {
   border-left: 1px solid #e6ecf0;
   padding: 4px 0 0 6px;
 }
 
-/* btn share */
+/* end of Retweets */
+
 .btn-share,
 .btn-quote {
   display: inline-block;
@@ -338,6 +325,7 @@ btn-share .retweets li strong {
   flex-wrap: wrap;
   width: 100%;
 }
+
 
 .footer {
   position: absolute;
@@ -383,7 +371,10 @@ footer a {
     box-shadow: none;
   }
 }
-/* 321px */
+
+
+
+
 @media screen and (max-width: 450px) {
   .nav .icon {
     display: block;
