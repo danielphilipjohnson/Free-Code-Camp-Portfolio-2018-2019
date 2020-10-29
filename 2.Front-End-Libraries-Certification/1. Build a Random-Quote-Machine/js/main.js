@@ -29,6 +29,7 @@ MODULE.initApp = function() {
 
     MODULE.displayTimeAndDayToDom();
     MODULE.setRetweetCount(MODULE.helperMethods.generateRandomNumberUpTo("1200"));
+    MODULE.setCommentCount(MODULE.helperMethods.generateRandomNumberUpTo("1500"));
     MODULE.setLikesCount(MODULE.helperMethods.generateRandomNumberUpTo("1500"));
 
 };
@@ -226,6 +227,19 @@ MODULE.displayTimeAndDayToDom = function() {
 MODULE.setRetweetCount = function(count) {
     $("#retweets").text(count);
 };
+
+
+/**
+ * setCommentCount
+ * @module MODULE
+ * @method setCommentCount
+ * @param {Number} count
+ */
+MODULE.setCommentCount = function(count) {
+    $("#comments").text(count);
+};
+
+
 /**
  * setLikesCount
  * @module MODULE
@@ -292,7 +306,7 @@ MODULE.buttonLogic.shareQuoteClick = function() {
  * @event followButtonClick
  */
 MODULE.buttonLogic.followButtonClick = function() {
-    var url = "https://twitter.com/danielPhilipJo1";
+    var url = "https://twitter.com/danielp_johnson";
     window.open(url, "_blank");
 };
 
