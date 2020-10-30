@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import MarkdownContainer from "./components/MarkdownContainer";
+
+import MarkdownContainer from "./components/Markdown/MarkdownContainer";
 
 import Navbar from "./components/sitewide/Navbar";
-import BlogType from "./components/BlogType";
 
-import BlogPost from "./components/BlogPost";
+import BlogType from "./components/Blog/BlogType";
+import BlogPost from "./components/Blog/BlogPost";
+
 import "./App.css";
 
 class App extends Component {
   render() {
     const numbers = [1, 2, 3, 4, 5];
     const BlogItems = numbers.map((number) =>  <BlogPost />);
+
+
     return (
       <div>
         <Navbar />

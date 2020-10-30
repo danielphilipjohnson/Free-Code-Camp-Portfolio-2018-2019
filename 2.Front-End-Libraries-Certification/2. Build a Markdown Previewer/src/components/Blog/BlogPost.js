@@ -1,9 +1,9 @@
 import React from "react";
-
+import './BlogPost.css';
 export default function BlogPost() {
   return (
     <div className="media">
-      <div className="d-flex mr-4 profile-box">
+      <div className="d-none d-lg-flex mr-4 profile-box">
         <img
           className=" rounded"
           src="https://placeimg.com/450/450/any"
@@ -11,7 +11,7 @@ export default function BlogPost() {
         />
       </div>
       <div className="media-body">
-        <div className="card" style={{ width: "35.5rem" }}>
+        <div className="card card-blog">
           <div className="card-header">
             <div className="media-body d-flex">
               <img
@@ -21,10 +21,10 @@ export default function BlogPost() {
               />
               <div
                 className="media-body d-flex
-                        space-between"
+                        space-between align-items-center"
               >
-                <div className="post-user">
-                  <p className="">USERNAME</p>
+                <div className="post-user pr-3">
+                  <p className="m-0">USERNAME</p>
                 </div>
                 <div className="share">
                   <a href="#">Follow</a>
