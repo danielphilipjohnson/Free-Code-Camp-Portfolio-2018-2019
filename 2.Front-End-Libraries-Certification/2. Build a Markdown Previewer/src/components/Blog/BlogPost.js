@@ -1,13 +1,18 @@
-import React from "react";
-import './BlogPost.css';
-export default function BlogPost() {
-  return (
-    <div className="media">
+import React, { Component } from "react";
+
+
+import "./BlogPost.css";
+class BlogPost extends Component {
+  render() {
+   
+    return (
+     
+      <div className="media">
       <div className="d-none d-lg-flex mr-4 profile-box">
         <img
           className=" rounded"
-          src="https://placeimg.com/450/450/any"
-          alt="Generic placeholder image"
+          src={this.props.profileUrl}
+          alt="user profile"
         />
       </div>
       <div className="media-body">
@@ -16,15 +21,15 @@ export default function BlogPost() {
             <div className="media-body d-flex">
               <img
                 className="mr-3 profile-img"
-                src="https://placeimg.com/450/450/any"
-                alt="Generic placeholder image"
+                src={this.props.profileUrl}
+                alt="user profile"
               />
               <div
                 className="media-body d-flex
                         space-between align-items-center"
               >
                 <div className="post-user pr-3">
-                  <p className="m-0">USERNAME</p>
+                  <p className="m-0">{this.props.username}</p>
                 </div>
                 <div className="share">
                   <a href="#">Follow</a>
@@ -34,11 +39,11 @@ export default function BlogPost() {
           </div>
           <img
             className="img-fluid"
-            src="https://source.unsplash.com/random"
-            alt=""
+            src={this.props.image}
+            alt="blog post"
           />
           <div className="card-block">
-            <p className="card-text text-muted post-tags">#example tags</p>
+            <p className="card-text text-muted post-tags p-3">{this.props.body}</p>
           </div>
           <div className="card-footer text-muted">
             <div className="float-left footer-info">17,543 Notes</div>
@@ -57,5 +62,9 @@ export default function BlogPost() {
         </div>
       </div>
     </div>
-  );
+    );
+    
+  }
 }
+
+export default BlogPost;

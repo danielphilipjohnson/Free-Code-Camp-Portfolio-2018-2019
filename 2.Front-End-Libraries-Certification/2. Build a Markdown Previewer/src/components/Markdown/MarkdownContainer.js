@@ -9,7 +9,7 @@ export default function MarkdownContainer() {
         <img
           className=" rounded"
           src="https://placeimg.com/450/450/any"
-          alt="Generic placeholder image"
+          alt="User Profile"
         />
       </div>
 

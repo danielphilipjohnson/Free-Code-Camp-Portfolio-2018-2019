@@ -32,7 +32,7 @@ class MarkDownEditor extends Component {
             src="https://via.placeholder.com/150"
             width="50"
             height="50"
-            alt="Generic placeholder image"
+            alt="user profile"
           />
             <div className="modal-dialog m-0 align-self-center" role="document">
               <div className="modal-content">

@@ -6,7 +6,7 @@ export default class BlogType extends Component {
       <div className="d-flex flex-row modal-bar mt-4">
         <div className="media d-none d-lg-flex">
           <div className="d-flex mr-4 profile-box">
-            <img className=" rounded" src="https://placeimg.com/450/450/any" alt="Generic placeholder image"/>
+            <img className=" rounded" src="https://placeimg.com/450/450/any" alt="bot profile"/>
           </div>
 
           <div className="media-body">
