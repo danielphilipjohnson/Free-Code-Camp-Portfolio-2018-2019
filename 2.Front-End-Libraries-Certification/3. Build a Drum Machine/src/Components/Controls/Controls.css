@@ -1,0 +1,32 @@
+.sample-bank {
+  background-color: #3d3d3d;
+  border: 2px solid rgba(0, 0, 0, 0.352);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+
+  position: relative;
+}
+
+.select-samples {
+  padding: 1rem;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  z-index: 10;
+}
+
+.sample-bank .fa-chevron-right {
+  margin-right: 1rem;
+  position: absolute;
+  right: 0;
+ 
+}
