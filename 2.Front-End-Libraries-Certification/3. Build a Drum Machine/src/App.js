@@ -6,7 +6,6 @@ import PadBank from "./Components/PadBank";
 import Navbar from "./Components/Navbar/Navbar";
 import Sidebar from "./Components/Sidebar";
 
-import VolumeControl from "./Components/Controls/VolumeControl";
 import SoundBanks from "./data/soundBank";
 
 class App extends Component {
@@ -90,8 +89,8 @@ class App extends Component {
                   text={this.state.display}
                   updateSoundBankAndDisplay={this.updateSoundBankAndDisplay}
                   bankSets={this.state.bankSets}
+                  changeVolume={this.changeVolume}
                 />
-                <VolumeControl changeVolume={this.changeVolume} />
               </div>
 
               <PadBank

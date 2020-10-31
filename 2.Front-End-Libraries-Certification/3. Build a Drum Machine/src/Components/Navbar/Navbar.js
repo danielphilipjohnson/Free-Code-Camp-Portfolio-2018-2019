@@ -5,17 +5,17 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <ul className="nav__links">
-        <li>
-          <h1 className="nav-logo">@ DrumMachine 1</h1>
+        <li className="nav-logo">
+          <h1 >@ DrumMachine v1</h1>
         </li>
         <li>
           <div className="mid">
-            <select className="sound-select" name="cars" id="cars">
-              <option value="volvo">Club - Bubblegums</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
+
+            <select className="sound-select" name="sounds" id="sounds">
+              <option value="default">Club - Default</option>
+              <option value="extra">Extra</option>
             </select>
+
             <div className="btn-drum btn-drum--sm">
               <span>130</span>
             </div>

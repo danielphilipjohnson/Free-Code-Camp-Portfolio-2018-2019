@@ -36,7 +36,7 @@ class Controls extends Component {
           {this.makeSoundOptions()}
         </select>
 
-        <i class="fas fa-chevron-right"></i>
+        <i className="fas fa-chevron-right"></i>
       </div>
     );
   }

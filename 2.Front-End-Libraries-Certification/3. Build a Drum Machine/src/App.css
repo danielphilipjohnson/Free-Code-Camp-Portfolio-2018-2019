@@ -13,6 +13,8 @@ body {
 main {
   display: grid;
   grid-template-columns: min-content 2fr;
+
+  background-color:#3d3d3d;
 }
 
 .sidebar {
@@ -20,10 +22,12 @@ main {
   height: 100vh;
 
   color: #8c8c8c;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .sidebar__links {
-  padding: 0;
+  padding: 1rem 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -40,15 +44,17 @@ main {
 
 .sidebar__links .btn-drum {
   margin: 0;
+  border: 1px solid #000;
+  border-radius: 0;
 }
 
 .btn-drum {
   border: 2px solid rgba(0, 0, 0, 0.352);
-  border-radius: 6px;
+  /* border-radius: 6px; */
   padding: 1rem 1.5rem;
-  margin: 1rem;
-  background: #3d3d3d;
-  display: inline-block;
+  margin: 0.5rem 0;
+  background-color: #242424;
+
 }
 .btn-drum .fa-play {
   color: green;
@@ -59,25 +65,17 @@ main {
 }
 
 .btn-drum--active {
-  background-color: #242424;
+  
+  background: #3d3d3d;
   text-shadow: #fff 0px 0px 2px;
 }
 btn-drum--sm {
   max-width: 25px;
 }
 .btn-drum.signal {
-  padding: 1rem 1.35rem;
+  padding: 1rem 1.39rem;
 }
 
-.sound-select {
-  width: 100%;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  background-color: #212121;
-  color: #c4c4c4;
-  border: 2px solid rgba(0, 0, 0, 0.352);
-  border-radius: 6px;
-}
 
 .title {
   color: #fff;
@@ -134,8 +132,6 @@ btn-drum--sm {
   cursor: pointer;
   /* Cursor on hover */
 }
-
-
 
 th {
   border-left: 2px solid grey;

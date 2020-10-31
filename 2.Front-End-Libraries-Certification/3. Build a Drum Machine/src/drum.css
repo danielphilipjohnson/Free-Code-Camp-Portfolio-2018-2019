@@ -14,7 +14,7 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding:  0.5rem;
+  margin:  1rem;
   
 }
 .btn-group  button {
@@ -33,11 +33,10 @@
 .control-panel {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  /* padding-top: 1rem; */
 }
 
-.controls {
-  background-color: #3d3d3d;
-}
+
 
 .power-button {
   background: #536976;
