@@ -6,12 +6,9 @@ class Display extends Component {
     render() {
         return (
             <header id="display" className="top">
-                <div className="power-buttons">
-                    <h1 className="title">
-                        FCC: Drum Machine</h1>
-                    <button className="power-button">Off</button>
-                </div>
+               
                 <div className="Drum-display">
+                <button className="power-button">Off</button>
                     <table>
                         <thead>
                             <tr>
