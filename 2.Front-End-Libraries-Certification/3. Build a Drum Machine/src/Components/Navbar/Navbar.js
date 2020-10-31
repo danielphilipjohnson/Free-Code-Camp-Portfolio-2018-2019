@@ -16,13 +16,13 @@ export default function Navbar() {
               <option value="mercedes">Mercedes</option>
               <option value="audi">Audi</option>
             </select>
-            <div className="btn-drum">
+            <div className="btn-drum btn-drum--sm">
               <span>130</span>
             </div>
-            <div className="btn-drum btn-drum--active">
+            <div className="btn-drum btn-drum--active btn-drum--sm">
               <i class="fas fa-play"></i>
             </div>
-            <div className="btn-drum">
+            <div className="btn-drum btn-drum--sm">
               <i class="fas fa-circle"></i>
             </div>
           </div>
