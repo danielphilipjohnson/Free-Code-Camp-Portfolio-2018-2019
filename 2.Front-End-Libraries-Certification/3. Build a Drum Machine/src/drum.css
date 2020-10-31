@@ -14,14 +14,13 @@
     width: 25%;
 }
 
-.bottom {
-    display: flex;
-    width: 100%;
+.control-panel {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .controls {
-    width: 25%;
-    text-align: center;
+    background-color: #3D3D3D;
 }
 
 

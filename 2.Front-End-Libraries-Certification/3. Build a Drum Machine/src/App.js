@@ -4,6 +4,7 @@ import "./drum.css";
 import Display from "./Components/Display";
 import PadBank from "./Components/PadBank";
 import Navbar from "./Components/Navbar/Navbar";
+import Sidebar from "./Components/Sidebar";
 
 import VolumeControl from "./Components/Controls/VolumeControl";
 import SoundBanks from "./data/soundBank";
@@ -75,49 +76,18 @@ class App extends Component {
       <div id="drum-machine" className="App">
         <Navbar />
         <main>
-          <aside className="sidebar">
-            <ul className="sidebar__links">
-              <li>
-                <div className="btn-drum">
-                  <i class="fas fa-bars"></i>
-                </div>
-              </li>
-              <li>
-                <div class="sidebar-btns">
-                  <div className="btn-drum">
-                    <i class="fas fa-search"></i>
-                  </div>
-
-                  <div className="btn-drum signal">
-                    <i class="fas fa-signal"></i>
-                  </div>
-                  {/* <div className="btn-drum">
-                    <i class="fas fa-wave-square"></i>
-                  </div> */}
-
-                  <div className="btn-drum">
-                    <i class="fas fa-pencil-alt"></i>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="btn-drum">
-                  <i class="fas fa-sliders-h"></i>
-                </div>
-              </li>
-            </ul>
-          </aside>
+          <Sidebar />
 
           <div>
-            <div className="bottom">
+            <div className="control-panel">
               <div className="controls">
-              
-                <VolumeControl changeVolume={this.changeVolume} />
+                
                 <Display
                   text={this.state.display}
                   updateSoundBankAndDisplay={this.updateSoundBankAndDisplay}
                   bankSets={this.state.bankSets}
                 />
+                <VolumeControl changeVolume={this.changeVolume} />
               </div>
 
               <PadBank
