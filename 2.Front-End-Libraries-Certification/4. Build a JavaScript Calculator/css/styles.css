@@ -1,11 +1,3 @@
-/**
- * @author Daniel Philip Johnson
- * @email daniel-philip-johnson
- * @create date 2020-06-19 12:55:51
- * @modify date 2020-06-19 12:55:51
- * @desc Styling for building Javascript Calculator
- */
-
 body {
     background-color: #818181;
 }
@@ -20,7 +12,7 @@ body {
     padding-top: 0.4rem;
 }
 
-.calculator-outershell {
+.calculator__outershell {
     padding: 0.5rem 0.5rem;
     background-color: #535B5E;
     border-radius: 5%;
@@ -28,7 +20,7 @@ body {
     box-shadow: 11px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #616571;
 }
 
-.calculator-inner {
+.calculator__inner {
     margin: .025rem .25rem;
     background: linear-gradient(to right, #59585E, #333238, #1C1B23);
     border: 2px solid #17181B;
@@ -36,23 +28,24 @@ body {
     box-shadow: 11px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #211D22;
 }
 
-.calc-title {
+.calculator__inner--title {
     color: white;
     padding-top: .75rem;
 }
 
-.logo {
+.calculator__inner--logo {
     width: 70px;
 }
 
-.screen {
+.calculator__inner--screen {
     background-color: #6F9180;
     margin: 0 1.5rem;
     border: 3px solid #283C33;
     font-family: 'Orbitron', sans-serif;
 }
 
-.screen h1 {
+
+.calculator__inner--entrybox {
     color: #214740;
 }
 
