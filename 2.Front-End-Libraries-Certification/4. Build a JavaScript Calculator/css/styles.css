@@ -26,6 +26,7 @@ body {
     border: 2px solid #17181B;
     border-radius: 2%;
     box-shadow: 11px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #211D22;
+    
 }
 
 .calculator__inner--title {
@@ -42,6 +43,7 @@ body {
     margin: 0 1.5rem;
     border: 3px solid #283C33;
     font-family: 'Orbitron', sans-serif;
+    height: 70px;
 }
 
 
