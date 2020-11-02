@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import DrumButton from './DrumButton';
+import "./PadBank.css";
 
 class PadBank extends Component {
     render() {
@@ -40,7 +41,7 @@ class PadBank extends Component {
 
         return (
             <div className="padBank">
-                <p className="master">Pads</p>
+                
                 <div className="drum-buttons">
                     {drumButtons}
                 </div>

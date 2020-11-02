@@ -26,7 +26,7 @@ class MarkdownPreviewer extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
       
         <MarkDownEditor text={this.state.convertedMarkdownText} changeMarkup={this.changeMarkup} changeTitle={this.changeTitle}/>
         <DisplayContainer newText={this.state.convertedMarkdownText} title={this.state.title}/>
