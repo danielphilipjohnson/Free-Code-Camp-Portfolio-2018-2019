@@ -21,7 +21,11 @@
 
 
 ## Markdown Previewer
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618662/fcc/front-libraries/design_flhjxp.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/2.%20Build%20a%20Markdown%20Previewer/public/img/markdownpc.png)
+
+
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/2.%20Build%20a%20Markdown%20Previewer/public/img/markdownmobile.png)
+
 
 
 ## Drum Machine

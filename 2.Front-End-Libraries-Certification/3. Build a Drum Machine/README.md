@@ -24,8 +24,9 @@
 
 
 ## Design
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/drummachine_v44nka.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/3.%20Build%20a%20Drum%20Machine/public/img/drumkit-pc.png)
 
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/3.%20Build%20a%20Drum%20Machine/public/img/drumkit-mobile.png)
 
 
 ## Available Scripts
