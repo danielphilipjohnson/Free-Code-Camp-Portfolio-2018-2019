@@ -19,23 +19,37 @@
 
 ![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/1.%20Build%20a%20Random-Quote-Machine/img/screenshot/mobile.png)
 
+### Codepen
+
+[Twitter Quote generator](https://codepen.io/danielphilipjohnson/full/bGEgaoo)
+
 
 ## Markdown Previewer
 ![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/2.%20Build%20a%20Markdown%20Previewer/public/img/markdownpc.png)
 
-
 ![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/2.%20Build%20a%20Markdown%20Previewer/public/img/markdownmobile.png)
 
+### Codepen
+[Markdown Previewer](https://codepen.io/danielphilipjohnson/full/vYLgpjX)
 
 
 ## Drum Machine
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/drummachine_v44nka.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/3.%20Build%20a%20Drum%20Machine/public/img/drumkit-pc.png)
+
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/3.%20Build%20a%20Drum%20Machine/public/img/drumkit-mobile.png)
+
+### Codepen
+[Drum Machine](https://codepen.io/danielphilipjohnson/full/mdVRLam)
 
 
 ## Javascript Calculator
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/calculator_hnlx3x.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/4.%20Build%20a%20JavaScript%20Calculator/screenshot/js-calc-pc.png)
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/calculator-mobile_zejdbr.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/4.%20Build%20a%20JavaScript%20Calculator/screenshot/js-calc-mobile.png)
+
+### Codepen
+[Javascript Calculator](https://codepen.io/danielphilipjohnson/full/abdpKOv)
+
 
 ## Pomodoro Clock
 ![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/pomodorro_bpybaf.png)

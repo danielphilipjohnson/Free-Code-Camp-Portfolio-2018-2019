@@ -40,24 +40,10 @@
 - User Story #15: My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like 2 / 7 with reasonable precision to at least 4 decimal places).
 
 ## Design
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/calculator_hnlx3x.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/4.%20Build%20a%20JavaScript%20Calculator/screenshot/js-calc-pc.png)
 
-![project](https://res.cloudinary.com/dpj88/image/upload/v1591618660/fcc/front-libraries/calculator-mobile_zejdbr.png)
+![project](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/2.Front-End-Libraries-Certification/4.%20Build%20a%20JavaScript%20Calculator/screenshot/js-calc-mobile.png)
 
-## How the app executes
 
-```
-MODULE.initApp = function() {
-
-    MODULE.setBackgroundColor();
-
-    quoteType = MODULE.getQuoteType();
-
-    MODULE.getQuoteAndSetDom(quoteType);
-
-    MODULE.displayTimeAndDayToDom();
-};
-```
-## Todo
-- add project to codepen
-- add link
+### Codepen
+[Javascript Calculator](https://codepen.io/danielphilipjohnson/full/abdpKOv)
