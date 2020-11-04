@@ -313,9 +313,7 @@ resetButton.addEventListener("click", function () {
  
 
   //Hit start button run timer
-
   // break is false
-
   // toggle is false user has selected a time
   if (this.innerText === "Reset") {
     var breakLength =
