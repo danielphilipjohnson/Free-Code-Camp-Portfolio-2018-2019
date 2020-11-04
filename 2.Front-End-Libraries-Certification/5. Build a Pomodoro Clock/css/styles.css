@@ -10,7 +10,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: rgb(240, 91, 86);
+  
+  background-color: rgb(76, 166, 169);
 }
 
 .nav {
@@ -117,7 +118,6 @@ body {
   
 }
 
-
 .btn-group-clock {
   display: flex;
   flex-direction: row;
@@ -135,8 +135,6 @@ body {
   margin-right: 1rem;
   min-width: 2.5rem;
 }
-
-
 
 .btn-round {
   border-radius: .4rem;
@@ -213,11 +211,7 @@ body {
 }
 
 @media screen and (min-width: 120rem) {
-
   .btn-lg {
     padding: 2.5rem 6rem;
   }
-
-
 }
-
