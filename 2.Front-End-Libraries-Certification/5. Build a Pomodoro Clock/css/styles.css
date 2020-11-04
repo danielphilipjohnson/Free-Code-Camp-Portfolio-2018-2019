@@ -57,12 +57,16 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-  width: 640px;
-
   margin: 10px auto;
+}
 
-  border-radius: 1rem;
-  /* font-family: "Orbitron", sans-serif; */
+@media screen and (min-width: 1000px) {
+  .clock {
+    width: 640px;
+    border-radius: 1rem;
+  }
+
+
 }
 .outer-clock {
   margin: 23px;
