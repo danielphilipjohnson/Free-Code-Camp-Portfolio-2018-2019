@@ -65,8 +65,9 @@ function breakTimer(breakLength) {
     var breakLength = (pausedTime === 0 ? breakLength : pausedTime);
     var refreshIntervalId = setInterval(function() {
 
-        secondsToHms(breakLength, breakTimerElem);
-
+        // secondsToHms(breakLength, breakTimerElem);
+        
+        secondsToHms(breakLength, clockTimer);
         breakLength--;
 
         if (breakLength < 0) {
@@ -179,12 +180,15 @@ function toggleTimer(counter, breakLength, start) {
  * @param {number} counter
  * @param {number} breakLength
  * @param {number} start
+ * change colors here
  */
 startButton.addEventListener('click', function() {
 
     // get session length and break length
     var sessionLength = parseInt(document.getElementById('session-length').innerText) * 60;
 
+
+    /* maybe change to the circle */    
     var breakLength = parseInt(document.getElementById('break-length').innerText) * 60;
 
 
