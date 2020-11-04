@@ -21,26 +21,37 @@ body {
 }
 .nav {
   display: flex;
-
   justify-content: center;
-
   padding: 1rem;
 }
 
 .nav__links {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
   align-items: center;
   list-style: none;
-  width: 50%;
+  width: 100%;
   padding-bottom: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .nav_link .logo {
-color: #fff;
-font-size: 1.5rem;
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
+
+
+@media screen and (min-width: 1000px) {
+  .nav__links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+
+}
 .clock {
   display: flex;
   justify-content: center;
@@ -80,7 +91,7 @@ font-size: 1.5rem;
 .clock-display__timer,
 .break-timer {
   font-size: 10rem;
-    text-align: center;
+  text-align: center;
   color: #fff;
 }
 .break-timer {
@@ -140,7 +151,7 @@ font-size: 1.5rem;
 
 .btn {
   display: inline-block;
-  min-width: 80px;
+  
   padding: 1rem 1.5rem;
   margin-left: 0.5rem;
   border: 0;
@@ -150,6 +161,10 @@ font-size: 1.5rem;
 
   font-size: 1.5rem;
 }
+.btn-nav {
+  font-size: 1.3rem;
+}
+
 .btn-round {
   border-radius: 4px;
 }
@@ -163,5 +178,14 @@ font-size: 1.5rem;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .btn-lg {
-    padding: 1.5rem 4rem;
+  padding: 1.5rem 4rem;
+}
+
+
+
+min-width: 80px;een and (min-width: 1000px) {
+  .btn-nav {
+    min-width: 80px;
+    font-size: 1.5rem;
+  }
 }
