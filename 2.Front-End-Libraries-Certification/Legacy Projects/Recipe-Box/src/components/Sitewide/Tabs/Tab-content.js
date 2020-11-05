@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Mains from '../../Menu/Sub/mains';
+import Mains from '../../Menu/Sub/Mains';
 import Starters from '../../Menu/Sub/Starters'
 import Dessert from '../../Menu/Sub/Dessert';
 

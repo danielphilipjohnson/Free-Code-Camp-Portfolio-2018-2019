@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Ingredients from "../ingredients";
+import Ingredients from "../Ingredients";
 
 import Card from "../../Card/Card";
 

@@ -4,8 +4,8 @@ import Nav from "./components/Sitewide/Nav/Nav";
 import Carousel from "./components/Carousel/Carousel";
 
 import Menu from "./components/Menu/Menu";
-import Modal from "./components/Modals/modal";
-import EditModal from "./components/Modals/editModal";
+import Modal from "./components/Modals/Modal";
+import EditModal from "./components/Modals/EditModal";
 
 import Dishes from "./components/Home/Dishes";
 import Cta from "./components/Home/Cta";

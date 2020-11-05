@@ -1,5 +1,5 @@
 import React from "react";
-import Ingredients from '../Menu/ingredients';
+import Ingredients from '../Menu/Ingredients';
 export default function Card(props) {
   return (
     <div class="card col-md-6" style={{ width: "18rem" }} key={props.key}>
