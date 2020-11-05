@@ -1,339 +1,335 @@
 /**
- * Free Code camp Javascript Calculator.
+ * Free Code camp Javascript Pomodoro.
 
  * @module Pomodoro
  * @version 1.0.0
  * @author Daniel Philip Johnson <daniel-philip-johnson@outlook.com>
  */
 
-
-
 // Required DOM elements
+var clockTimer = document.getElementById("clock-timer");
 
-var clockTimer = document.getElementById('clock-timer');
+var breakTimerElem = document.getElementById("break-timer");
 
-var breakTimerElem = document.getElementById('break-timer');
+var startButton = document.getElementById("start");
 
-var startButton = document.getElementById('start');
+var resetButton = document.getElementById("reset");
 
-var resetButton = document.getElementById('reset');
-
-//Global Timer and break 
+//Global Timer and break
 var timerRunning = true;
 
 var breakRunning = false;
 
 var pausedTime = 0;
 
-var toggled = false
+var toggled = false;
 
 var reset = false;
 
 
+var breakBackgroundColor = "background-color: rgb(73, 143, 193);";
 
+var startBackgroundColor = "background-color: rgb(240, 91, 86)";
+
+// create a variable
 
 /**
  * Display equation and result to UI
- * @module Calculator
+ * @module Pomodoro
  * @method secondsToHms
  * @param {number} d
- * @param {number} displayToUpdate
+ * @param {clockTimer} displayToUpdate
  * @return {number} Value
  */
 
 function secondsToHms(d, displayToUpdate) {
+  d = Number(d);
 
-    d = Number(d);
+  var m = Math.floor((d % 3600) / 60);
 
-    var m = Math.floor(d % 3600 / 60);
-
-    var s = Math.floor(d % 3600 % 60);
-
-    displayToUpdate.textContent = "" + (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  var s = Math.floor((d % 3600) % 60);
+  var formattedTime =
+    "" + (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+  displayToUpdate.textContent = formattedTime;
+  return formattedTime;
 }
-
-
 
 /**
  * Runs breaktimer
- * @module Calculator
+ * @module Pomodoro
  * @method breakTimer
  * @param {number} breakLength
  */
 function breakTimer(breakLength) {
-    // repetitive
-    var breakLength = (pausedTime === 0 ? breakLength : pausedTime);
-    var refreshIntervalId = setInterval(function() {
 
-        secondsToHms(breakLength, breakTimerElem);
 
-        breakLength--;
+  var breakLength = pausedTime === 0 ? breakLength : pausedTime;
+  var refreshIntervalId = setInterval(function () {
 
-        if (breakLength < 0) {
-            pausedTime = 0;
-            clearInterval(refreshIntervalId);
+    // secondsToHms(breakLength, breakTimerElem);
 
-            startButton.innerText = "Start";
-            timerRunning = false;
+    secondsToHms(breakLength, clockTimer);
+    breakLength--;
 
-        } else if (breakRunning === false) {
+    /* If break ends stop the timer and change the button text to start */
+    if (breakLength < 0) {
+      pausedTime = 0;
+      clearInterval(refreshIntervalId);
 
-            pausedTime = breakLength;
-            clearInterval(refreshIntervalId);
+      startButton.innerText = "Start";
+      timerRunning = false;
 
-        }
-        // doesnt work
-        else if (toggled) {
-            clearInterval(refreshIntervalId);
-            startButton.innerText = "Start Break";
-            pausedTime = 0;
-        }
+    } else if (breakRunning === false) {
+      pausedTime = breakLength;
+      clearInterval(refreshIntervalId);
+    }
 
-    }, 1000);
+    else if (toggled) {
+      clearInterval(refreshIntervalId);
+      startButton.innerText = "Start Break";
+      pausedTime = 0;
+    }
+
+  }, 1000);
 }
-
 
 /**
  * ToggleTimer between modes
- * @module Calculator
+ * @module Pomodoro
  * @method toggleTimer
  * @param {number} counter
  * @param {number} breakLength
  * @param {number} start
  */
+
 function toggleTimer(counter, breakLength, start) {
-    // if paused is equal to zero then the timer hasnt been paused used the value of the session length
+  // if paused is equal to zero then the timer hasnt been paused used the value of the session length
 
-    var counter = (pausedTime === 0 ? counter : pausedTime);
+  var counter = pausedTime === 0 ? counter : pausedTime;
 
-    var breakLength = breakLength;
+  var breakLength = breakLength;
 
+  function runTimer() {
+    var formattedWorkTime = secondsToHms(counter, clockTimer);
 
-    function runTimer() {
-        secondsToHms(counter, clockTimer);
-        secondsToHms(breakLength, breakTimerElem);
-        counter--;
-        if (counter < 0) {
+    // update page title
+    document.title = formattedWorkTime + " - Time to work";
 
-            clearInterval(refreshIntervalId);
+    var Breakformatted = secondsToHms(breakLength, breakTimerElem);
+    counter--;
 
-            startButton.innerText = "Stop Break";
+    if (counter < 0) {
+      clearInterval(refreshIntervalId);
 
-            breakRunning = true;
+      // update page title and change background
+      document.title = Breakformatted + " - Time for a break";
+      document.body.style = breakBackgroundColor;
 
-            timerRunning = false;
+      startButton.innerText = "Stop Break";
 
-            pausedTime = 0;
-            // maybe run set timeout so there a bit of a break inbetween
-            breakTimer(breakLength);
+      breakRunning = true;
 
-        }
-        // replace name with paused
-        else if (timerRunning === false) {
+      timerRunning = false;
 
-            pausedTime = counter;
-
-            clearInterval(refreshIntervalId);
-
-        }
-        // sliders toggled stop time
-        else if (toggled) {
-            console.log("toggle working");
-            pausedTime = 0;
-            clearInterval(refreshIntervalId);
-
-            startButton.innerText = "Start";
-        }
+      pausedTime = 0;
+      // maybe run set timeout so there a bit of a break inbetween
+      breakTimer(breakLength);
     }
-    if (start) {
 
 
+    else if (timerRunning === false) {
+      pausedTime = counter;
 
-        var refreshIntervalId = setInterval(function() {
-            if (reset) {
-                console.log('in reset');
-                console.log(pausedTime);
-                reset = false;
-                pausedTime = 0;
-                startButton.textContent = "Stop";
-                counter = (pausedTime === 0 ? counter : pausedTime);
-                clearInterval(refreshIntervalId);
-                runTimer();
-
-
-            } else {
-
-                runTimer();
-            }
-
-        }, 1000);
+      clearInterval(refreshIntervalId);
     }
+
+    // sliders toggled stop time
+    else if (toggled) {
+
+        
+      pausedTime = 0;
+      clearInterval(refreshIntervalId);
+
+      startButton.innerText = "Start";
+
+    }
+  }
+
+  if (start) {
+    var refreshIntervalId = setInterval(function () {
+      if (reset) {
+
+        reset = false;
+        pausedTime = 0;
+        startButton.textContent = "Stop";
+        counter = pausedTime === 0 ? counter : pausedTime;
+        clearInterval(refreshIntervalId);
+        runTimer();
+      } else {
+        runTimer();
+      }
+    }, 1000);
+  }
 }
-
-
 
 /**
  * Start button onClick
- * @module Calculator
+ * @module Pomodoro
  * @event startButton
  * @param {number} counter
  * @param {number} breakLength
  * @param {number} start
+ * change colors here
  */
-startButton.addEventListener('click', function() {
+startButton.addEventListener("click", function () {
+  // get session length and break length
+  var sessionLength =
+    parseInt(document.getElementById("session-length").innerText) * 60;
 
-    // get session length and break length
-    var sessionLength = parseInt(document.getElementById('session-length').innerText) * 60;
+  /* maybe change to the circle */
+  var breakLength =
+    parseInt(document.getElementById("break-length").innerText) * 60;
 
-    var breakLength = parseInt(document.getElementById('break-length').innerText) * 60;
+  /**
+   * Start button is pressed
+   * users isnt on break
+   * and toggle is false
+   */
+  if (this.innerText === "Start") {
+    // create a variable
+    document.body.style = startBackgroundColor;
 
+    this.innerText = "Stop";
+
+    timerRunning = true;
+
+    breakRunning = false;
+
+    toggled = false;
+
+    toggleTimer(sessionLength, breakLength, timerRunning);
+
+  } else if (this.innerText === "Stop") {
+
+  /**
+   * If stop button is pressed
+   * stop the timer
+   */
+    timerRunning = false;
+    breakRunning = false;
+
+    this.innerText = "Start";
 
     /**
-     * Start button is pressed
-     * users isnt on break
-     * and toggle is false
-     */
-    if (this.innerText === "Start") {
-
-        this.innerText = "Stop";
-
-        timerRunning = true;
-
-        breakRunning = false;
-
-        toggled = false;
-
-        toggleTimer(sessionLength, breakLength, timerRunning);
-    }
-    /**
-     * If stop button is pressed
+     * If its time to start break
      * stop the timer
      */
-    else if (this.innerText === "Stop") {
 
-        timerRunning = false;
-        breakRunning = false;
+  } else if (this.innerText === "Start Break") {
 
-        this.innerText = "Start";
-        /**
-         * If its time to start break
-         * stop the timer
-         */
-    } else if (this.innerText === "Start Break") {
+ 
+    timerRunning = false;
 
-        timerRunning = false;
+    breakRunning = true;
 
-        breakRunning = true;
+    toggled = false;
 
-        toggled = false;
+    this.innerText = "Stop Break";
 
-        this.innerText = "Stop Break"
-
-        breakTimer(breakLength);
-        /**
+    breakTimer(breakLength);
+    /**
         * Stop the break
   
     */
-    } else if (this.innerText === "Stop Break") {
-        timerRunning = false;
-        breakRunning = false;
-        toggled = false;
-        this.innerText = "Start Break"
-    }
+  } else if (this.innerText === "Stop Break") {
+    timerRunning = false;
+    breakRunning = false;
+    toggled = false;
+    this.innerText = "Start Break";
+  }
 });
 
-
 function sliderButtons(minusButton, plusButton, lengthOfTime, displayElem) {
-    // requires checks no more than 25 mins no less than zero
+  // requires checks no more than 25 mins no less than zero
 
-    var minusButton = document.getElementById(minusButton);
+  var minusButton = document.getElementById(minusButton);
 
-    var plusButton = document.getElementById(plusButton);
+  var plusButton = document.getElementById(plusButton);
 
+  minusButton.addEventListener("click", function () {
+    var valueButton = document.getElementById(lengthOfTime);
 
-    minusButton.addEventListener('click', function() {
-        var valueButton = document.getElementById(lengthOfTime);
+    var sessionLength = parseInt(valueButton.innerText);
+    console.log(sessionLength);
+    if (sessionLength <= 1) {
+      valueButton.innerText = 1;
+    } else {
+      console.log(displayElem);
+      sessionLength = sessionLength - 1;
 
-        var sessionLength = parseInt(valueButton.innerText);
-        console.log(sessionLength);
-        if (sessionLength <= 1) {
-            valueButton.innerText = 1;
-        } else {
-            console.log(displayElem);
-            sessionLength = sessionLength - 1;
+      secondsToHms(sessionLength * 60, displayElem);
 
-            secondsToHms(sessionLength * 60, displayElem);
+      valueButton.innerText = sessionLength;
+      pausedTime = 0;
+      toggled = true;
+    }
+  });
 
-            valueButton.innerText = sessionLength;
-            pausedTime = 0;
-            toggled = true;
+  plusButton.addEventListener("click", function () {
+    var valueButton = document.getElementById(lengthOfTime);
 
+    var sessionLength = parseInt(valueButton.innerText);
+    if (sessionLength >= 25) {
+      valueButton.innerText = 25;
+    } else {
+      console.log(displayElem);
+      sessionLength = sessionLength + 1;
+      pausedTime = 0;
+      console.log(sessionLength);
+      valueButton.innerText = sessionLength;
+      secondsToHms(sessionLength * 60, displayElem);
 
-        }
-    });
-
-    plusButton.addEventListener('click', function() {
-        var valueButton = document.getElementById(lengthOfTime);
-
-        var sessionLength = parseInt(valueButton.innerText);
-        if (sessionLength >= 25) {
-            valueButton.innerText = 25;
-        } else {
-            console.log(displayElem);
-            sessionLength = sessionLength + 1;
-            pausedTime = 0;
-            console.log(sessionLength);
-            valueButton.innerText = sessionLength;
-            secondsToHms(sessionLength * 60, displayElem);
-
-            toggled = true
-
-        };
-
-    });
+      toggled = true;
+    }
+  });
 }
 
-sliderButtons('minus-break-session', 'plus-break-session', 'break-length', breakTimerElem);
-sliderButtons('minus-session', 'plus-session', 'session-length', clockTimer);
+sliderButtons(
+  "minus-break-session",
+  "plus-break-session",
+  "break-length",
+  breakTimerElem
+);
+sliderButtons("minus-session", "plus-session", "session-length", clockTimer);
 
+resetButton.addEventListener("click", function () {
+  // get session length and break length
+  var sessionLength =
+    parseInt(document.getElementById("session-length").innerText) * 60;
 
+  var breakLength =
+    parseInt(document.getElementById("break-length").innerText) * 60;
 
+ 
 
+  //Hit start button run timer
+  // break is false
+  // toggle is false user has selected a time
+  if (this.innerText === "Reset") {
+    var breakLength =
+      parseInt(document.getElementById("break-length").innerText) * 60;
+    //how do i put a zero before
 
+    timerRunning = true;
 
-resetButton.addEventListener('click', function() {
+    breakRunning = false;
 
+    toggled = false;
+    pausedTime = 0;
+    reset = true;
+    formattedTime;
+    startButton.innerText = "Start";
 
-    // get session length and break length
-    var sessionLength = parseInt(document.getElementById('session-length').innerText) * 60;
-
-    var breakLength = parseInt(document.getElementById('break-length').innerText) * 60;
-
-    //var breakTimer = document.getElementById('break-timer');
-    //breakTimer.innerText = document.getElementById('break-length').innerText + ":00";
-
-
-    //Hit start button run timer 
-
-    // break is false
-
-    // toggle is false user has selected a time
-    if (this.innerText === "Reset") {
-        var breakLength = parseInt(document.getElementById('break-length').innerText) * 60;
-        //how do i put a zero before
-
-        timerRunning = true;
-
-        breakRunning = false;
-
-        toggled = false;
-        pausedTime = 0;
-        reset = true;
-        startButton.innerText = "Start";
-
-
-        toggleTimer(sessionLength, breakLength, timerRunning);
-
-
-    }
+    toggleTimer(sessionLength, breakLength, timerRunning);
+  }
 });
