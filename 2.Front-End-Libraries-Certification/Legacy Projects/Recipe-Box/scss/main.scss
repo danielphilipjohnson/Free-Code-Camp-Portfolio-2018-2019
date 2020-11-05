@@ -1,0 +1,17 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+
+.cta {
+  @extend .jumbotron;
+}
+
+
+.services {
+  @extend .row;
+  .service {
+    @extend .col-md-4;
+  }
+}

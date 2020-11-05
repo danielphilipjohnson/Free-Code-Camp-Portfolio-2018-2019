@@ -1,43 +1,96 @@
-import React, { Component } from 'react';
-import Nav from './components/nav';
-import Jumbotron from './components/jumbotron'
-import Menu from './components/menu'
-import Modal from './components/modal';
-import EditModal from './components/editModal';
-import $ from 'jquery';
+import React, { Component } from "react";
+// import Nav from './components/nav';
+import Nav from "./components/Sitewide/Nav/Nav";
+import Carousel from "./components/Carousel/Carousel";
+
+import Menu from "./components/Menu/Menu";
+import Modal from "./components/Modals/modal";
+import EditModal from "./components/Modals/editModal";
+
+import Cta from "./components/Home/Cta";
+
+import $ from "jquery";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       recipe: {},
-      edit: {}
-    }
+      edit: {},
+    };
   }
 
   // fake recipe request
   fakedRequest() {
     return {
       starters: [
-        { id: 0, name: 'White beans with herbs', price: '12.50', ingredients: ['white beans', 'herbs', 'onion', 'garlic', 'crostini or bruschetta'] },
-        { id: 1, name: 'Bacon rosemary stuffed mushrooms', price: '12.50', ingredients: ['stuffed mushrooms', 'rosemary', 'bacon and cheese!'] },
-        { id: 2, name: 'Creamy smoked salmon spread', price: '12.50', ingredients: ['Scottish smoked salmon trimmings', 'double cream', 'cream cheese softened', 'lemon juiced', 'chopped fresh dill', 'salt and freshly ground black pepper', 'salmon roe'] },
+        {
+          id: 0,
+          name: "White beans with herbs",
+          price: "12.50",
+          ingredients: [
+            "white beans",
+            "herbs",
+            "onion",
+            "garlic",
+            "crostini or bruschetta",
+          ],
+        },
+        {
+          id: 1,
+          name: "Bacon rosemary stuffed mushrooms",
+          price: "12.50",
+          ingredients: ["stuffed mushrooms", "rosemary", "bacon and cheese!"],
+        },
+        {
+          id: 2,
+          name: "Creamy smoked salmon spread",
+          price: "12.50",
+          ingredients: [
+            "Scottish smoked salmon trimmings",
+            "double cream",
+            "cream cheese softened",
+            "lemon juiced",
+            "chopped fresh dill",
+            "salt and freshly ground black pepper",
+            "salmon roe",
+          ],
+        },
       ],
       mains: [
-        { id: 0, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
-        { id: 1, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
+        {
+          id: 0,
+          name: "pizza",
+          price: "12.50",
+          ingredients: ["Fresh Tomatoe", "Fresh Basil", "Fresh Mozarella"],
+        },
+        {
+          id: 1,
+          name: "pizza",
+          price: "12.50",
+          ingredients: ["Fresh Tomatoe", "Fresh Basil", "Fresh Mozarella"],
+        },
       ],
       desserts: [
-        { id: 0, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
-        { id: 1, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
+        {
+          id: 0,
+          name: "pizza",
+          price: "12.50",
+          ingredients: ["Fresh Tomatoe", "Fresh Basil", "Fresh Mozarella"],
+        },
+        {
+          id: 1,
+          name: "pizza",
+          price: "12.50",
+          ingredients: ["Fresh Tomatoe", "Fresh Basil", "Fresh Mozarella"],
+        },
       ],
-    }
-
+    };
   }
 
   // a function to populate storage
   populateLocalStorage(recipes) {
-    //do the local storage check 
+    //do the local storage check
     localStorage.setItem("_undreamtmayhem_recipe", JSON.stringify(recipes));
     this.setState({ recipes: recipes });
     //if not set state
@@ -51,25 +104,21 @@ class App extends Component {
   }
 
   isLocalStorageAvailable() {
-    if (typeof (Storage) !== "undefined") {
+    if (typeof Storage !== "undefined") {
       return true;
-    }
-    else {
+    } else {
       return false;
     }
   }
   ////////////////////////////////
 
-
   // Set Default Recipes VIA  local storage or react set state
   //set local storage NEXT
   setRecipes() {
-    if (typeof (Storage) !== "undefined") {
-
+    if (typeof Storage !== "undefined") {
       // if item doesnt exist Use a fake get request
       if (!localStorage.getItem("_undreamtmayhem_recipe")) {
-
-        // set the data        
+        // set the data
         let recipes = this.fakedRequest();
 
         // set the storage
@@ -78,9 +127,8 @@ class App extends Component {
         let saveToSetState = this.retrieveLocalStorage();
 
         this.setState({
-          recipe: saveToSetState
+          recipe: saveToSetState,
         });
-
       } else {
         // if recipe item exists    // pull it from local storage the set state
         let theRecipes = localStorage.getItem("_undreamtmayhem_recipe");
@@ -88,52 +136,100 @@ class App extends Component {
         let recipeObj = JSON.parse(theRecipes);
 
         this.setState({
-          recipe: recipeObj
+          recipe: recipeObj,
         });
-
       }
     } else {
       // No Web Storage support.. use reacts setState defaults
       alert("failed");
 
-      this.setState(
-        {
-          recipe: {
-            starters: [
-              { id: 0, name: 'White beans with herbs', price: '12.50', ingredients: ['white beans', 'herbs', 'onion', 'garlic', 'crostini or bruschetta'] },
-              { id: 1, name: 'Bacon rosemary stuffed mushrooms', price: '12.50', ingredients: ['stuffed mushrooms', 'rosemary', 'bacon and cheese!'] },
-              { id: 2, name: 'Creamy smoked salmon spread', price: '12.50', ingredients: ['Scottish smoked salmon trimmings', 'double cream', 'cream cheese softened', 'lemon juiced', 'chopped fresh dill', 'salt and freshly ground black pepper', 'salmon roe'] },
-            ],
-            mains: [
-              { id: 0, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
-              { id: 1, name: 'pizza', price: '12.50', ingredients: ['Fresh Tomatoe', 'Fresh Basil', 'Fresh Mozarella'] },
-            ],
-            desserts: [
-              {
-                id: 0,
-                name: "Obleas",
-                price: "12.50",
-                ingredients: ["Flour", "Water", "Milk", "Sugar"]
-              },
-              {
-                id: 1,
-                name: "Paris-Brest",
-                price: "12.50",
+      this.setState({
+        recipe: {
+          starters: [
+            {
+              id: 0,
+              name: "White beans with herbs",
+              price: "12.50",
+              ingredients: [
+                "white beans",
+                "herbs",
+                "onion",
+                "garlic",
+                "crostini or bruschetta",
+              ],
+            },
+            {
+              id: 1,
+              name: "Bacon rosemary stuffed mushrooms",
+              price: "12.50",
+              ingredients: [
+                "stuffed mushrooms",
+                "rosemary",
+                "bacon and cheese!",
+              ],
+            },
+            {
+              id: 2,
+              name: "Creamy smoked salmon spread",
+              price: "12.50",
+              ingredients: [
+                "Scottish smoked salmon trimmings",
+                "double cream",
+                "cream cheese softened",
+                "lemon juiced",
+                "chopped fresh dill",
+                "salt and freshly ground black pepper",
+                "salmon roe",
+              ],
+            },
+          ],
+          mains: [
+            {
+              id: 0,
+              name: "pizza",
+              price: "12.50",
+              ingredients: ["Fresh Tomatoe", "Fresh Basil", "Fresh Mozarella"],
+            },
+            {
+              id: 1,
+              name: "pizza",
+              price: "12.50",
+              ingredients: ["Fresh Tomatoe", "Fresh Basil", "Fresh Mozarella"],
+            },
+          ],
+          desserts: [
+            {
+              id: 0,
+              name: "Obleas",
+              price: "12.50",
+              ingredients: ["Flour", "Water", "Milk", "Sugar"],
+            },
+            {
+              id: 1,
+              name: "Paris-Brest",
+              price: "12.50",
 
-                ingredients: ["Flour", "Eggs", "Almonds", "Sugar", "Milk", "Butter", "Praline", "Powdered Sugar"]
-              }
-            ],
-          },
-        });
-
+              ingredients: [
+                "Flour",
+                "Eggs",
+                "Almonds",
+                "Sugar",
+                "Milk",
+                "Butter",
+                "Praline",
+                "Powdered Sugar",
+              ],
+            },
+          ],
+        },
+      });
     }
   }
 
   // Allow Users to ADD recipes via local storage or react setState
   addRecipe(category, recipe) {
-    //local storage 
+    //local storage
     let localStorageAvailablity = this.isLocalStorageAvailable();
-
 
     if (localStorageAvailablity) {
       let theRecipes = localStorage.getItem("_undreamtmayhem_recipe");
@@ -149,8 +245,7 @@ class App extends Component {
       typeOfRecipe.push(recipe);
 
       this.setState({ typeOfRecipe: recipeObj });
-      $('#add-recipe .close').click();
-
+      $("#add-recipe .close").click();
     }
     // use react set state as alternative
     else {
@@ -159,7 +254,7 @@ class App extends Component {
       typeOfRecipe.push(recipe);
 
       this.setState({ typeOfRecipe: typeOfRecipe });
-      $('#add-recipe .close').click();
+      $("#add-recipe .close").click();
     }
   }
 
@@ -167,40 +262,52 @@ class App extends Component {
   setEditModal() {
     this.setState({
       edit: {
-        id: 0, name: '', price: '', category: '', ingredients: ['']
-      }
-    })
+        id: 0,
+        name: "",
+        price: "",
+        category: "",
+        ingredients: [""],
+      },
+    });
   }
-
 
   // Store the item we want to Edit
   // works on starters and gets catergory and id
   editRecipeFun(category, id) {
-
-    let index = this.state.recipe[category].findIndex(x => x.id === id);
+    let index = this.state.recipe[category].findIndex((x) => x.id === id);
     let recipeToEdit = this.state.recipe[category][index];
 
-    recipeToEdit['category'] = category;
+    recipeToEdit["category"] = category;
 
     this.setState({ edit: recipeToEdit });
-
   }
 
-  // EDIT MODAL FUNCTIONS 
-  formChange(editedID, editedName, editedPrice, editedCategory, editedIngrients) {
-    let editObj = { id: editedID, name: editedName, price: editedPrice, category: editedCategory, ingredients: editedIngrients };
+  // EDIT MODAL FUNCTIONS
+  formChange(
+    editedID,
+    editedName,
+    editedPrice,
+    editedCategory,
+    editedIngrients
+  ) {
+    let editObj = {
+      id: editedID,
+      name: editedName,
+      price: editedPrice,
+      category: editedCategory,
+      ingredients: editedIngrients,
+    };
     this.setState({
-      edit: editObj
+      edit: editObj,
     });
   }
 
   editModalOnSubmit() {
-
     let editCategory = this.state.edit.category;
 
     let editID = this.state.edit.id;
 
-    // editing 
+    // editing
     let editTitle = this.state.edit.name;
 
     let editPrice = this.state.edit.price;
@@ -212,7 +319,7 @@ class App extends Component {
     let recipeToEdit = this.state.recipe[editCategory][editID];
 
     if (localStorageAvailablity) {
-      // get local storage 
+      // get local storage
       let recipe = this.retrieveLocalStorage();
 
       let localRecipeToEdit = recipe[editCategory][editID];
@@ -223,37 +330,25 @@ class App extends Component {
 
       // state doesnt update
       if (Array.isArray(editedIngrients)) {
-
         localRecipeToEdit.ingredients = recipeToEdit.ingredients = editedIngrients;
-
-      }
-      else {
-
+      } else {
         let cleanedIngredient = this.convertIngredientToArray(editedIngrients);
 
         localRecipeToEdit.ingredients = recipeToEdit.ingredients = cleanedIngredient;
-
       }
       this.populateLocalStorage(recipe);
 
       this.setState({ recipeToEdit: recipeToEdit });
 
-      $('#edit-recipe .close').click();
-
-    }
-    else {
-
+      $("#edit-recipe .close").click();
+    } else {
       recipeToEdit.name = editTitle;
 
       recipeToEdit.price = editPrice;
 
       if (Array.isArray(editedIngrients)) {
-
         recipeToEdit.ingredients = editedIngrients;
-      }
-
-      else {
-
+      } else {
         let cleanedIngredient = this.convertIngredientToArray(editedIngrients);
 
         recipeToEdit.ingredients = cleanedIngredient;
@@ -263,18 +358,14 @@ class App extends Component {
     }
   }
 
-
   componentWillMount() {
-
     this.setRecipes();
 
     this.setEditModal();
-
   }
 
   //GENERATES ID FOR ADDING ID
   generateID(typeOfRecipe) {
-
     let storageAvailablity = this.isLocalStorageAvailable();
 
     if (typeOfRecipe === "starters") {
@@ -286,56 +377,41 @@ class App extends Component {
 
         let id = recipeStarters["starters"][len - 1].id;
 
-        id++
+        id++;
 
         return id;
-
-      }
-      else {
-
+      } else {
         let startersLen = this.state.recipe.starters.length;
 
         return startersLen++;
       }
-    }
-
-    else if (typeOfRecipe === "mains") {
+    } else if (typeOfRecipe === "mains") {
       if (storageAvailablity) {
-
         let recipeStarters = this.retrieveLocalStorage();
 
         let len = recipeStarters["mains"].length;
 
         let id = recipeStarters["mains"][len - 1].id;
 
-        id++
+        id++;
 
         return id;
-
-      }
-      else {
-
+      } else {
         let startersLen = this.state.recipe.mains.length;
 
         return startersLen++;
-
       }
-    }
-
-    else if (typeOfRecipe === "desserts") {
+    } else if (typeOfRecipe === "desserts") {
       if (storageAvailablity) {
-
         let recipeStarters = this.retrieveLocalStorage();
         let len = recipeStarters["desserts"].length;
 
         let id = recipeStarters["desserts"][len - 1].id;
 
-        id++
+        id++;
 
         return id;
-
-      }
-      else {
+      } else {
         let startersLen = this.state.recipe.desserts.length;
         return startersLen++;
       }
@@ -350,30 +426,29 @@ class App extends Component {
       stringArr.splice(0, 1);
     }
     // Remove comma at the end
-    if (stringArr[stringArr.length - 1] === ',') {
+    if (stringArr[stringArr.length - 1] === ",") {
       stringArr.pop();
     }
     // Make it back to a string
     var joined = stringArr.join("");
 
     // Remove whitespace
-    let whitespacedRemoved = joined.replace(/\s/g, '');
+    let whitespacedRemoved = joined.replace(/\s/g, "");
 
     // Convert to validated Array
-    let covertedIngredients = whitespacedRemoved.split(',');
+    let covertedIngredients = whitespacedRemoved.split(",");
 
     return covertedIngredients;
   }
 
   // DELETE RECIPE
   deleteRecipe(id, category) {
-
     // need to remove from local storage
     let recipe = this.retrieveLocalStorage();
 
     let localStorageItemToDelete = recipe[category];
 
-    let index = localStorageItemToDelete.findIndex(x => x.id === id);
+    let index = localStorageItemToDelete.findIndex((x) => x.id === id);
 
     localStorageItemToDelete.splice(index, 1);
 
@@ -386,7 +461,7 @@ class App extends Component {
 
     //itemToDelete.splice(index, 1);
 
-    this.setState({ rec12.45ipe: recipe });
+    this.setState({ recipe: recipe });
   }
 
   //edit recipe is setting state
@@ -394,10 +469,74 @@ class App extends Component {
     return (
       <div>
         <Nav />
-        <Jumbotron />
-        <Menu recipes={this.state.recipe} changeRecipe={this.editRecipeFun.bind(this)} />
-        <Modal addRecipe={this.addRecipe.bind(this)} generateID={this.generateID.bind(this)} />
-        <EditModal editRecipe={this.state.edit} deleteRecipe={this.deleteRecipe.bind(this)} formChange={this.formChange.bind(this)} editModalSubmit={this.editModalOnSubmit.bind(this)} />
+        <Carousel />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 col-lg-3">
+              <img
+                class="rounded-circle"
+                src="https://source.unsplash.com/100x100/?food"
+                alt="Second slide"
+              />
+              <h4>Grilled Beef with potatoes</h4>
+              <p>Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+            <div className="col-sm-12 col-lg-3">
+              <img
+                class="rounded-circle"
+                src="https://source.unsplash.com/100x100/?food"
+                alt="Second slide"
+              />
+              <h4>Grilled Beef with potatoes</h4>
+              <p>Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+            <div className="col-sm-12 col-lg-3">
+              <img
+                class="rounded-circle"
+                src="https://source.unsplash.com/100x100/?food"
+                alt="Second slide"
+              />
+              <h4>Grilled Beef with potatoes</h4>
+              <p>Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+            <div className="col-sm-12 col-lg-3">
+              <img
+                class="rounded-circle"
+                src="https://source.unsplash.com/100x100/?food"
+                alt="Second slide"
+              />
+              <h4>Grilled Beef with potatoes</h4>
+              <p>Meat, Potatoes, Rice, Tomatoe</p>
+            </div>
+          </div>
+        </div>
+        <a
+          className="btn btn-primary btn-lg btn-recipe"
+          href="#"
+          role="button"
+          data-toggle="modal"
+          data-target="#add-recipe"
+        >
+          Add a recipe
+        </a>
+
+        <Menu
+          recipes={this.state.recipe}
+          changeRecipe={this.editRecipeFun.bind(this)}
+        />
+
+        <Cta />
+
+        <Modal
+          addRecipe={this.addRecipe.bind(this)}
+          generateID={this.generateID.bind(this)}
+        />
+        <EditModal
+          editRecipe={this.state.edit}
+          deleteRecipe={this.deleteRecipe.bind(this)}
+          formChange={this.formChange.bind(this)}
+          editModalSubmit={this.editModalOnSubmit.bind(this)}
+        />
       </div>
     );
   }

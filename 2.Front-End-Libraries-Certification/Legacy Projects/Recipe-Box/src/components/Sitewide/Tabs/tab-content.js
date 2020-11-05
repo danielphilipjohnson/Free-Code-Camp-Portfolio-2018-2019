@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Mains from './mains';
-import Starters from './starters'
-import Dessert from './dessert';
+import Mains from '../../Menu/Sub/mains';
+import Starters from '../../Menu/Sub/Starters'
+import Dessert from '../../Menu/Sub/Dessert';
 
-//add starters`
-// PROPS here
+
 class TabContent extends Component {
     render() {
 

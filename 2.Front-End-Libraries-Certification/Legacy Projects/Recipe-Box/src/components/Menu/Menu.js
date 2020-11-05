@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Tabs from './menu-component/tabs';
-import TabContent from './menu-component/tab-content';
+import Tabs from '../Sitewide/Tabs/Tabs';
+import TabContent from '../Sitewide/Tabs/tab-content';
 
 class Menu extends Component {
     render() {
