@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import Modal from "./components/Modals/modal";
 import EditModal from "./components/Modals/editModal";
 
+import Dishes from "./components/Home/Dishes";
 import Cta from "./components/Home/Cta";
 
 import $ from "jquery";
@@ -281,7 +282,7 @@ class App extends Component {
 
     this.setState({ edit: recipeToEdit });
   }
-
+  Dishes;
   // EDIT MODAL FUNCTIONS
   formChange(
     editedID,
@@ -359,6 +360,7 @@ class App extends Component {
   }
 
   componentWillMount() {
+    Dishes;
     this.setRecipes();
 
     this.setEditModal();
@@ -471,54 +473,17 @@ class App extends Component {
         <Nav />
         <Carousel />
         <div className="container">
-          <div className="row">
-            <div className="col-sm-12 col-lg-3">
-              <img
-                class="rounded-circle"
-                src="https://source.unsplash.com/100x100/?food"
-                alt="Second slide"
-              />
-              <h4>Grilled Beef with potatoes</h4>
-              <p>Meat, Potatoes, Rice, Tomatoe</p>
-            </div>
-            <div className="col-sm-12 col-lg-3">
-              <img
-                class="rounded-circle"
-                src="https://source.unsplash.com/100x100/?food"
-                alt="Second slide"
-              />
-              <h4>Grilled Beef with potatoes</h4>
-              <p>Meat, Potatoes, Rice, Tomatoe</p>
-            </div>
-            <div className="col-sm-12 col-lg-3">
-              <img
-                class="rounded-circle"
-                src="https://source.unsplash.com/100x100/?food"
-                alt="Second slide"
-              />
-              <h4>Grilled Beef with potatoes</h4>
-              <p>Meat, Potatoes, Rice, Tomatoe</p>
-            </div>
-            <div className="col-sm-12 col-lg-3">
-              <img
-                class="rounded-circle"
-                src="https://source.unsplash.com/100x100/?food"
-                alt="Second slide"
-              />
-              <h4>Grilled Beef with potatoes</h4>
-              <p>Meat, Potatoes, Rice, Tomatoe</p>
-            </div>
-          </div>
+          <Dishes />
+          <a
+            className="btn btn-primary btn-lg btn-recipe"
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#add-recipe"
+          >
+            Add a recipe
+          </a>
         </div>
-        <a
-          className="btn btn-primary btn-lg btn-recipe"
-          href="#"
-          role="button"
-          data-toggle="modal"
-          data-target="#add-recipe"
-        >
-          Add a recipe
-        </a>
 
         <Menu
           recipes={this.state.recipe}
