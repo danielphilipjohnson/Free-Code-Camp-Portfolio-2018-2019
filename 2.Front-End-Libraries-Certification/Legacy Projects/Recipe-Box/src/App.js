@@ -9,6 +9,7 @@ import EditModal from "./components/Modals/EditModal";
 
 import Dishes from "./components/Home/Dishes";
 import Cta from "./components/Home/Cta";
+import FoodMenu from "./components/Home/FoodMenu";
 
 import $ from "jquery";
 
@@ -489,9 +490,9 @@ class App extends Component {
           recipes={this.state.recipe}
           changeRecipe={this.editRecipeFun.bind(this)}
         />
-
-        <Cta />
-
+        <Cta/>
+        <FoodMenu/>
+       
         <Modal
           addRecipe={this.addRecipe.bind(this)}
           generateID={this.generateID.bind(this)}

@@ -19,6 +19,26 @@
   }
 }
 
+.card-menu {
+  @extend .card;
+  @extend .col-lg-6;
+  padding: 0;
+  .card-img-top {
+    height: 250px;
+    width: 50%;
+    border-radius: 0;
+    object-fit: cover;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* to edit later */
 
 $body-bg:                   $white !default;
