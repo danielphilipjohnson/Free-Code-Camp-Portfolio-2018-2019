@@ -12,6 +12,8 @@ import Cta from "./components/Home/Cta";
 import FoodMenu from "./components/Home/FoodMenu";
 import Chefs from "./components/Home/Chefs";
 import ContactForm from "./components/Home/ContactForm";
+import Testimony from "./components/Home/Testimony";
+
 
 import $ from "jquery";
 
@@ -498,7 +500,7 @@ class App extends Component {
 
         <Chefs />
         <ContactForm/>
-
+<Testimony/>
 
         <Modal
           addRecipe={this.addRecipe.bind(this)}
