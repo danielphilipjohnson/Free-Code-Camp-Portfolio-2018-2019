@@ -2,6 +2,8 @@ import React, { Component } from "react";
 // import Nav from './components/nav';
 import Nav from "./components/Sitewide/Nav/Nav";
 import Carousel from "./components/Carousel/Carousel";
+import Footer from "./components/Sitewide/Footer/Footer";
+
 
 import Menu from "./components/Menu/Menu";
 import Modal from "./components/Modals/Modal";
@@ -13,6 +15,7 @@ import FoodMenu from "./components/Home/FoodMenu";
 import Chefs from "./components/Home/Chefs";
 import ContactForm from "./components/Home/ContactForm";
 import Testimony from "./components/Home/Testimony";
+
 
 import Blog from "./components/Home/Blog";
 
@@ -503,6 +506,8 @@ class App extends Component {
         <Testimony />
         */}
  <Blog/>
+
+ <Footer/>
         <Modal
           addRecipe={this.addRecipe.bind(this)}
           generateID={this.generateID.bind(this)}
