@@ -14,6 +14,7 @@ import Chefs from "./components/Home/Chefs";
 import ContactForm from "./components/Home/ContactForm";
 import Testimony from "./components/Home/Testimony";
 
+import Blog from "./components/Home/Blog";
 
 import $ from "jquery";
 
@@ -497,11 +498,11 @@ class App extends Component {
         <Cta />
         <FoodMenu /> */}
 
-
-        <Chefs />
-        <ContactForm/>
-<Testimony/>
-
+        {/* <Chefs />
+        <ContactForm />
+        <Testimony />
+        */}
+ <Blog/>
         <Modal
           addRecipe={this.addRecipe.bind(this)}
           generateID={this.generateID.bind(this)}
