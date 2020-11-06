@@ -72,6 +72,7 @@ export default function Chefs() {
       <div className="row">
         {chefItem}
       </div>
+      
     </div>
   );
 }
