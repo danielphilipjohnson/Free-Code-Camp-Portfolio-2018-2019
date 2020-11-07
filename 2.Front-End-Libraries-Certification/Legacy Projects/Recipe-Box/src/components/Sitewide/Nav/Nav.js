@@ -8,30 +8,28 @@ export default function Nav() {
   const paperPlaneIcon = <FontAwesomeIcon icon={faPaperPlane} />;
 
   return (
-    <div>
-      <ul className="nav d-flex justify-content-center">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+    <div className="nav-top container ">
+      <ul className="row nav-top d-flex justify-content-center text-secondary mb-0 p-0">
+        <li className="d-flex align-items-center col-lg-4">
+          <a className="nav-link text-secondary" href="#">
             {phoneIcon}
-
-            <span>+ 1235 2355 98</span>
           </a>
+          <span>+ 1235 2355 98</span>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+        <li className="d-flex align-items-center col-lg-4">
+          <a className="nav-link text-secondary" href="#">
             {paperPlaneIcon}
-
-            <span>youremail@email.com</span>
           </a>
+          <span className="nav-link">youremail@email.com</span>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
+        <li className="d-flex align-items-center col-lg-4">
+          <a className="nav-link text-secondary" href="#">
             Open hours: Monday - Sunday 8:00AM - 9:00PM
           </a>
         </li>
       </ul>
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="bg-transparent navbar-expand-lg navbar-dark d-flex border-bottom border-secondary py-4">
         <a className="navbar-brand" href="#">
           El Pirata Porch
         </a>
@@ -47,30 +45,30 @@ export default function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul className="navbar-nav">
+            <li className="nav-item pr-3 active">
               <a className="nav-link" href="#">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item pr-3">
               <a className="nav-link" href="#">
                 About
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item pr-3">
               <a className="nav-link" href="#">
                 Menu
               </a>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item pr-3">
               <a className="nav-link" href="#">
                 Stories
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item pr-3">
               <a className="nav-link" href="#">
                 Contact
               </a>
@@ -78,7 +76,7 @@ export default function Nav() {
           </ul>
 
           <form className="form-inline my-2 my-lg-0">
-            <button className="btn btn-success my-2 my-sm-0" type="submit">
+            <button className="btn btn-primary my-2 my-sm-0" type="submit">
               Book a table
             </button>
           </form>

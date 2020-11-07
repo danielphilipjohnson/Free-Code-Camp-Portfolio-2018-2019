@@ -1,5 +1,6 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
+@import "./component/nav-secondary";
 
 @import "custom-variables";
 
@@ -36,13 +37,15 @@
 
 
 
+/* util */
 
+.bg-transparent {
+  background-color: transparent;
+}
 
 
 /* to edit later */
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
 
 
 

@@ -505,9 +505,9 @@ class App extends Component {
         <ContactForm />
         <Testimony />
         */}
- <Blog/>
+ {/* <Blog/>
 
- <Footer/>
+ <Footer/> */}
         <Modal
           addRecipe={this.addRecipe.bind(this)}
           generateID={this.generateID.bind(this)}
