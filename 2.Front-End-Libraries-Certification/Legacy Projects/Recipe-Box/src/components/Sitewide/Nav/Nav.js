@@ -9,7 +9,7 @@ export default function Nav() {
 
   return (
     <Fragment>
-      <div className="d-none d-lg-flex nav-top nav-t">
+      <div className="d-none d-lg-flex nav-top nav-t ">
         <div className="container">
           <ul className="row d-flex justify-content-center text-secondary mb-0 p-0">
             <li className="d-flex justify-content-center col-lg-4 p-2">
@@ -28,9 +28,9 @@ export default function Nav() {
           </ul>
         </div>
       </div>
-      <div className="nav-bottom">
+      <div className="nav-bottom bg-transparent">
         <div className="container">
-          <nav className="bg-transparent navbar-expand-md navbar-dark d-flex align-items-center flex-wrap py-4 justify-content-between">
+          <nav className="fixed-top navbar-expand-md navbar-dark d-flex align-items-center flex-wrap justify-content-between">
             <a className="navbar-brand" href="#">
               El Pirata Porch
             </a>

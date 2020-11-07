@@ -1,12 +1,41 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
-@import "./component/nav-secondary";
+
 
 @import "custom-variables";
 
+
 @import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 
+.subheading {
+  font-size: 5rem;
+  font-style: italic;
+  font-family: 'Niconne', cursive;
+}
+
+.heading {
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+@include media-breakpoint-up(md) {
+  .dishes {
+    margin-top: 0;
+    
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .dishes {
+    margin-top: -17rem;
+    
+  }
+}
+
+
+@import "./component/nav-secondary";
+@import "./component/carousel";
 
 .cta {
   @extend .jumbotron;
@@ -34,24 +63,10 @@
 
 
 
-.carousel {
-  position: absolute;
-  top:0;
-}
-
-.carousel-inner {
-  height: 100vh;
-}
-.carousel-caption {
-  bottom: 50%;
-}
 
 
 /* util */
 
-.bg-transparent {
-  background-color: transparent;
-}
 
 
 

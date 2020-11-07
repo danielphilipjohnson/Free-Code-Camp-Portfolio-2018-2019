@@ -291,7 +291,7 @@ class App extends Component {
 
     this.setState({ edit: recipeToEdit });
   }
-  Dishes;
+
   // EDIT MODAL FUNCTIONS
   formChange(
     editedID,
@@ -369,7 +369,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    Dishes;
+   
     this.setRecipes();
 
     this.setEditModal();
@@ -480,11 +480,13 @@ class App extends Component {
     return (
       <Fragment>
         <Nav />
-        {/* <Carousel /> */}
-        {/* <Carousel />
-        <div className="container">
-          <Dishes />
-          <a
+        <Carousel />
+        <div className="container-fluid dishes">
+        <Dishes />
+        </div>
+       
+
+        {/* <a
             className="btn btn-primary btn-lg btn-recipe"
             href="#"
             role="button"
@@ -493,14 +495,13 @@ class App extends Component {
           >
             Add a recipe
           </a>
-        </div>
-
+       
         <Menu
           recipes={this.state.recipe}
           changeRecipe={this.editRecipeFun.bind(this)}
         />
         <Cta />
-        <FoodMenu /> */}
+        <FoodMenu />  */}
 
         {/* <Chefs />
         <ContactForm />
