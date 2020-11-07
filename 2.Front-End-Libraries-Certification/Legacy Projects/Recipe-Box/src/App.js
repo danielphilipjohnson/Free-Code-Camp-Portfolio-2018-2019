@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 // import Nav from './components/nav';
 import Nav from "./components/Sitewide/Nav/Nav";
 import Carousel from "./components/Carousel/Carousel";
@@ -478,8 +478,9 @@ class App extends Component {
   //edit recipe is setting state
   render() {
     return (
-      <div>
+      <Fragment>
         <Nav />
+        <Carousel />
         {/* <Carousel />
         <div className="container">
           <Dishes />
@@ -518,7 +519,7 @@ class App extends Component {
           formChange={this.formChange.bind(this)}
           editModalSubmit={this.editModalOnSubmit.bind(this)}
         />
-      </div>
+      </Fragment>
     );
   }
 }

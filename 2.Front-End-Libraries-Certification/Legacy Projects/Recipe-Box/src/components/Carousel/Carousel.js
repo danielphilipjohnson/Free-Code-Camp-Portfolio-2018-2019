@@ -1,37 +1,44 @@
 import React from "react";
 
+import carousel0 from "../../img/carousel/carousel0.jpg";
+import carousel1 from "../../img/carousel/carousel1.jpg";
+import carousel2 from "../../img/carousel/carousel2.jpg";
+
+
 export default function Carousel() {
   return (
     <div
-      id="carouselExampleIndicators"
+      id="restaurantCarousel"
       class="carousel slide"
       data-ride="carousel"
     >
       <ol class="carousel-indicators">
         <li
-          data-target="#carouselExampleIndicators"
+          data-target="#restaurantCarousel"
           data-slide-to="0"
           class="active"
         ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#restaurantCarousel" data-slide-to="1"></li>
+        <li data-target="#restaurantCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
             class="d-block w-100"
-            src="https://source.unsplash.com/1600x900/?food"
+            src={carousel0}
             alt="First slide"
           />
-          <div class="carousel-caption d-none d-md-block">
-            <p>El Pirata Porch</p>
-            <h5>Nutritious and Tasty</h5>
-          </div>
+          <header class="carousel-caption d-none d-md-block">
+            <h4>El Pirata Porch</h4>
+            <h2>Nutritious and Tasty</h2>
+          </header>
         </div>
+
+{/* 
         <div class="carousel-item">
           <img
             class="d-block w-100"
-            src="https://source.unsplash.com/1600x900/?food"
+            src={carousel1}
             alt="Second slide"
           />
           <div class="carousel-caption d-none d-md-block">
@@ -41,21 +48,26 @@ export default function Carousel() {
            
           </div>
         </div>
+
+
         <div class="carousel-item">
           <img
             class="d-block w-100"
-            src="https://source.unsplash.com/1600x900/?food"
+            src={carousel2}
             alt="Third slide"
           />
           <div class="carousel-caption d-none d-md-block">
             <p>El Pirata Porch</p>
             <h5>Best Restaurants</h5>
           </div>
-        </div>
+        </div> */}
+
+
+
       </div>
       <a
         class="carousel-control-prev"
-        href="#carouselExampleIndicators"
+        href="#restaurantCarousel"
         role="button"
         data-slide="prev"
       >
@@ -64,7 +76,7 @@ export default function Carousel() {
       </a>
       <a
         class="carousel-control-next"
-        href="#carouselExampleIndicators"
+        href="#restaurantCarousel"
         role="button"
         data-slide="next"
       >

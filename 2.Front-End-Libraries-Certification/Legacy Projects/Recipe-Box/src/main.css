@@ -1,4 +1,6 @@
 .nav-top {
+  position: relative;
+  z-index: 9999;
   background-color: transparent;
   list-style: none; }
   .nav-top li {
@@ -7175,6 +7177,16 @@ a.text-dark:hover, a.text-dark:focus {
     width: 50%;
     border-radius: 0;
     object-fit: cover; }
+
+.carousel {
+  position: absolute;
+  top: 0; }
+
+.carousel-inner {
+  height: 100vh; }
+
+.carousel-caption {
+  bottom: 50%; }
 
 /* util */
 .bg-transparent {
