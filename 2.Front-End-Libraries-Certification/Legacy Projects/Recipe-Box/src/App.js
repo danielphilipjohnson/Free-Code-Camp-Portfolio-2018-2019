@@ -480,7 +480,7 @@ class App extends Component {
     return (
       <Fragment>
         <Nav />
-        <Carousel />
+        {/* <Carousel /> */}
         {/* <Carousel />
         <div className="container">
           <Dishes />
