@@ -4,7 +4,6 @@ import Nav from "./components/Sitewide/Nav/Nav";
 import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Sitewide/Footer/Footer";
 
-
 import Menu from "./components/Menu/Menu";
 import Modal from "./components/Modals/Modal";
 import EditModal from "./components/Modals/EditModal";
@@ -15,7 +14,6 @@ import FoodMenu from "./components/Home/FoodMenu";
 import Chefs from "./components/Home/Chefs";
 import ContactForm from "./components/Home/ContactForm";
 import Testimony from "./components/Home/Testimony";
-
 
 import Blog from "./components/Home/Blog";
 
@@ -369,7 +367,6 @@ class App extends Component {
   }
 
   componentWillMount() {
-   
     this.setRecipes();
 
     this.setEditModal();
@@ -467,12 +464,9 @@ class App extends Component {
     //set Local storage
 
     //let itemToDelete = this.state.recipe[category];
+    //127.0.0.1:5500/to-add-frontend-path/12.CSS-Frameworks/Bootstrap_4/Digital%20Agency/index.htmllete.splice(index, 1);
 
-    //let index = itemToDelete.findIndex(x => x.id === id);
-
-    //itemToDelete.splice(index, 1);
-
-    this.setState({ recipe: recipe });
+    http: this.setState({ recipe: recipe });
   }
 
   //edit recipe is setting state
@@ -482,9 +476,8 @@ class App extends Component {
         <Nav />
         <Carousel />
         <div className="container-fluid dishes">
-        <Dishes />
+          <Dishes />
         </div>
-       
 
         {/* <a
             className="btn btn-primary btn-lg btn-recipe"
@@ -507,7 +500,7 @@ class App extends Component {
         <ContactForm />
         <Testimony />
         */}
- {/* <Blog/>
+        {/* <Blog/>
 
  <Footer/> */}
         <Modal

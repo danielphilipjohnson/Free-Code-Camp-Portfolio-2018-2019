@@ -21,14 +21,9 @@
   height: 100vh;
 }
 .carousel-caption {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-  height: 50%;
-  width: 100%;
+  // border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+
   top: 0;
-  left: 0;
-  right: unset;
-  bottom: unset;
-  
 }
 .carousel-item {
   img {
@@ -36,7 +31,6 @@
     object-fit: cover;
   }
 }
-
 
 @include media-breakpoint-up(lg) {
   .carousel-item {
@@ -47,7 +41,7 @@
   }
 }
 
-
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   z-index: 9999;
 }

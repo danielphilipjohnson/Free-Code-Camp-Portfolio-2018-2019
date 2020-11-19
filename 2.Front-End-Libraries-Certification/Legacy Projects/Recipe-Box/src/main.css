@@ -7166,19 +7166,41 @@ a.text-dark:hover, a.text-dark:focus {
 .subheading {
   font-size: 5rem;
   font-style: italic;
-  font-family: 'Niconne', cursive; }
+  font-family: "Niconne", cursive; }
 
 .heading {
   font-size: 5.5rem;
   font-weight: bold; }
 
+.dishes {
+  padding: 2rem 0;
+  background-color: #fff; }
+  .dishes .row, .dishes .services {
+    margin: 0; }
+  .dishes .dish {
+    padding: 0 0 1rem 0; }
+    .dishes .dish-title {
+      color: #212529;
+      font-weight: 700; }
+    .dishes .dish-subtext {
+      color: #495057;
+      font-weight: 700; }
+
 @media (min-width: 768px) {
   .dishes {
-    margin-top: 0; } }
+    margin-top: 0;
+    padding: 0; }
+    .dishes .dish {
+      padding: 0; } }
 
 @media (min-width: 992px) {
   .dishes {
-    margin-top: -17rem; } }
+    margin-top: -17rem;
+    background-color: unset; }
+    .dishes .dish-title {
+      color: #fff; }
+    .dishes .dish-subtext {
+      color: #f8f9fa; } }
 
 .nav-top {
   position: relative;
@@ -7214,13 +7236,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100vh; }
 
 .carousel-caption {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-  height: 50%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: unset;
-  bottom: unset; }
+  top: 0; }
 
 .carousel-item img {
   height: 100vh;
