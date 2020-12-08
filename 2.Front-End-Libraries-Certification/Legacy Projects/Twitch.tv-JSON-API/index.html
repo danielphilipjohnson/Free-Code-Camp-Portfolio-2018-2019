@@ -67,8 +67,8 @@
       content="https://pbs.twimg.com/profile_images/1288051154413379591/tUGJS2vc_400x400.jpg">
     <meta name="twitter:card" content="Twitter Profile">
 
-
     <title>Twitch Viewer</title>
+
     <link rel="preconnect">
 
     <link rel="stylesheet"
@@ -78,14 +78,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="crossorigin="anonymous"
       />
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
-    <script src="./js/app.js"></script>
+  
   </head>
 
-  <body
-    data-spy="scroll" data-target="#basic-nav" ng-app="twitchApp">
-
+  <body data-spy="scroll" data-target="#basic-nav" ng-app="twitchApp">
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <a class="navbar-brand" href="#">
@@ -288,7 +284,6 @@
       </div>
     </main>
 
-
     <!-- Footer -->
     <footer class="main-footer text-center text-white p-1">
       <div class="container">
@@ -360,12 +355,11 @@
       </div>
     </footer>
 
-
     <!-- insert modals-->
     <div class="stream" ng-controller="ChannelController">
       <div ng-repeat="stream in streamModel">
         <div class="modal fade" id="{{stream.stream.channel.name}}"
-          tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          tabindex="-1" role="dialog" arbundleia-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -377,7 +371,7 @@
               </div>
               <div class="modal-body p-0">
                 <div class="player">
-                  <img class="img-responsive" class="stream-logo mt-3 p-1"
+                  <img class="img-responsive stream-logo" 
                     src="{{stream.stream.channel.logo}}" alt="stream-logo">
                   <div class="stream-info m-2 col">
                     <h3 class="stream-channel-name">
@@ -400,12 +394,15 @@
                 </div>
               </div>
             </div>
-          </div>img-responsive
+          </div>
         </div>
       </div>
       <!-- end of modal -->
 
       <!-- jQuery first, then Tether, then Bootstrap JS. -->
+      <script
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="./js/app.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
