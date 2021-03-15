@@ -136,7 +136,9 @@ Here are some of the major framworks I used for this project.
    yarn build
    ```
 
-<!-- ROADMAP --><!-- USAGE EXAMPLES -->
+<!-- ROADMAP -->
+
+<!-- USAGE EXAMPLES -->
 
 ## Usage
 
@@ -151,7 +153,7 @@ See the [open issues](https://github.com/danielphilipjohnson/Free-Code-Camp-Port
 ## Contributing
 
 Feel free to make any contributions, if you are learning open source and want to practice this is a great place to start.
-Any contributions you make are \*\_greatly appreciated\_https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/blob/master/static/front-end-libraries/calculator/calculator.png*.
+Any contributions you make are **greatly appreciated**
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
