@@ -73,7 +73,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Calculator](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/static/front-end-libraries/calculator/calculator.png)
 
 I took FreeCodeCamp Front End Development Libraries Projects to improve my front end skills. With this project I wanted to use my React skills to build a functioning calculator. The react app was styled with CSS.
 
@@ -99,6 +99,10 @@ I followed the freecodecamp user story:
 <li><b>User Story #13:</b> If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (-) sign). For example, if 5 + _ 7 = is entered, the result should be 35 (i.e. 5 _ 7); if 5 _ - 5 = is entered, the result should be -25 (i.e. 5 \* (-5)).</li>
 <li><b>User Story #14:</b> Pressing an operator immediately following = should start a new calculation that operates on the result of the previous evaluation.</li>
 <li><b>User Story #15:</b> My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like 2 / 7 with reasonable precision to at least 4 decimal places).</li></ul>
+
+![Calculator](https://raw.githubusercontent.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/master/static/front-end-libraries/calculator/calculator-mobile.png)
+
+Mobile View
 
 ### Built With
 
@@ -147,7 +151,7 @@ See the [open issues](https://github.com/danielphilipjohnson/Free-Code-Camp-Port
 ## Contributing
 
 Feel free to make any contributions, if you are learning open source and want to practice this is a great place to start.
-Any contributions you make are **greatly appreciated**.
+Any contributions you make are \*\_greatly appreciated\_https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/blob/master/static/front-end-libraries/calculator/calculator.png*.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -173,32 +177,24 @@ Project Link: [https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2
 
 ## Acknowledgements
 
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [Loaders.css](https://connoratherton.com/loaders)
-- [Slick Carousel](https://kenwheeler.github.io/slick)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Sticky Kit](http://leafo.net/sticky-kit)
-- [JVectorMap](http://jvectormap.com)
 - [Font Awesome](https://fontawesome.com)
 - [Big.js](https://github.com/MikeMcl/big.js/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019.svg?style=for-the-badge
+[contributors-url]: https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019.svg?style=for-the-badge
+[forks-url]: https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/network/members
+[stars-shield]: https://img.shields.io/github/stars/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019.svg?style=for-the-badge
+[stars-url]: https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/stargazers
+[issues-shield]: https://img.shields.io/github/issues/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019.svg?style=for-the-badge
+[issues-url]: https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/issues
+[license-shield]: https://img.shields.io/github/license/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019.svg?style=for-the-badge
+[license-url]: https://github.com/danielphilipjohnson/Free-Code-Camp-Portfolio-2018-2019/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/danielphilipjohnson
 [product-screenshot]: images/screenshot.png
