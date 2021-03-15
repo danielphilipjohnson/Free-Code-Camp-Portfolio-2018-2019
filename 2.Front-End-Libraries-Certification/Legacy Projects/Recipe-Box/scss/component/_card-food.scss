@@ -1,0 +1,17 @@
+.card-food {
+  @extend .card;
+  @extend .col-md-6;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  &-img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &-body {
+    background-color: red;
+    @extend .card-body;
+  }
+}
